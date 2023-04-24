@@ -1,0 +1,565 @@
+version: 3.1
+
+nlu:
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hello there
+      - good morning
+      - good evening
+      - moin
+      - hey there
+      - let's go
+      - hey dude
+      - goodmorning
+      - goodevening
+      - good afternoon
+      - greet
+      - howdy
+      - yo
+      - whattsup
+      - ey yo
+      - sup
+
+  - intent: goodbye
+    examples: |
+      - cu
+      - good by
+      - cee you later
+      - good night
+      - bye
+      - goodbye
+      - have a nice day
+      - see you around
+      - bye bye
+      - see you later
+      - talk to you soon 
+      - take care
+      - nice talk
+      - it was quite good
+      - okay
+      - okay then
+      - have a good day
+      - end
+      - stop
+
+  - intent: affirm
+    examples: |
+      - yes
+      - y
+      - indeed
+      - of course
+      - that sounds good
+      - correct
+      - great
+      - wow it looks good
+
+  - intent: deny
+    examples: |
+      - no
+      - n
+      - never
+      - I don't think so
+      - don't like that
+      - no way
+      - not really
+
+  - intent: mood_great
+    examples: |
+      - perfect
+      - great
+      - amazing
+      - feeling like a king
+      - wonderful
+      - I am feeling very good
+      - I am great
+      - I am amazing
+      - I am going to save the world
+      - super stoked
+      - extremely good
+      - so so perfect
+      - so good
+      - so perfect
+
+  - intent: mood_unhappy
+    examples: |
+      - my day was horrible
+      - I am sad
+      - I don't feel very well
+      - I am disappointed
+      - super sad
+      - I'm so sad
+      - sad
+      - very sad
+      - unhappy
+      - not good
+      - not very good
+      - extremly sad
+      - so saad
+      - so sad
+      - feel really sad today
+      - feel blue
+      - ca it seem shake feel sad 
+      - every feel hopeless overwhelm right
+      - ca it seem find joy thing late
+      - feel like stuck rut sad despair
+      - it know snap sad
+      - feel like weight chest ca it breath
+      - struggle find motive any sad
+      - feel like go motion life right
+
+  - intent: bot_challenge
+    examples: |
+      - are you a bot?
+      - are you a human?
+      - am I talking to a bot?
+      - am I talking to a human?
+
+  - intent: help
+    examples: |
+      - help
+      - need help
+      - assist
+      - struggle
+      - I'm having trouble with something, can you help me?
+      - Do you have any advice for me?
+      - I need some guidance, can you help me out?
+      - Can you point me in the right direction?
+      - I don't know what to do, can you help me?
+      - How can you assist me?
+      - Can you provide some support?
+      - What should I do?
+
+  - intent: thanks
+    examples: |
+      - thank
+      - thank a lot 
+      - thank you for your help
+      - appri
+      - thank for the help
+      - great assistant
+      - best
+      - owe one
+      - glad 
+      - great help
+      - wow
+
+  - intent: mental_health_concern
+    examples: |
+      - struggle mental health recent
+      - mental health 
+      - anxiety really bad late 
+      - feel like ca it escape depress
+      - experience  symptom  really affect life
+      - feel  abject   event situate
+      - trouble sleep  problem issue
+      - thought really new late
+      - feel really stress  problem issue
+      - feel really iso along
+      - it feel like late
+      - worry might  mental health conduct
+
+  - intent: depression_symptoms
+    examples: |
+      - feel sad appear reason 
+      - lost interest thing use enjoy long time
+      - energy feel tire time  go
+      - ca it consent make denis  happen long time
+      - trouble sleep sleep much  go 
+      - feel hopeless worthless  long time since felt differ
+      - thought harm suicide
+      - want die
+      - reason live
+      - feel reason continue live
+      - difficult live
+      - wish east way leave earth
+      - want free problem
+
+  - intent: Depression
+    examples: |
+      - depress
+      - symptom depress
+      - tell depress
+      - think might depress
+      - depress treat
+      - long depress topic last
+      - cope strategic deal depress
+      - depress affect daily life
+      - nature remedy depress 
+      - support love one deal depress
+      - differ type depress
+      - depress affect relationship
+      - depress cause genet
+      - common disconcert depress
+      - talk doctor depress
+      - risk factor depress
+      - find therapist mental health profession help depress
+      - depress symptom not media conduct 
+      - depress affect children been
+      - common trigger depress
+      - family member deal depress  support
+      - friend seem depress  help
+      - partnerspous  love life  deal depress  support
+      - depress treat
+      - common treatment option depress
+      - nature remedy depress
+      - therapy help depress
+      - type media use treat depress
+      - exercise help depress
+      - alter therapy depress
+      - find mental health institute hospital depress treatment
+      - selfcar practice help depress
+      - spirit help depress
+      - spirit practice help depress
+      - prayer help depress
+      - role faith play heal depress
+      - incorpor spirit treatment depress 
+      - spirit help treat depress
+      - spirit practice help alley symptom depress
+      - merit help depress
+      - connect nature help depress
+      - gratitude post think help depress 
+      - way incorpor spirit everyday life prevent depress
+      - count help other spirit way combat depress
+      - role religion play treat depress 
+      - common cause depress
+      - stress contribute depress
+      - genet play role depress
+      - childhood expert contribute depress
+      - lack social support lead depress
+      - major life change loss contribute depress
+      - substance abuse contribute depress 
+      - major depress
+      - persist depress discord
+      - season affect discord
+      - postpartum depress
+      - pinchot depress
+      - type depress
+
+  - intent: Depression_conversations
+    examples: |
+      - feel let parent
+      - good not
+      - feel stress late
+      - want kill
+      - afraid fail
+      - top cause depress
+      - age group highest rate depress
+      - country highest rate depress
+      - school cause depress
+      - biology cause depress
+      - depress affect world
+      - race highest rate depress
+      - overseer cause depress
+      - lack sleep make feel sad
+      - depress side effect diet
+      - low blood sugar cause suicide thought
+      - long anxiety last
+      - age anxiety peak
+      - stage anxiety
+      - anxiety bad
+      - control thought
+      - man thought day
+      - lone
+      - one like
+      - think ugly
+      - wish better
+      - hate
+      - wish could winner
+      - hate lose
+      - think lose mind
+      - want break
+      - stress
+      - never succeed life
+      - sad all the time 
+      - victim bull
+      - afraid file case bull
+      - wish quit
+      - want leave you nor run away
+      - let every one
+      - ca it anymore
+      - time come
+      - feel anxious late
+
+  - intent: anxiety_symptoms
+    examples: |
+      - feel constantly worry edge
+      - trouble control worry
+      - feel restless ca it sit still
+      - trouble fall asleep stay asleep worry
+      - get vasili fatigue exhaust
+      - trouble consent worry
+      - expert muscle tension muscle each
+      - get merit gait
+      - avoid certain situate make anxious
+      - panic attack
+      - expert race thought
+      - feel like cometh terrible go happen
+      - trouble breath feel short breath anxious
+
+  - intent: Anxiety
+    examples: |
+      - anxiety discord
+      - symptom anxiety
+      - tell anxiety
+      - think might experience anxiety
+      - anxiety treat
+      - long anxiety topic last
+      - cope strategic deal anxiety
+      - anxiety affect daily life
+      - nature remedy anxiety
+      - support love one deal anxiety
+      - differ type anxiety
+      - anxiety affect relationship
+      - anxiety cause genet
+      - common disconcert anxiety
+      - talk doctor anxiety
+      - risk factor anxiety
+      - find therapist mental health profession help anxiety
+      - anxiety symptom not media conduct
+      - anxiety affect children been
+      - common trigger anxiety
+      - family member deal anxiety support
+      - friend seem anxious help
+      - partnerspous love life deal anxiety support
+      - anxiety treat
+      - common treatment option anxiety
+      - nature remedy anxiety
+      - therapy help anxiety
+      - type media use treat anxiety
+      - exercise help anxiety
+      - alter therapy anxiety
+      - find mental health institute hospital anxiety treatment
+      - selfcar practice help anxiety
+      - mind help anxiety
+      - merit help anxiety
+      - breath exercise help anxiety
+      - way incorpor mind everyday life prevent anxiety
+      - post affirm help anxiety
+      - role diet play manage anxiety
+      - count behavior therapy cut help anxiety
+      - exposure therapy help anxiety
+      - common cause anxiety
+      - stress contribute anxiety
+      - genet play role anxiety
+      - childhood expert contribute anxiety
+      - lack social support lead anxiety
+      - major life change loss contribute anxiety
+      - substance abuse contribute anxiety
+      - anxiety affect daily life
+      - support love one anxiety
+      - differ anxiety depress
+      - rule anxiety
+
+  - intent: bipolar_disorder_symptoms
+    examples: |
+      - experience extreme mood swing late  feel overlie happy extreme sad
+      - energy level fluctuates lot  affect daily life
+      - trouble sleep  thought race constantly
+      - feel like ca it control mot impact relationship work
+      - thought grandson feel invent
+      - feel overlie impulse engage risk behavior
+      - experience signify change appetite weight
+      - feel excess merit gait
+      - difficult focus complete task 
+      - experience loss interest active use enjoy
+
+  - intent: Bipolar_Disorder
+    examples: |
+      -	bipolar discord
+      -	symptom bipolar discord
+      -	tell bipolar discord
+      -	think might bipolar discord
+      -	bipolar discord treat
+      -	long bipolar discord topic last
+      -	cope strategic deal bipolar discord
+      -	bipolar discord affect daily life
+      -	nature remedy bipolar discord
+      -	support love one deal bipolar discord
+      -	differ type bipolar discord
+      -	bipolar discord affect relationship
+      -	bipolar discord cause genet
+      -	common disconcert bipolar discord
+      -	talk doctor bipolar discord
+      -	risk factor bipolar discord
+      -	find therapist mental health profession help bipolar discord
+      -	bipolar discord symptom not media conduct
+      -	bipolar discord affect children been
+      -	common trigger bipolar discord
+      -	family member deal bipolar discord support
+      -	friend seem bipolar discord help
+      -	partnerspous love life bipolar discord support
+      -	bipolar discord treat
+      -	common treatment option bipolar discord
+      -	nature remedy bipolar discord
+      -	therapy help bipolar discord
+      -	type media use treat bipolar discord
+      -	exercise help bipolar discord
+      -	alter therapy bipolar discord
+      -	find mental health institute hospital bipolar discord treatment
+      -	selfcar practice help bipolar discord
+      -	spirit help bipolar discord
+      -	count help other spirit way combat bipolar discord
+      -	role religion play treat bipolar discord
+      -	common cause bipolar discord
+      -	stress contribute bipolar discord
+      -	genet play role bipolar discord
+      -	childhood expert contribute bipolar discord
+      -	lack social support lead bipolar discord
+      -	major life change loss contribute bipolar discord
+      -	substance abuse contribute bipolar discord
+
+  - intent: PTSD_symptoms
+    examples: |
+    -	experience nightmare flashback trauma event
+    -	feel anxious edge time even dimmed danger
+    -	avoid certain place people active remind trauma event
+    -	feel numb discontent other struggle feel mot
+    -	trouble sleep expert insomnia
+    -	feel guilty response trauma event
+    -	height start response vasili start
+    -	feel hopeless like future limit trauma
+    -	struggle anger merit trouble control temper
+    -	physics symptom headache stomach problem it media explain
+    -	feel like relit trauma event
+    -	hard time trust other form close relationship
+    -	struggle substance abuse way cope trauma
+    -	expert feel shame worthless trauma
+
+
+  - intent: PTSD
+    examples: |
+    -	its
+    -	its stand
+    -	symptom its
+    -	its affect people
+    -	cause its
+    -	its cure
+    -	its treat
+    -	longer effect its
+    -	help someone its
+    -	cope mean deal its
+    -	its affect relationship
+    -	common disconcert its
+    -	its cause combat
+    -	resource people its
+    -	its common
+    -	its lead mental health issue
+    -	its prevent
+    -	differ type its
+    -	complex its
+    -	selfhelp strategic manage its
+    -	ca it stop think trauma event happen
+    -	feel like relit trauma event flashback nightmare
+    -	get vasili start feel edge time
+    -	try avoid any remind trauma event
+    -	feel guilty sham happen
+    -	difficult sleep consent
+    -	feel detach other mot numb
+    -	it feel like anymore trauma event
+    -	feel like constantly guard like cometh bad go happen
+    -	feel like danger even
+    -	panic attack feel like heart attack
+    -	trouble trust other form close relationship
+    -	feel like stuck past ca it move
+    -	afraid talk happen seek help
+
+
+  - intent: schizophrenia
+    examples: |
+    - schizophrenia
+    - symptom schizophrenia
+    - cause schizophrenia
+    - schizophrenia hereditary
+    - schizophrenia cure
+    - schizophrenia treat
+    - differ type schizophrenia
+    - new symptom schizophrenia
+    - post symptom schizophrenia
+    - schizophrenia affect social behavior
+    - support someone schizophrenia
+    - common disconcert schizophrenia
+    - people schizophrenia lead normal life
+    - schizophrenia affect brain function
+    - differ schizophrenia multiple person discord
+    - substance abuse cause schizophrenia
+    - first sign schizophrenia
+    - schizophrenia diagnose children
+    - role media treat schizophrenia
+    - alter treatment schizophrenia
+    - longer outlook people schizophrenia
+    - link trauma schizophrenia
+    - family love one support someone schizophrenia
+    - people schizophrenia work live indeed
+
+  - intent: eating_disorder
+    examples: |
+    -	eat discord
+    -	differ type eat discord
+    -	symptom eat discord
+    -	cause eat discord
+    -	men eat discord
+    -	treatment eat discord
+    -	alter treatment eat discord
+    -	longer outlook someone eat discord
+    -	social effect eat discord
+    -	help love one eat discord
+    -	suspect eat discord
+    -	common disconcert eat discord
+    -	selfhelp strategic manage eat discord
+    -	know need profession help eat discord
+    -	cope mean deal trigger may lead discord eat behavior
+    -	improve relationship food body
+    -	feel like abscess weight way look
+    -	feel guilty sham eat
+    -	skin meal drastic reduce food intake
+    -	feel like control eat habit
+    -	often find being eat pure vomit method
+    -	constantly compare other feel inadequ
+    -	feel like need exercise excess burn calorie
+    -	notice signify weight loss weight gain short period time
+    -	worry eat habit affect health
+    -	feel like adduct food unhealthy relationship
+    -	constantly think food calorie
+    -	avoid social situate involve food
+    -	feel like selfworth tie weight appear
+    -	afraid gain weight become overnight
+    -	notice change menstrual cycle reproduce health due eat habit
+
+
+  - intent: disdisruptive_behavior_disorder
+    examples: |
+    - disrupt behavior discord
+    - dissect person trait
+    - symptom conduct discord
+    - cause disrupt behavior dissect discord
+    - treatment disrupt behavior dissect discord
+    - disrupt behavior dissect discord affect social relationship
+    - disrupt behavior dissect discord prevent
+    - differ type disrupt behavior discord
+    - symptom opposite defiant discord
+    - conduct discord differ opposite defiant discord
+    - common trigger disrupt behavior episode
+    - parent carnegie help manage disrupt behavior children
+    - connect substance abuse disrupt behavior discord
+    - common disconcert disrupt behavior discord
+
+  - intent: neurodevelopmental_disorder
+    examples: |
+    - neurodevelopment discord
+    - symptom cutis spectrum discord
+    - cause neurodevelopment discord
+    - treatment neurodevelopment discord
+    - neurodevelopment discord affect social relationship daily function
+    - neurodevelopment discord prevent
+    - attend deficit hyperact discord  add
+    - symptom add
+    - add diagnose
+    - treatment add
+    - dyslexia
+    - symptom dyslexia
+    - dyslexia diagnose
+    - treatment dyslexia
+    - add
