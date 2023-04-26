@@ -1,4 +1,4 @@
-version: 3.1
+version: "3.1"
 
 nlu:
   - intent: greet
@@ -145,6 +145,8 @@ nlu:
       - glad 
       - great help
       - wow
+    # responses:
+    #   - utter_thanks
 
   - intent: mental_health_concern
     examples: |
@@ -160,6 +162,8 @@ nlu:
       - feel really iso along
       - it feel like late
       - worry might  mental health conduct
+    # responses:
+    #   - utter_make_happy
 
   - intent: depression_symptoms
     examples: |
@@ -171,11 +175,13 @@ nlu:
       - feel hopeless worthless  long time since felt differ
       - thought harm suicide
       - want die
-      - reason live
+      - reason live 
       - feel reason continue live
       - difficult live
       - wish east way leave earth
       - want free problem
+    # responses:
+    #   - utter_ask_support
 
   - intent: Depression
     examples: |
@@ -237,6 +243,8 @@ nlu:
       - postpartum depress
       - pinchot depress
       - type depress
+    # responses:
+    #   - utter_depression_info
 
   - intent: Depression_conversations
     examples: |
@@ -282,6 +290,8 @@ nlu:
       - ca it anymore
       - time come
       - feel anxious late
+    # responses:
+    #   - utter_emotional_connection
 
   - intent: anxiety_symptoms
     examples: |
@@ -298,6 +308,8 @@ nlu:
       - expert race thought
       - feel like cometh terrible go happen
       - trouble breath feel short breath anxious
+    # responses:
+    #   - utter_anxiety_symptom
 
   - intent: Anxiety
     examples: |
@@ -352,6 +364,8 @@ nlu:
       - support love one anxiety
       - differ anxiety depress
       - rule anxiety
+    # responses:
+    #   - utter_anxiety_info
 
   - intent: bipolar_disorder_symptoms
     examples: |
@@ -365,6 +379,8 @@ nlu:
       - feel excess merit gait
       - difficult focus complete task 
       - experience loss interest active use enjoy
+    # responses:
+    #   - utter_bipolar_disorder_symptoms
 
   - intent: Bipolar_Disorder
     examples: |
@@ -410,156 +426,167 @@ nlu:
       -	lack social support lead bipolar discord
       -	major life change loss contribute bipolar discord
       -	substance abuse contribute bipolar discord
+    # responses:
+    #   - utter_bipolar_disoder_info
 
   - intent: PTSD_symptoms
     examples: |
-    -	experience nightmare flashback trauma event
-    -	feel anxious edge time even dimmed danger
-    -	avoid certain place people active remind trauma event
-    -	feel numb discontent other struggle feel mot
-    -	trouble sleep expert insomnia
-    -	feel guilty response trauma event
-    -	height start response vasili start
-    -	feel hopeless like future limit trauma
-    -	struggle anger merit trouble control temper
-    -	physics symptom headache stomach problem it media explain
-    -	feel like relit trauma event
-    -	hard time trust other form close relationship
-    -	struggle substance abuse way cope trauma
-    -	expert feel shame worthless trauma
-
+      -	experience nightmare flashback trauma event
+      -	feel anxious edge time even dimmed danger
+      -	avoid certain place people active remind trauma event
+      -	feel numb discontent other struggle feel mot
+      -	trouble sleep expert insomnia
+      -	feel guilty response trauma event
+      -	height start response vasili start
+      -	feel hopeless like future limit trauma
+      -	struggle anger merit trouble control temper
+      -	physics symptom headache stomach problem it media explain
+      -	feel like relit trauma event
+      -	hard time trust other form close relationship
+      -	struggle substance abuse way cope trauma
+      -	expert feel shame worthless trauma
+    # responses:
+    #   - utter_PSTD_symptom
 
   - intent: PTSD
     examples: |
-    -	its
-    -	its stand
-    -	symptom its
-    -	its affect people
-    -	cause its
-    -	its cure
-    -	its treat
-    -	longer effect its
-    -	help someone its
-    -	cope mean deal its
-    -	its affect relationship
-    -	common disconcert its
-    -	its cause combat
-    -	resource people its
-    -	its common
-    -	its lead mental health issue
-    -	its prevent
-    -	differ type its
-    -	complex its
-    -	selfhelp strategic manage its
-    -	ca it stop think trauma event happen
-    -	feel like relit trauma event flashback nightmare
-    -	get vasili start feel edge time
-    -	try avoid any remind trauma event
-    -	feel guilty sham happen
-    -	difficult sleep consent
-    -	feel detach other mot numb
-    -	it feel like anymore trauma event
-    -	feel like constantly guard like cometh bad go happen
-    -	feel like danger even
-    -	panic attack feel like heart attack
-    -	trouble trust other form close relationship
-    -	feel like stuck past ca it move
-    -	afraid talk happen seek help
-
+      -	its
+      -	its stand
+      -	symptom its
+      -	its affect people
+      -	cause its
+      -	its cure
+      -	its treat
+      -	longer effect its
+      -	help someone its
+      -	cope mean deal its
+      -	its affect relationship
+      -	common disconcert its
+      -	its cause combat
+      -	resource people its
+      -	its common
+      -	its lead mental health issue
+      -	its prevent
+      -	differ type its
+      -	complex its
+      -	selfhelp strategic manage its
+      -	ca it stop think trauma event happen
+      -	feel like relit trauma event flashback nightmare
+      -	get vasili start feel edge time
+      -	try avoid any remind trauma event
+      -	feel guilty sham happen
+      -	difficult sleep consent
+      -	feel detach other mot numb
+      -	it feel like anymore trauma event
+      -	feel like constantly guard like cometh bad go happen
+      -	feel like danger even
+      -	panic attack feel like heart attack
+      -	trouble trust other form close relationship
+      -	feel like stuck past ca it move
+      -	afraid talk happen seek help
+    # responses:
+    #   - utter_PSTD_info
 
   - intent: schizophrenia
     examples: |
-    - schizophrenia
-    - symptom schizophrenia
-    - cause schizophrenia
-    - schizophrenia hereditary
-    - schizophrenia cure
-    - schizophrenia treat
-    - differ type schizophrenia
-    - new symptom schizophrenia
-    - post symptom schizophrenia
-    - schizophrenia affect social behavior
-    - support someone schizophrenia
-    - common disconcert schizophrenia
-    - people schizophrenia lead normal life
-    - schizophrenia affect brain function
-    - differ schizophrenia multiple person discord
-    - substance abuse cause schizophrenia
-    - first sign schizophrenia
-    - schizophrenia diagnose children
-    - role media treat schizophrenia
-    - alter treatment schizophrenia
-    - longer outlook people schizophrenia
-    - link trauma schizophrenia
-    - family love one support someone schizophrenia
-    - people schizophrenia work live indeed
+      - schizophrenia
+      - symptom schizophrenia
+      - cause schizophrenia
+      - schizophrenia hereditary
+      - schizophrenia cure
+      - schizophrenia treat
+      - differ type schizophrenia
+      - new symptom schizophrenia
+      - post symptom schizophrenia
+      - schizophrenia affect social behavior
+      - support someone schizophrenia
+      - common disconcert schizophrenia
+      - people schizophrenia lead normal life
+      - schizophrenia affect brain function
+      - differ schizophrenia multiple person discord
+      - substance abuse cause schizophrenia
+      - first sign schizophrenia
+      - schizophrenia diagnose children
+      - role media treat schizophrenia
+      - alter treatment schizophrenia
+      - longer outlook people schizophrenia
+      - link trauma schizophrenia
+      - family love one support someone schizophrenia
+      - people schizophrenia work live indeed
+    # responses:
+    #   - utter_schizophrenia_info
 
   - intent: eating_disorder
     examples: |
-    -	eat discord
-    -	differ type eat discord
-    -	symptom eat discord
-    -	cause eat discord
-    -	men eat discord
-    -	treatment eat discord
-    -	alter treatment eat discord
-    -	longer outlook someone eat discord
-    -	social effect eat discord
-    -	help love one eat discord
-    -	suspect eat discord
-    -	common disconcert eat discord
-    -	selfhelp strategic manage eat discord
-    -	know need profession help eat discord
-    -	cope mean deal trigger may lead discord eat behavior
-    -	improve relationship food body
-    -	feel like abscess weight way look
-    -	feel guilty sham eat
-    -	skin meal drastic reduce food intake
-    -	feel like control eat habit
-    -	often find being eat pure vomit method
-    -	constantly compare other feel inadequ
-    -	feel like need exercise excess burn calorie
-    -	notice signify weight loss weight gain short period time
-    -	worry eat habit affect health
-    -	feel like adduct food unhealthy relationship
-    -	constantly think food calorie
-    -	avoid social situate involve food
-    -	feel like selfworth tie weight appear
-    -	afraid gain weight become overnight
-    -	notice change menstrual cycle reproduce health due eat habit
-
+      -	eat discord
+      -	differ type eat discord
+      -	symptom eat discord
+      -	cause eat discord
+      -	men eat discord
+      -	treatment eat discord
+      -	alter treatment eat discord
+      -	longer outlook someone eat discord
+      -	social effect eat discord
+      -	help love one eat discord
+      -	suspect eat discord
+      -	common disconcert eat discord
+      -	selfhelp strategic manage eat discord
+      -	know need profession help eat discord
+      -	cope mean deal trigger may lead discord eat behavior
+      -	improve relationship food body
+      -	feel like abscess weight way look
+      -	feel guilty sham eat
+      -	skin meal drastic reduce food intake
+      -	feel like control eat habit
+      -	often find being eat pure vomit method
+      -	constantly compare other feel inadequ
+      -	feel like need exercise excess burn calorie
+      -	notice signify weight loss weight gain short period time
+      -	worry eat habit affect health
+      -	feel like adduct food unhealthy relationship
+      -	constantly think food calorie
+      -	avoid social situate involve food
+      -	feel like selfworth tie weight appear
+      -	afraid gain weight become overnight
+      -	notice change menstrual cycle reproduce health due eat habit
+    # responses:
+    #   - utter_eating_disorder_info
 
   - intent: disdisruptive_behavior_disorder
     examples: |
-    - disrupt behavior discord
-    - dissect person trait
-    - symptom conduct discord
-    - cause disrupt behavior dissect discord
-    - treatment disrupt behavior dissect discord
-    - disrupt behavior dissect discord affect social relationship
-    - disrupt behavior dissect discord prevent
-    - differ type disrupt behavior discord
-    - symptom opposite defiant discord
-    - conduct discord differ opposite defiant discord
-    - common trigger disrupt behavior episode
-    - parent carnegie help manage disrupt behavior children
-    - connect substance abuse disrupt behavior discord
-    - common disconcert disrupt behavior discord
+      - disrupt behavior discord
+      - dissect person trait
+      - symptom conduct discord
+      - cause disrupt behavior dissect discord
+      - treatment disrupt behavior dissect discord
+      - disrupt behavior dissect discord affect social relationship
+      - disrupt behavior dissect discord prevent
+      - differ type disrupt behavior discord
+      - symptom opposite defiant discord
+      - conduct discord differ opposite defiant discord
+      - common trigger disrupt behavior episode
+      - parent carnegie help manage disrupt behavior children
+      - connect substance abuse disrupt behavior discord
+      - common disconcert disrupt behavior discord
+    # responses:
+    #   - utter_disdisruptive_behavior_disorder
 
   - intent: neurodevelopmental_disorder
     examples: |
-    - neurodevelopment discord
-    - symptom cutis spectrum discord
-    - cause neurodevelopment discord
-    - treatment neurodevelopment discord
-    - neurodevelopment discord affect social relationship daily function
-    - neurodevelopment discord prevent
-    - attend deficit hyperact discord  add
-    - symptom add
-    - add diagnose
-    - treatment add
-    - dyslexia
-    - symptom dyslexia
-    - dyslexia diagnose
-    - treatment dyslexia
-    - add
+      - neurodevelopment discord
+      - symptom cutis spectrum discord
+      - cause neurodevelopment discord
+      - treatment neurodevelopment discord
+      - neurodevelopment discord affect social relationship daily function
+      - neurodevelopment discord prevent
+      - attend deficit hyperact discord  add
+      - symptom add
+      - add diagnose
+      - treatment add
+      - dyslexia
+      - symptom dyslexia
+      - dyslexia diagnose
+      - treatment dyslexia
+      - add
+    # responses:
+    #   - utter_neurodevelopmental_disorder

@@ -1,30 +1,143 @@
 version: "3.1"
 
 stories:
+  - story: happy path
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_great
+      - action: utter_happy
 
-- story: happy path
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
+  - story: sad path 1
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_unhappy
+      - action: utter_cheer_up
+      - action: utter_did_that_help
+      - intent: affirm
+      - action: utter_happy
 
-- story: sad path 1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
+  - story: sad path 2
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_unhappy
+      - action: utter_cheer_up
+      - action: utter_did_that_help
+      - intent: deny
+      - action: utter_goodbye
 
-- story: sad path 2
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye
+  - story: User expresses depression symptoms
+    steps:
+      - intent: depression_symptoms
+      - action: action_utter_sympathy
+      - action: action_utter_recommend_help
+      - action: utter_did_that_help
+      - intent: deny
+      - action: action_utter_acknowledge_suicidal
+      - action: action_connect_crisis_hotline
+      - action: utter_goodbye
+
+  - story: User expresses depression
+    steps:
+      - intent: depression_symptoms
+      - action: utter_depression_info
+      - action: utter_emotional_connection
+      - action: utter_did_that_help
+      - intent: deny
+
+  - story: User expresses anxiety
+    steps:
+      - intent: anxiety_symptoms
+      - action: action_utter_sympathy
+      - action: utter_ask_support
+      - action: utter_anxiety_symptom
+      - intent: deny
+      - action: utter_goodbye
+
+  - story: User expresses bipolar disorder symptoms
+    steps:
+      - intent: bipolar_disorder_symptoms
+      - action: action_utter_sympathy
+      - action: utter_ask_support
+      - action: utter_bipolar_disorder_symptoms
+      - intent: deny
+      - action: action_utter_recommend_help
+      - action: utter_goodbye
+
+  - story: User expresses bipolar disorder
+    steps:
+      - intent: Bipolar Disorder
+      - action: action_utter_sympathy
+      - action: utter_ask_support
+      - action: utter_bipolar_disorder_symptoms
+      - intent: deny
+      - action: action_utter_recommend_help
+      - action: utter_goodbye
+
+  - story: User expresses PTSD_symptoms
+    steps:
+      - intent: PTSD_symptoms
+      - action: action_utter_sympathy
+      - action: utter_ask_support
+      - action: utter_PSTD_symptom
+      - intent: deny
+      - action: action_utter_recommend_help
+      - action: utter_goodbye
+
+  - story: User expresses PTSD
+    steps:
+      - intent: PTSD
+      - action: action_utter_sympathy
+      - action: utter_ask_support
+      - action: utter_PSTD_info
+      - intent: deny
+      - action: action_utter_recommend_help
+      - action: utter_goodbye
+
+  - story: User expresses schizophrenia
+    steps:
+      - intent: PTSD
+      - action: action_utter_sympathy
+      - action: utter_ask_support
+      - action: utter_schizophrenia_info
+      - intent: deny
+      - action: action_utter_recommend_help
+      - action: utter_goodbye
+
+  - story: User expresses eating_disorder
+    steps:
+      - intent: eating_disorder
+      - action: action_utter_sympathy
+      - action: utter_ask_support
+      - action: utter_eating_disorder_info
+      - intent: deny
+      - action: action_utter_recommend_help
+      - action: utter_goodbye
+
+  - story: User expresses disdisruptive_behavior_disorder
+    steps:
+      - intent: eating_disorder
+      - action: action_utter_sympathy
+      - action: utter_ask_support
+      - action: utter_disdisruptive_behavior_disorder
+      - intent: deny
+      - action: action_utter_recommend_help
+      - action: utter_goodbye
+
+  - story: User expresses disdisruptive_behavior_disorder
+    steps:
+      - intent: neurodevelopmental_disorder
+      - action: action_utter_sympathy
+      - action: utter_ask_support
+      - action: utter_neurodevelopmental_disorder
+      - intent: deny
+      - action: action_utter_recommend_help
+      - action: utter_goodbye
+
+  - story: User expresses gratitude
+    steps:
+      - intent: thanks
+      - action: utter_thanks
+      - action: utter_goodbye
