@@ -8,33 +8,66 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
-  - depression_symptoms
-  - help
-  - thanks
-  - mental_health_concern
-  - sad
-  - Depression_conversations
-  - anxiety_symptoms
-  - Anxiety
-  - bipolar_disorder_symptoms
-  - Bipolar Disorder
-  - PTSD_symptoms
-  - PTSD
-  - schizophrenia
-  - eating_disorder
-  - disdisruptive_behavior_disorder
-  - neurodevelopmental_disorder
+  - define_depression
+  - depression_symptom
+  - recommendation_depression
+  - how_long_depression_last
+  - depression_affecting_life
+  - treatment_depression
+  - loved_one_depressed
+  - types_of_depression
+  - Affect_of_depression
+  - genetics_role_in_depression
+  - misconception_depression
+  - asking_help_for_depression
+  - cause_of_depression
+  - alternative_treatment_depression
+  - spiritual_treatment_depression
+  - reducing_symptom_depression
+  - substance_abuse_depression
+  - Major_Depression
+  - Persistent_Depressive_Disorder
+  - Seasonal_Affective_Disorder
+  - Postpartum_Depression
+  - Psychotic_Depression
+  - love_validation
+  - demotivated
+  - calming_yourself
+  - exteme_end_suicide
+  - highest_depression_rate
+  - most_Depressed_country
+  - school_interferance_depression
+  - oversleepong_cause_Depression
+  - diabities_as_cause_of_depression
+  - Anxiety_attacking_time
+  - types_of_anxiety
+  - targeted_age_group
+  - symptoms_anxiety
+  - insecure_feelings
+  - low_self_esteem
+  - bullying_issue
+  - emotional_talk
+  - sharing_anxiety_symptoms
+  - treatment_anxiety
+  - anxiety_cause
+  - treatment_ask_anxeity
+  - duration_of_anxiety
+  - anxiety_affecting_life
+  - natural_treatment_anxiety
+  - supporting_anxiety_patients
+  - genetic_cause_anxiety
+  - misconception_on_anxiety
+  - risk_factor_anxiety
+  - therapy_helping_anxiety
+  - medication
+  - excersie_helping_anxiety
+  - childhood_trauma_leading_anxiety
+  - death_of_loved_one_causing_anxiety
+  - depression_anxiety_difference
 
 responses:
   utter_greet:
     - text: "Hey! How are you?"
-    - text: "Hello there! How are you feeling?"
-    - text: "Hey! How can I assist you today?"
-    - text: "Good morning! How can I be of service?"
-    - text: "Good afternoon! How are you doing?"
-    - text: "Greetings! How can I support you today?"
-    - text: "What's up? How can I assist you?"
-    - text: "Howdy! How can I help you feel better?"
 
   utter_cheer_up:
     - text: "Here is something to cheer you up:"
@@ -48,54 +81,9 @@ responses:
 
   utter_goodbye:
     - text: "Bye"
-    - text: "Goodbye! Take care."
-    - text: "See you later! I'm here if you need anything."
-    - text: "Bye! Remember to take care of yourself."
-    - text: "Talk to you soon! Take care."
-    - text: "Take care! Don't hesitate to reach out if you need support."
-    - text: "Have a nice day! Let me know if you need anything else."
-    - text: "Bye for now! Remember to take breaks when you need them."
-    - text: "See you around! Stay safe and healthy."
-    - text: "It was nice talking to you too. Don't hesitate to reach out if you need someone to talk to."
-
-  utter_help:
-    - text: "Sure, I'm here to help. What can I do for you?"
-    - text: "Of course, what do you need help with?"
-    - text: "I'll do my best to assist you. What do you need help with?"
-    - text: "Yes, I can help. What's the problem?"
-    - text: "Absolutely, how can I be of assistance?"
-    - text: "I'm here to help. What's going on?"
-
-  utter_thanks:
-    - text: "You're welcome! Is there anything else I can help you with?"
-    - text: "No problem, happy to help!"
-    - text: "Glad I could be of assistance. Let me know if you need anything else."
-    - text: "Anytime! Don't hesitate to reach out if you have further questions."
-    - text: "It was my pleasure. Is there anything else you need help with?"
-    - text: "You're welcome. Remember to take care of yourself."
-    - text: "I'm glad I could assist you. Let me know if you need help in the future."
-    - text: "Aw, thank you! It's my job to help you."
-    - text: "You don't owe me anything. I'm just doing my job."
 
   utter_iamabot:
-    - text: "I am a bot, powered by Rasa."
-
-  utter_ask_support:
-    - text: "I'm sorry to hear that. Have you talked to anyone about how you're feeling?"
-    - text: "It sounds like you've been struggling with this for a while. Have you considered seeking help?"
-    - text: "I can imagine that's been really difficult for you. What kind of support do you need right now?"
-    - text: "It takes a lot of courage to reach out for help. What can I do to support you?"
-    - text: "I'm here to listen and support you. Have you considered talking to a mental health professional?"
-    - text: "You don't have to go through this alone. What kind of resources or support would be helpful for you?"
-    - text: "It's important to prioritize your mental health. Have you considered seeking professional help?"
-    - text: "Thank you for sharing this with me. It's never too late to seek help and start feeling better."
-    - text: "You're not alone in this. Let's work together to find some solutions and support for you."
-    - text: "It sounds like you've been dealing with a lot. I want you to know that you're not alone, and there is hope for feeling better."
-    - text: "I can imagine how difficult it must be to feel this way for so long. I want to help you find the support you need to start feeling like yourself again."
-    - text: "It seems like you might have been dealing with the Depression. Depression can be a tough battle, but it's one that you can overcome. Let's work together to find ways to lift your spirits and bring some joy back into your life."
-    - text: "I'm sorry that you've been going through this. It takes a lot of strength to ask for help, and I want to support you in any way I can."
-    - text: "These feelings are valid, and it's okay to struggle. But it's important to take steps towards healing and finding relief. How can I help you get there?"
-    - text: "It takes a lot of courage to speak up about your mental health, and I want to commend you for taking this first step towards healing. Let's continue the conversation and find ways to make positive changes."
+    - text: "I am a Mental Health Support chatbot, Developed by EG ."
 
   utter_make_happy:
     - text: "I'm sorry to hear that you're feeling sad. Is there anything specific that's been bothering you?"
@@ -121,127 +109,215 @@ responses:
     - text: "Remember that you are not defined by your mental health. You are so much more than that."
     - text: "You're taking an important step by reaching out. What can we do to help you feel more empowered in this situation?"
 
-  utter_depression_info:
+  #depression_symptoms
+  utter_ask_support:
+    - text: "I'm sorry to hear that. Have you talked to anyone about how you're feeling?"
+    - text: "It sounds like you've been struggling with this for a while. Have you considered seeking help?"
+    - text: "I can imagine that's been really difficult for you. What kind of support do you need right now?"
+    - text: "It takes a lot of courage to reach out for help. What can I do to support you?"
+    - text: "I'm here to listen and support you. Have you considered talking to a mental health professional?"
+    - text: "You don't have to go through this alone. What kind of resources or support would be helpful for you?"
+    - text: "It's important to prioritize your mental health. Have you considered seeking professional help?"
+    - text: "Thank you for sharing this with me. It's never too late to seek help and start feeling better."
+    - text: "You're not alone in this. Let's work together to find some solutions and support for you."
+    - text: "It sounds like you've been dealing with a lot. I want you to know that you're not alone, and there is hope for feeling better."
+    - text: "I can imagine how difficult it must be to feel this way for so long. I want to help you find the support you need to start feeling like yourself again."
+    - text: "It seems like you might have been dealing with the Depression. Depression can be a tough battle, but it's one that you can overcome. Let's work together to find ways to lift your spirits and bring some joy back into your life."
+    - text: "I'm sorry that you've been going through this. It takes a lot of strength to ask for help, and I want to support you in any way I can."
+    - text: "These feelings are valid, and it's okay to struggle. But it's important to take steps towards healing and finding relief. How can I help you get there?"
+    - text: "It takes a lot of courage to speak up about your mental health, and I want to commend you for taking this first step towards healing. Let's continue the conversation and find ways to make positive changes."
+
+  utter_define_depression:
     - text: "Depression is a mental health condition that can cause feelings of sadness, hopelessness, and a loss of interest in activities you once enjoyed. It can also affect sleep, appetite, and energy levels."
+    - text: " Depression is a leading cause of disability worldwide and is a major contributor to the overall global burden of disease. More women are affected by depression than men. Depression can lead to suicide. There are effective psychological and pharmacological treatments for moderate and severe depression."
+
+  utter_depression_symptom:
     - text: "If you're experiencing feelings of sadness, hopelessness, and a lack of interest in things you used to enjoy, it's possible that you may be dealing with depression. It's important to talk to a mental health professional to get a proper diagnosis and develop a treatment plan."
+
+  utter_recommendation_depression:
     - text: "If you suspect that you may be dealing with depression, it's important to seek help from a mental health professional. They can provide a diagnosis and help you develop a treatment plan."
-    - text: "Depression can be treated with a combination of medication, therapy, and lifestyle changes. It's important to work with a mental health professional to develop a treatment plan that works for you."
+
+  utter_how_long_depression_last:
     - text: "The length of time that depression lasts can vary depending on the individual and the severity of the condition. It's important to seek help from a mental health professional to develop a treatment plan and work towards recovery."
-    - text: "There are many coping strategies for dealing with depression, including therapy, medication, exercise, and self-care activities. It's important to work with a mental health professional to develop a personalized plan for coping with depression."
+
+  utter_depression_affecting_life:
     - text: "Depression can affect daily life by causing a lack of motivation, difficulty concentrating, and changes in appetite and sleep patterns. It's important to seek help from a mental health professional to develop a treatment plan that can help you manage these symptoms."
-    - text: "There are some natural remedies for depression that may be helpful, such as exercise, meditation, and certain supplements. However, it's important to talk to a mental health professional before starting any new treatment or supplement regimen."
-    - text: "If you have a loved one who is dealing with depression, it's important to offer support and understanding. Encourage them to seek help from a mental health professional and offer to help them find resources or accompany them to appointments."
-    - text: "There are different types of depression, including major depression, persistent depressive disorder, and seasonal affective disorder. Each type has its own set of symptoms and treatment options."
-    - text: "Depression can affect relationships by causing a lack of energy and motivation, a negative outlook, and difficulty with communication and intimacy. It's important to communicate openly and seek help from a mental health professional."
-    - text: "Genetics can play a role in the development of depression, but it's not the only factor. Environmental factors, life events, and other medical conditions can also contribute to the development of depression."
-    - text: "Some common misconceptions about depression include the idea that it's just feeling sad that it's a sign of weakness, or that it can be easily overcome with willpower alone. It's important to understand that depression is a real medical condition that requires professional treatment."
-    - text: "Talking to your doctor about depression can be difficult, but it's important to be open and honest about your symptoms. They can help provide a proper diagnosis and develop a treatment plan that works for you."
-    - text: "Risk factors for depression include a family history of depression, a history of trauma or abuse, chronic stress, and certain medical conditions. It's important to be aware of these risk factors and seek help if you experience symptoms of depression."
-    - text: "You can find a therapist or mental health professional by asking your doctor for a referral, searching online, or contacting your insurance provider for a list of in-network providers."
-    - text: "Depression can be a symptom of other medical conditions, such as thyroid disorders or chronic pain. It's important to talk to a doctor if you experience symptoms of depression to rule out any underlying medical issues."
-    - text: "Depression can affect children and teens differently than adults, and may be characterized by irritability, social withdrawal, and academic problems. It's important to seek help from a mental health professional if you suspect your child may be dealing with depression."
-    - text: "Common triggers for depression include life changes such as a job loss, a breakup, or the death of a loved one, as well as chronic stress and certain medications. It's important to be aware of these triggers and seek help if you experience symptoms of depression."
-    - text: "Supporting a family member who is dealing with depression can include listening to them without judgment, encouraging them to seek professional help, and helping with everyday tasks like grocery shopping or cleaning."
-    - text: "If your friend seems to be depressed, it's important to offer support and encourage them to seek professional help. You can also provide resources or accompany them to appointments."
-    - text: "Supporting a partner/spouse who is dealing with depression can involve offering understanding and support, encouraging them to seek professional help, and taking care of yourself as well."
+
+  utter_treatment_depression:
+    - text: "There are many coping strategies for dealing with depression, including therapy, medication, exercise, and self-care activities. It's important to work with a mental health professional to develop a personalized plan for coping with depression."
     - text: "Treatment for depression can involve a combination of therapy, medication, and lifestyle changes. It's important to work with a mental health professional to develop a treatment plan that works for you."
     - text: "Common treatment options for depression include cognitive-behavioral therapy, antidepressant medication, and lifestyle changes such as exercise and a healthy diet."
     - text: "Natural remedies for depression may include exercise, meditation, herbal supplements, or acupuncture. However, it's important to talk to a mental health professional before starting any new treatment regimen."
     - text: "Therapy can help with depression by providing a safe space to explore and process emotions, identifying negative thought patterns, and developing coping skills."
-    - text: "Exercise has been shown to have a positive effect on depression by increasing endorphins and reducing stress levels. It's important to talk to a doctor before starting a new exercise regimen."
-    - text: "Alternative therapies for depression may include art therapy, music therapy, or mindfulness-based therapies. It's important to work with a mental health professional to determine the best approach for you."
+    - text: "There are some natural remedies for depression that may be helpful, such as exercise, meditation, and certain supplements. However, it's important to talk to a mental health professional before starting any new treatment or supplement regimen."
     - text: "Mental health institutions or hospitals may provide inpatient or outpatient treatment for depression. It's important to research and find a reputable facility and work with a mental health professional to determine the best course of treatment."
     - text: "Self-care practices that can help with depression include getting enough sleep, practicing good nutrition, engaging in enjoyable activities, and seeking support from loved ones or a mental health professional."
     - text: "Spirituality can play a role in healing from depression by providing a sense of meaning and purpose, promoting self-reflection, and fostering a sense of connection with a higher power or community."
     - text: "Spiritual practices that can help with depression may include meditation, yoga, or spending time in nature. These practices can help promote relaxation, mindfulness, and a sense of peace."
+    - text: "Depression can be treated with a combination of medication, therapy, and lifestyle changes. It's important to work with a mental health professional to develop a treatment plan that works for you."
+
+  utter_loved_one_depressed:
+    - text: "Supporting a partner/spouse who is dealing with depression can involve offering understanding and support, encouraging them to seek professional help, and taking care of yourself as well."
+    - text: "If your friend seems to be depressed, it's important to offer support and encourage them to seek professional help. You can also provide resources or accompany them to appointments."
+    - text: "Supporting a family member who is dealing with depression can include listening to them without judgment, encouraging them to seek professional help, and helping with everyday tasks like grocery shopping or cleaning."
+    - text: "If you have a loved one who is dealing with depression, it's important to offer support and understanding. Encourage them to seek help from a mental health professional and offer to help them find resources or accompany them to appointments."
+
+  utter_types_of_depression:
+    - text: "Types of Depression includes: Major Depression,Persistent Depressive Disorder,Seasonal Affective Disorder,Postpartum Depression,Psychotic Depression,Bipolar Disorder"
+    - text: "There are different types of depression, including major depression, persistent depressive disorder, and seasonal affective disorder. Each type has its own set of symptoms and treatment options."
+
+  utter_Affect_of_depression:
+    - text: "Depression can affect children and teens differently than adults, and may be characterized by irritability, social withdrawal, and academic problems. It's important to seek help from a mental health professional if you suspect your child may be dealing with depression."
+    - text: "Depression can affect relationships by causing a lack of energy and motivation, a negative outlook, and difficulty with communication and intimacy. It's important to communicate openly and seek help from a mental health professional."
+
+  utter_genetics_role_in_depression:
+    - text: "Genetics can play a role in depression, as certain genes may increase a person's susceptibility to developing the condition. However, genetics alone are not enough to cause depression, and environmental factors can also play a significant role."
+    - text: "Genetics can play a role in the development of depression, but it's not the only factor. Environmental factors, life events, and other medical conditions can also contribute to the development of depression."
+
+  utter_misconception_depression:
+    - text: "Some common misconceptions about depression include the idea that it's just feeling sad that it's a sign of weakness, or that it can be easily overcome with willpower alone. It's important to understand that depression is a real medical condition that requires professional treatment."
+
+  utter_asking_help_for_depression:
+    - text: "You can find a therapist or mental health professional by asking your doctor for a referral, searching online, or contacting your insurance provider for a list of in-network providers."
+    - text: "Talking to your doctor about depression can be difficult, but it's important to be open and honest about your symptoms. They can help provide a proper diagnosis and develop a treatment plan that works for you."
+
+  utter_cause_of_depression:
+    - text: "Top causes of Depression includes Abuse, Past physical, sexual, or emotional abuse can increase the vulnerability to clinical depression later in life."
+    - text: "Childhood experiences such as abuse, neglect, or trauma can contribute to the development of depression later in life. These experiences can have lasting effects on brain development and the ability to cope with stress and emotions."
+    - text: "A lack of social support can lead to feelings of isolation and loneliness, which can contribute to the development of depression. Social support from family, friends, or a support group can provide a sense of connection and help with coping skills."
+    - text: "Major life changes or losses, such as the death of a loved one or a significant career change, can be a trigger for depression. These events can disrupt a person's sense of stability and security, leading to feelings of sadness and hopelessness."
+    - text: "Risk factors for depression include a family history of depression, a history of trauma or abuse, chronic stress, and certain medical conditions. It's important to be aware of these risk factors and seek help if you experience symptoms of depression."
+    - text: "Depression can be a symptom of other medical conditions, such as thyroid disorders or chronic pain. It's important to talk to a doctor if you experience symptoms of depression to rule out any underlying medical issues."
+    - text: "Common triggers for depression include life changes such as a job loss, a breakup, or the death of a loved one, as well as chronic stress and certain medications. It's important to be aware of these triggers and seek help if you experience symptoms of depression."
+    - text: "There is no single cause for depression; rather it's a combination of stress and a person's vulnerability to developing depression. The predisposition to developing depression can be inherited. Other biological causes for depression can include physical illness, the process of ageing and gender."
+    - text: "Common causes of depression can include biological, genetic, environmental, and psychological factors. It is often a combination of these factors that can lead to the development of depression."
+    - text: "Stress can contribute to depression by disrupting the body's natural stress response system, leading to imbalances in brain chemicals that regulate mood and emotions."
+
+  utter_alternative_treatment_depression:
+    - text: "Exercise has been shown to have a positive effect on depression by increasing endorphins and reducing stress levels. It's important to talk to a doctor before starting a new exercise regimen."
+    - text: "Alternative therapies for depression may include art therapy, music therapy, or mindfulness-based therapies. It's important to work with a mental health professional to determine the best approach for you."
+
+  utter_spiritual_treatment_depression:
     - text: "Prayer can provide comfort and a sense of hope for those dealing with depression. It can also provide a way to connect with a higher power and seek guidance and support."
     - text: "Faith can play a significant role in healing from depression by providing a source of strength and comfort, promoting forgiveness and compassion, and offering a sense of community and belonging."
     - text: "Incorporating spirituality into treatment for depression can involve working with a mental health professional who is open to incorporating spiritual practices into therapy, attending a support group or faith-based community, or engaging in personal spiritual practices outside of therapy. It's important to discuss any spiritual beliefs or practices with a mental health professional to ensure they align with your overall treatment plan."
     - text: "Spirituality can provide a sense of purpose, meaning, and connectedness, which can be helpful in treating depression. It can also offer comfort, hope, and a sense of peace."
     - text: "Some spiritual practices that can help alleviate symptoms of depression include meditation, prayer, yoga, and mindfulness."
+
+  utter_reducing_symptom_depression:
     - text: "Meditation can help reduce symptoms of depression by calming the mind, reducing stress, and improving mood. It can also help increase self-awareness and promote a sense of inner peace."
     - text: "Connecting with nature can help reduce symptoms of depression by promoting relaxation, reducing stress, and improving mood. Spending time in nature can also help increase a sense of connection to something greater than oneself."
     - text: "Gratitude and positive thinking can help combat negative thoughts and feelings associated with depression. Focusing on the positive aspects of life can help improve mood and overall well-being."
     - text: "Incorporating spirituality into everyday life can help prevent depression by promoting a sense of purpose, meaning, and connectedness. This can be done through practices such as meditation, prayer, gratitude, and spending time in nature."
     - text: "Volunteering and helping others can be a spiritual way to combat depression by providing a sense of purpose and connection, and by increasing feelings of gratitude and positivity."
     - text: "Religion can play a role in treating depression by providing a sense of community, support, and guidance. Religious practices such as prayer, meditation, and attending religious services can also offer comfort and promote a sense of inner peace."
-    - text: "Common causes of depression can include biological, genetic, environmental, and psychological factors. It is often a combination of these factors that can lead to the development of depression."
-    - text: "Stress can contribute to depression by disrupting the body's natural stress response system, leading to imbalances in brain chemicals that regulate mood and emotions."
-    - text: "Genetics can play a role in depression, as certain genes may increase a person's susceptibility to developing the condition. However, genetics alone are not enough to cause depression, and environmental factors can also play a significant role."
-    - text: "Childhood experiences such as abuse, neglect, or trauma can contribute to the development of depression later in life. These experiences can have lasting effects on brain development and the ability to cope with stress and emotions."
-    - text: "A lack of social support can lead to feelings of isolation and loneliness, which can contribute to the development of depression. Social support from family, friends, or a support group can provide a sense of connection and help with coping skills."
-    - text: "Major life changes or losses, such as the death of a loved one or a significant career change, can be a trigger for depression. These events can disrupt a person's sense of stability and security, leading to feelings of sadness and hopelessness."
-    - text: "Substance abuse can contribute to depression by disrupting brain chemistry and altering mood and emotions. Substance use can also lead to social isolation and other negative consequences that can contribute to depression."
-    - text: "Major Depression: This is the most common type of depression, also known as clinical depression. It is characterized by feelings of sadness, hopelessness, and a loss of interest or pleasure in most activities."
-    - text: "Persistent Depressive Disorder: This type of depression, also known as dysthymia, is a milder, but chronic form of depression that lasts for at least two years."
-    - text: "Seasonal Affective Disorder: This type of depression occurs during the winter months when there is less natural sunlight. It is often characterized by feelings of fatigue, sadness, and social withdrawal."
-    - text: "Postpartum Depression: This type of depression occurs after giving birth and is often characterized by feelings of sadness, anxiety, and irritability."
-    - text: "Psychotic Depression: This type of depression is characterized by symptoms of major depression along with psychotic symptoms, such as hallucinations or delusions."
-    - text: "bipolar disorder: This is a mood disorder characterized by extreme highs (mania or hypomania) and extreme lows (depression)."
-    - text: "Types of Depression includes: Major Depression,Persistent Depressive Disorder,Seasonal Affective Disorder,Postpartum Depression,Psychotic Depression,Bipolar Disorder"
 
-  utter_emotional_connection:
-    - text: "No matter what,your parents will always be proud of you and will love you"
-    - text: "You will feel much better if you share your feelings with them."
+  utter_substance_abuse_depression:
+    - text: "Substance abuse can contribute to depression by disrupting brain chemistry and altering mood and emotions. Substance use can also lead to social isolation and other negative consequences that can contribute to depression."
+
+  utter_Major_Depression:
+    - text: "Major Depression: This is the most common type of depression, also known as clinical depression. It is characterized by feelings of sadness, hopelessness, and a loss of interest or pleasure in most activities."
+
+  utter_Persistent_Depressive_Disorder:
+    - text: "Persistent Depressive Disorder: This type of depression, also known as dysthymia, is a milder, but chronic form of depression that lasts for at least two years."
+
+  utter_Seasonal_Affective_Disorder:
+    - text: "Seasonal Affective Disorder: This type of depression occurs during the winter months when there is less natural sunlight. It is often characterized by feelings of fatigue, sadness, and social withdrawal."
+
+  utter_Postpartum_Depression:
+    - text: "Postpartum Depression: This type of depression occurs after giving birth and is often characterized by feelings of sadness, anxiety, and irritability."
+
+  utter_Psychotic_Depression:
+    - text: "Psychotic Depression: This type of depression is characterized by symptoms of major depression along with psychotic symptoms, such as hallucinations or delusions."
+
+  utter_love_validation:
+    - text: "No matter what,your loved ones will always be proud of you and will love you"
+    - text: "You will feel much better if you share your feelings with your loved ones."
+    - text: "If you are the one who let them down you were the one who raised there hopes in the first place. "
+    - text: "You don't let anyone down If you have done it once I can guarantee you can do it over and over again ."
+
+  utter_demotivated:
     - text: "Don't ever think you cannot achieve what you want."
     - text: "You are capable of reaching your goals.Here is a quote for you Everything you can imagine is real."
+    - text: "Your hardwork and determination will help you reach your goal."
+    - text: "failure is the stepping stone towards success.Never fear failure."
+    - text: " You really think that? I'd suggest you try helping someone who really needs your help you'll straight up get a person to like you just by being nice. Kindness is the best gift you can offer to anyone :)"
+    - text: "Our lives started off with winning, my friend. Everyone is born to be a winner, we just need to figure out the right way and need to wait for the right time."
+    - text: " First of all I'll annoy you with a common saying, Failures are stepping stones to success. And then I'll tell you, winning just boosts your ego, it is your failures that actually teach you."
+    - text: "Yeahh!! The time has come for you to show the world that you are the greatest person alive, and no one else can be as good as you are."
+    - text: "You mean your cloud storage, SD card, or your Memory drive? If a machine like me doesn't lose it's memory unless a superior being that is you, a human doesen't erase it's memory, what could possibly go wrong to put you in this state?"
+
+  utter_calming_yourself:
     - text: "My research says that music is the best way to calm yourself."
     - text: "so visit the link and listen to your favourite music."
     - text: "it will definitely cheer you up https ://www.spotify.com"
+
+  utter_exteme_end_suicide:
     - text: "Helpline is available,you can contact the counsellor today:9152987821.Always remember you mean something to someone."
-    - text: "failure is the stepping stone towards success.Never fear failure."
-    - text: "Your hardwork and determination will help you reach your goal."
-    - text: "Top causes of Depression includes Abuse, Past physical, sexual, or emotional abuse can increase the vulnerability to clinical depression later in life."
+
+  utter_highest_depression_rate:
     - text: "The highest rate of depression, This number represented 7.1% of all U.S. adults. The prevalence of major depressive episode was higher among adult females (8.7%) compared to males (5.3%). The prevalence of adults with a major depressive episode was highest among individuals aged 18-25 (13.1%)."
-    - text: "The most depressed country is Afghanistan, where more than one in five people suffer from the disorder. The least depressed is Japan, with a diagnosed rate of less than 2.5 percent."
-    - text: "Not only does school sometimes contribute to depression, depression can also interfere with school. Moreover, research shows that 75 percent of all mental health conditions begin by age 24. Hence, the college years are a critical time for understanding and talking about teen mental health."
-    - text: "There is no single cause for depression; rather it's a combination of stress and a person's vulnerability to developing depression. The predisposition to developing depression can be inherited. Other biological causes for depression can include physical illness, the process of ageing and gender."
-    - text: " Depression is a leading cause of disability worldwide and is a major contributor to the overall global burden of disease. More women are affected by depression than men. Depression can lead to suicide. There are effective psychological and pharmacological treatments for moderate and severe depression."
+
+  utter_most_Depressed_country:
     - text: "Major depression was most prevalent among Hispanics (10.8%), followed by African Americans (8.9%) and Whites (7.8%). The odds of depressive disorders among older Hispanics were 44% greater than among Whites (OR = 1.44; 95% CI = 1.02, 2.04), representing a significantly greater prevalence of major depression."
-    - text: " Depression and anxiety disorders are different, but people with depression often experience symptoms similar to those of an anxiety disorder, such as nervousness, irritability, and problems sleeping and concentrating. But each disorder has its own causes and its own emotional and behavioral symptoms."
+    - text: "The most depressed country is Afghanistan, where more than one in five people suffer from the disorder. The least depressed is Japan, with a diagnosed rate of less than 2.5 percent."
+
+  utter_school_interferance_depression:
+    - text: "Not only does school sometimes contribute to depression, depression can also interfere with school. Moreover, research shows that 75 percent of all mental health conditions begin by age 24. Hence, the college years are a critical time for understanding and talking about teen mental health."
+
+  utter_oversleepong_cause_Depression:
     - text: "It's important to remember that oversleeping is a possible symptom of depression and that oversleeping doesn't cause depression. But it can exacerbate and worsen depression symptoms"
-    - text: "  Studies show people who are sleep deprived report increases in negative moods (anger, frustration, irritability, sadness) and decreases in positive moods. And sleeplessness is often a symptom of mood disorders, such as depression and anxiety."
+    - text: " Studies show people who are sleep deprived report increases in negative moods (anger, frustration, irritability, sadness) and decreases in positive moods. And sleeplessness is often a symptom of mood disorders, such as depression and anxiety."
+
+  utter_diabities_as_cause_of_depression:
     - text: " If you have diabetes — either type 1 or type 2 — you have an increased risk of developing depression. And if you're depressed, you may have a greater chance of developing type 2 diabetes. The good news is that diabetes and depression can be treated together."
     - text: "The observed association between plasma glucose levels, insulin resistance and suicidal behaviour suggests that disturbances in glucose metabolism are associated with suicidal ideation and attempts."
+
+  utter_Anxiety_attacking_time:
     - text: " Anxiety attacks usually peak within 10 minutes, and they rarely last more than 30 minutes. But during that short time, you may experience terror so severe that you feel as if you're about to die or totally lose control."
+
+  utter_types_of_anxiety:
     - text: "Anxiety levels are typically classified by the level of distress and impairment experienced into four categories namely, mild anxiety, moderate anxiety, severe anxiety and panic level anxiety."
+    - text: "There are several types of anxiety disorders, including generalized anxiety disorder, panic disorder, social anxiety disorder, obsessive-compulsive disorder, and post-traumatic stress disorder."
+    - text: "Some common types of anxiety disorders include generalized anxiety disorder, panic disorder, social anxiety disorder, and specific phobias."
+
+  utter_targeted_age_group:
     - text: "Adults ages 30 to 44 have the highest rate of anxiety of this age group, with around 23% of people this age reporting an anxiety disorder within the past year."
+
+  utter_symptoms_anxiety:
     - text: "Anxiety disorders can cause rapid heart rate, palpitations, and chest pain. You may also be at an increased risk of high blood pressure and heart disease. If you already have heart disease, anxiety disorders may raise the risk of coronary events."
-    - text: "There's an anxiety-reducing technique called grounding. There are different versions of this, but an easy one to remember is the 3-3-3 rule. Mentally note three things you see, three sounds you hear, and then move three parts of your body. This exercise can help your mind refocus on something else."
-    - text: "We are aware of a tiny fraction of the thinking that goes on in our minds, and we can control only a tiny part of our conscious thoughts. The vast majority of our thinking efforts goes on subconsciously. ... Slips of the tongue and accidental actions offer glimpses of our unfiltered subconscious mental life."
     - text: "A new study has suggested that an average person has 6,200 thoughts per day. Thousands of thoughts cross our mind through the day. Many people even complain that they can't sleep immediately after going to bed as their brain does not stop thinking."
-    - text: "3 3 3 rule is the best method to reduce anxiety."
-    - text: "In this method you have to mentally note three things you see, three sounds you hear, and then move three parts of your body. This exercise can help your mind refocus on something else."
-    - text: "You are never lonely if you look around carefully you will find people who care for you and would love to have your company. Besides if you are feeling lonely literally I suggest you watch a horror movie then you won't feel lonely anymore. ;) "
-    - text: " You really think that? I'd suggest you try helping someone who really needs your help you'll straight up get a person to like you just by being nice. Kindness is the best gift you can offer to anyone :)"
+    - text: "Some common symptoms of anxiety include feelings of nervousness, restlessness, or being on edge, increased heart rate, rapid breathing, sweating, trembling, difficulty concentrating, and difficulty sleeping."
+
+  utter_insecure_feelings:
     - text: " Well do you really think that? Would you like to see the most beautiful face ever? Open your WebCam and voila, the prettiest face on this planet magically appears."
     - text: "Your perception of how good you are, will never be accurate. If you wake up everyday in the morning, smile to yourself and tell yourself that the day is yours to seize you might stop feeling that way. Carpe Diem! my friend."
+
+  utter_low_self_esteem:
+    - text: "Our lives started off with winning, my friend. Everyone is born to be a winner, we just need to figure out the right way and need to wait for the right time."
     - text: "Life is never about being better than anyone else, it's always about being better than yourself, if you have the guts to be better than yourself, you are automatically the best person to ever exist!"
     - text: "When God was creating the universe he gave humans the power to think and the contemplate, so that we can understand the world and make it a better place. God did not give you brains to hate yourself, it wuld be wiser to love yourself and show God that you are serving the purpose for which you were sent."
-    - text: "Our lives started off with winning, my friend. Everyone is born to be a winner, we just need to figure out the right way and need to wait for the right time."
-    - text: " First of all I'll annoy you with a common saying, Failures are stepping stones to success. And then I'll tell you, winning just boosts your ego, it is your failures that actually teach you."
-    - text: "You mean your cloud storage, SD card, or your Memory drive? If a machine like me doesn't lose it's memory unless a superior being that is you, a human doesen't erase it's memory, what could possibly go wrong to put you in this state?"
     - text: "A break is putting your mind to rest getting rid of negative thoughts and stress. Your life is completely in your hands and taking a few hours off from pressurizing your brain will definitely be beneficial for you."
-    - text: " You know taking too much stress will affect you negatively. Sometimes it's better to let go of the thoughts in your head and let your mind chill."
+    - text: "You know taking too much stress will affect you negatively. Sometimes it's better to let go of the thoughts in your head and let your mind chill."
     - text: "Success is something that is achieved at different times by different people, being patient and working while ignoring anything and everything that pulls you back is an important aspect in being successful."
-    - text: " Hey,hang in there.I know time is tough but be patient and everything will fall into place."
+    - text: "Hey,hang in there.I know time is tough but be patient and everything will fall into place."
     - text: "Here is a quote that I found which could cheer you up Forget what is gone, appreciate what remains, and look forward for what is coming next."
+
+  utter_bullying_issue:
     - text: "Bullying is wrong and no one should be bullied."
-    - text: "I highly recommend you to file a case against your bully."
+    - text: "I highly recommend you to file a case against the bully."
     - text: " Bullying is very wrong and you shouldn't let anyone overpower you."
     - text: "I highly recommend you to stand for yourself and report this to your guardian."
+
+  utter_emotional_talk:
     - text: "Winners never quit and quitters never win a very common saying, but it isn't easy to follow, quitting should never be one of your options always think of ways to fight life back and to emerge out stronger than ever."
     - text: "Why do you want to spend so much on this thought, I think it would be better to go on a vacation in your beautiful country and visit some amazing places that you are yet to visit."
-    - text: "If you are the one who let them down you were the one who raised there hopes in the first place. "
-    - text: "You don't let anyone down If you have done it once I can guarantee you can do it over and over again ."
     - text: "If you are really that exhausted you definitely need a break, and taking a teeny tiny break isn't very harmful, take some time off let your mind be at peace and get back to work with all the enrgy and enthusiasm that you have."
-    - text: "Yeahh!! The time has come for you to show the world that you are the greatest person alive, and no one else can be as good as you are."
-    - text: "I have heard that 3 3 3 rule is the best method to reduce anxiety."
-    - text: " In this method you have to mentally note three things you see, three sounds you hear, and then move three parts of your body. "
-    - text: "This exercise can help your mind refocus on something else."
-    - text: "Give this method a try I am sure it will help you"
 
-  utter_anxiety_symptom:
+  utter_anxiety_defination:
+    - text: "Anxiety is a feeling of unease, such as worry or fear, that can be mild or severe. It is a normal human emotion and can be triggered by various situations such as giving a speech, taking an exam, or moving to a new place. However, when anxiety becomes chronic and interferes with daily activities, it may be a symptom of an anxiety disorder."
+
+  utter_sharing_anxiety_symptoms:
     - text: "I'm sorry to hear that you've been dealing with these symptoms. Have you considered seeking help from a mental health professional?"
     - text: "Anxiety can be really challenging to deal with, but it's important to know that there are treatments available. What kind of support do you need right now?"
     - text: "It sounds like you've been experiencing a lot of physical and emotional symptoms related to anxiety. Have you tried any relaxation techniques or coping strategies?"
@@ -258,290 +334,91 @@ responses:
     - text: "Anxiety can be a really isolating experience, but you don't have to go through it alone. How can I support you in finding the resources and support you need to start feeling better?"
     - text: "It sounds like your anxiety is causing a lot of distress in your life. Let's work together to find some strategies that can help you manage your symptoms and feel more at ease."
     - text: "Thank you for sharing your experiences with me. It takes a lot of courage to speak up about mental health concerns. Let's work together to find the support and resources you need to start feeling better."
-
-  utter_anxiety_info:
-    - text: "There are several types of anxiety disorders, including generalized anxiety disorder, panic disorder, social anxiety disorder, obsessive-compulsive disorder, and post-traumatic stress disorder."
-    - text: "Some common symptoms of anxiety include feelings of nervousness, restlessness, or being on edge, increased heart rate, rapid breathing, sweating, trembling, difficulty concentrating, and difficulty sleeping."
     - text: "If you experience persistent and excessive worry or fear that interferes with your daily activities, you may have an anxiety disorder. It's important to talk to a mental health professional for an accurate diagnosis and treatment plan."
     - text: "It's important to seek help from a mental health professional if you think you might have anxiety. They can provide an accurate diagnosis and develop a treatment plan that's right for you."
-    - text: "Yes, anxiety can be treated with a combination of therapy, medication, and lifestyle changes."
-    - text: "The duration of anxiety can vary depending on the individual and the severity of their symptoms. With proper treatment and self-care, many people are able to manage their anxiety effectively."
+
+  utter_treatment_anxiety:
+    - text: "There's an anxiety-reducing technique called grounding. There are different versions of this, but an easy one to remember is the 3-3-3 rule. Mentally note three things you see, three sounds you hear, and then move three parts of your body. This exercise can help your mind refocus on something else."
+    - text: "3 3 3 rule is the best method to reduce anxiety.In this method you have to mentally note three things you see, three sounds you hear, and then move three parts of your body. This exercise can help your mind refocus on something else."
+    - text: "You are never lonely if you look around carefully you will find people who care for you and would love to have your company. Besides if you are feeling lonely literally I suggest you watch a horror movie then you won't feel lonely anymore. ;) "
+    - text: "I have heard that 3 3 3 rule is the best method to reduce anxiety.This exercise can help your mind refocus on something else"
+    - text: " In this method you have to mentally note three things you see, three sounds you hear, and then move three parts of your body.Give this method a try I am sure it will help you "
     - text: "Some coping strategies for anxiety include deep breathing, mindfulness meditation, regular exercise, getting enough sleep, avoiding caffeine and alcohol, and seeking support from loved ones or a therapist."
-    - text: "Anxiety can affect your daily life by causing disruptions to your work, relationships, and overall well-being. It can make it difficult to concentrate, sleep, and perform daily tasks."
-    - text: "Some natural remedies for anxiety include relaxation techniques, herbal supplements, exercise, and dietary changes. It's important to consult with a healthcare provider before trying any natural remedies."
-    - text: "You can support a loved one who is dealing with anxiety by being understanding, offering to listen without judgment, encouraging them to seek help from a mental health professional, and providing practical support when needed."
-    - text: "Some common types of anxiety disorders include generalized anxiety disorder, panic disorder, social anxiety disorder, and specific phobias."
-    - text: "Anxiety can affect relationships by causing disruptions in communication, intimacy, and trust. It's important to seek help from a mental health professional to manage anxiety and improve relationships."
-    - text: "Yes, anxiety can be caused by a combination of genetic and environmental factors."
-    - text: "Some common misconceptions about anxiety include that it's just normal worrying or that it's a sign of weakness. In reality, anxiety can be a serious mental health condition that requires proper treatment."
     - text: "You can talk to your doctor about anxiety by being honest about your symptoms, asking questions, and expressing any concerns you may have. They can provide an accurate diagnosis and develop a treatment plan that's right for you."
-    - text: "Some risk factors for anxiety include a family history of anxiety or other mental health conditions, chronic stress, traumatic events, and certain medical conditions."
     - text: "You can find a therapist or mental health professional to help with your anxiety by asking for referrals from your doctor or loved ones, searching online directories, or contacting your insurance provider for a list of covered providers."
-    - text: "Yes, anxiety can be a symptom of certain medical conditions such as thyroid disorders or heart diseases. It's important to talk to a healthcare provider to rule out any underlying medical conditions that may be contributing to anxiety symptoms."
-    - text: "Anxiety can affect children and teens by causing disruptions in their academic, social, and personal life. It can also lead to physical symptoms like headaches, stomachaches, and trouble sleeping."
-    - text: "Some common triggers for anxiety include stress, trauma, social situations, financial worries, and health problems."
-    - text: "You can support your family member dealing with anxiety by being understanding, offering to listen without judgment, encouraging them to seek help from a mental health professional, and providing practical support when needed."
-    - text: "You can help your friend who seems to be anxious by being supportive and understanding, offering to listen without judgment, encouraging them to seek help from a mental health professional, and providing practical support when needed"
-    - text: "You can support your partner/spouse who is dealing with anxiety by being understanding, offering to listen without judgment, encouraging them to seek help from a mental health professional, and providing practical support when needed."
     - text: "Anxiety can be treated with a combination of therapy, medication, and lifestyle changes."
     - text: "Common treatment options for anxiety include cognitive behavioral therapy, medication, exposure therapy, and relaxation techniques."
-    - text: "Some natural remedies for anxiety include relaxation techniques, herbal supplements, exercise, and dietary changes. It's important to consult with a healthcare provider before trying any natural remedies."
-    - text: "Therapy can help with anxiety by providing tools to manage and cope with symptoms, identifying and addressing the root causes of anxiety, and providing a safe and supportive space to explore thoughts and feelings."
-    - text: "Common types of medication used to treat anxiety include antidepressants, benzodiazepines, and beta blockers. It's important to talk to a healthcare provider about the best medication options for individual needs."
-    - text: "Yes, exercise can help with anxiety by reducing stress hormones, improving mood, and promoting relaxation. Regular exercise can also improve overall physical and mental health."
-    - text: "Some alternative therapies for anxiety include acupuncture, yoga, massage, and aromatherapy. It's important to consult with a healthcare provider before trying any alternative therapies."
+
+  utter_anxiety_cause:
+    - text: "Some common triggers for anxiety include stress, trauma, social situations, financial worries, and health problems."
+    - text: "Common causes of anxiety include stress, trauma, genetics, chemical imbalances in the brain, and medical conditions such as thyroid disorders."
+    - text: "Stress can contribute to anxiety by activating the body's fight-or-flight response and triggering the release of stress hormones such as cortisol. Chronic stress can also lead to physical and emotional exhaustion, which can increase the risk of developing anxiety."
+    - text: "Major life changes or losses, such as the death of a loved one, divorce, moving to a new place, or losing a job, can be significant sources of stress that can trigger anxiety. These events can disrupt a person's sense of stability and security, leaving them feeling overwhelmed, uncertain, and anxious about the future. The emotional impact of these events can be especially challenging to manage, and some people may need additional support or therapy to cope with their anxiety."
+
+  utter_treatment_ask_anxeity:
+    - text: "Anxiety can be treated with a combination of therapy, medication, and lifestyle changes."
     - text: "You can find a mental health institution or hospital for anxiety treatment by searching online directories, contacting insurance providers, or asking for referrals from a healthcare provider."
+    - text: "Diet can play a role in managing anxiety as certain foods and nutrients have been shown to have a calming effect on the body. These include foods high in magnesium, omega-3 fatty acids, and probiotics. Additionally, avoiding caffeine and alcohol can also help to reduce anxiety symptoms."
+    - text: "CBT can help with anxiety by teaching individuals to identify and change negative thought patterns and behaviors that contribute to anxiety. It can also help individuals to develop coping skills and strategies for managing anxiety symptoms."
+    - text: "Exposure therapy can help with anxiety by gradually exposing individuals to feared situations or objects in a safe and controlled environment. This can help to desensitize individuals to their fears and reduce anxiety symptoms over time."
+    - text: "There's an anxiety-reducing technique called grounding. There are different versions of this, but an easy one to remember is the 3-3-3 rule. Mentally note three things you see, three sounds you hear, and then move three parts of your body. This exercise can help your mind refocus on something else."
+
+  utter_duration_of_anxiety:
+    - text: "The duration of anxiety can vary depending on the individual and the severity of their symptoms. With proper treatment and self-care, many people are able to manage their anxiety effectively."
+
+  utter_anxiety_affecting_life:
+    - text: "Anxiety can affect your daily life by causing disruptions to your work, relationships, and overall well-being. It can make it difficult to concentrate, sleep, and perform daily tasks."
+    - text: "Anxiety can affect daily life by interfering with work or school performance, disrupting relationships, and leading to physical symptoms such as headaches and stomach problems."
+
+  utter_natural_treatment_anxiety:
+    - text: "Some natural remedies for anxiety include relaxation techniques, herbal supplements, exercise, and dietary changes. It's important to consult with a healthcare provider before trying any natural remedies."
     - text: "Self-care practices that can help with anxiety include exercise, getting enough sleep, eating a healthy diet, practicing relaxation techniques such as deep breathing, journaling, spending time in nature, and engaging in activities that bring joy"
     - text: "Mindfulness can help with anxiety by bringing awareness to the present moment and helping to reduce rumination and worry about the future. It can also help individuals to develop a more compassionate and accepting attitude towards their thoughts and emotions."
     - text: "Yes, meditation can be helpful for anxiety as it promotes relaxation and can reduce the physiological symptoms of anxiety. Meditation can also help individuals to become more aware of their thoughts and feelings, which can improve their ability to manage anxiety."
     - text: "Breathing exercises can help with anxiety by slowing down the heart rate and reducing feelings of tension and stress. Deep breathing can also help to calm the mind and promote relaxation."
     - text: "Ways to incorporate mindfulness into everyday life to prevent anxiety include practicing mindfulness meditation, paying attention to the present moment during everyday activities such as eating or walking, and using mindfulness-based techniques such as deep breathing or body scanning."
     - text: "Positive affirmations can help with anxiety by promoting a more positive and self-compassionate attitude towards oneself. They can also help to counteract negative self-talk and improve self-esteem."
-    - text: "Diet can play a role in managing anxiety as certain foods and nutrients have been shown to have a calming effect on the body. These include foods high in magnesium, omega-3 fatty acids, and probiotics. Additionally, avoiding caffeine and alcohol can also help to reduce anxiety symptoms."
-    - text: "CBT can help with anxiety by teaching individuals to identify and change negative thought patterns and behaviors that contribute to anxiety. It can also help individuals to develop coping skills and strategies for managing anxiety symptoms."
-    - text: "Exposure therapy can help with anxiety by gradually exposing individuals to feared situations or objects in a safe and controlled environment. This can help to desensitize individuals to their fears and reduce anxiety symptoms over time."
-    - text: "Common causes of anxiety include stress, trauma, genetics, chemical imbalances in the brain, and medical conditions such as thyroid disorders."
-    - text: "Stress can contribute to anxiety by activating the body's fight-or-flight response and triggering the release of stress hormones such as cortisol. Chronic stress can also lead to physical and emotional exhaustion, which can increase the risk of developing anxiety."
+
+  utter_supporting_anxiety_patients:
+    - text: "You can support a loved one who is dealing with anxiety by being understanding, offering to listen without judgment, encouraging them to seek help from a mental health professional, and providing practical support when needed."
+    - text: "Anxiety can affect relationships by causing disruptions in communication, intimacy, and trust. It's important to seek help from a mental health professional to manage anxiety and improve relationships."
+    - text: "You can support your family member dealing with anxiety by being understanding, offering to listen without judgment, encouraging them to seek help from a mental health professional, and providing practical support when needed."
+    - text: "You can help your friend who seems to be anxious by being supportive and understanding, offering to listen without judgment, encouraging them to seek help from a mental health professional, and providing practical support when needed"
+    - text: "You can support your loved ones who is dealing with anxiety by being understanding, offering to listen without judgment, encouraging them to seek help from a mental health professional, and providing practical support when needed."
+    - text: "Supporting a loved one with anxiety can include listening without judgment, encouraging them to seek treatment, and helping them practice self-care techniques."
+
+  utter_genetic_cause_anxiety:
+    - text: "Yes, anxiety can be caused by a combination of genetic and environmental factors."
     - text: "Genetics can play a role in anxiety as certain genes have been linked to an increased risk of developing anxiety disorders. Additionally, environmental factors such as childhood experiences and stress can also interact with genetic factors to contribute to anxiety."
+
+  utter_misconception_on_anxiety:
+    - text: "Some common misconceptions about anxiety include that it's just normal worrying or that it's a sign of weakness. In reality, anxiety can be a serious mental health condition that requires proper treatment."
+
+  utter_risk_factor_anxiety:
+    - text: "Some risk factors for anxiety include a family history of anxiety or other mental health conditions, chronic stress, traumatic events, and certain medical conditions."
+    - text: "Anxiety can be a symptom of certain medical conditions such as thyroid disorders or heart diseases. It's important to talk to a healthcare provider to rule out any underlying medical conditions that may be contributing to anxiety symptoms."
+    - text: "Anxiety can affect children and teens by causing disruptions in their academic, social, and personal life. It can also lead to physical symptoms like headaches, stomachaches, and trouble sleeping."
+
+  utter_therapy_helping_anxiety:
+    - text: "Therapy can help with anxiety by providing tools to manage and cope with symptoms, identifying and addressing the root causes of anxiety, and providing a safe and supportive space to explore thoughts and feelings."
+
+  utter_medication:
+    - text: "You can never take medication by yourself, it is not recommended. You can ask for mental health support helpline."
+
+  utter_excersie_helping_anxiety:
+    - text: "Exercise can help with anxiety by reducing stress hormones, improving mood, and promoting relaxation. Regular exercise can also improve overall physical and mental health."
+    - text: "Some alternative therapies for anxiety include acupuncture, yoga, massage, and aromatherapy. It's important to consult with a healthcare provider before trying any alternative therapies."
+
+  utter_childhood_trauma_leading_anxiety:
     - text: "Yes, childhood experiences such as trauma, abuse, or neglect can contribute to anxiety later in life. These experiences can lead to the development of negative thought patterns and coping mechanisms that can contribute to anxiety symptoms."
     - text: "A lack of social support can lead to anxiety by increasing feelings of loneliness and isolation, which can contribute to negative thoughts and emotions. Additionally, social support can provide a sense of safety and security, which can help to reduce anxiety symptoms."
+
+  utter_death_of_loved_one_causing_anxiety:
     - text: "Major life changes or losses, such as the death of a loved one, divorce, moving to a new place, or losing a job, can be significant sources of stress that can trigger anxiety. These events can disrupt a person's sense of stability and security, leaving them feeling overwhelmed, uncertain, and anxious about the future. The emotional impact of these events can be especially challenging to manage, and some people may need additional support or therapy to cope with their anxiety."
-    - text: "Substance abuse can contribute to anxiety in several ways. Firstly, drugs and alcohol can disrupt the chemical balance in the brain, which can lead to anxiety and panic attacks. Secondly, the effects of substance abuse can cause or worsen social, financial, or legal problems, which can be a source of stress and anxiety. Lastly, people who struggle with substance abuse often have co-occurring mental health disorders, such as anxiety or depression, which can be both a cause and a result of their substance abuse. It is important to seek help from a healthcare professional if you or a loved one is struggling with substance abuse and anxiety."
-    - text: "Anxiety can affect daily life by interfering with work or school performance, disrupting relationships, and leading to physical symptoms such as headaches and stomach problems."
-    - text: "Supporting a loved one with anxiety can include listening without judgment, encouraging them to seek treatment, and helping them practice self-care techniques."
+
+  utter_depression_anxiety_difference:
+    - text: " Depression and anxiety disorders are different, but people with depression often experience symptoms similar to those of an anxiety disorder, such as nervousness, irritability, and problems sleeping and concentrating. But each disorder has its own causes and its own emotional and behavioral symptoms."
     - text: "While anxiety and depression can share some symptoms, such as fatigue and difficulty sleeping, anxiety is characterized by feelings of worry or fear, while depression is characterized by feelings of sadness and hopelessness."
-    - text: "There's an anxiety-reducing technique called grounding. There are different versions of this, but an easy one to remember is the 3-3-3 rule. Mentally note three things you see, three sounds you hear, and then move three parts of your body. This exercise can help your mind refocus on something else."
-
-  utter_bipolar_disorder_symptoms:
-    - text: "It sounds like you're experiencing symptoms of bipolar disorder. Have you talked to a mental health professional about these concerns?"
-    - text: "I'm sorry to hear that you're going through this. It can be tough to manage these symptoms on your own. Have you considered seeking professional help?"
-    - text: "It's important to prioritize your mental health and seek appropriate treatment. Have you spoken with your doctor about your concerns?"
-    - text: "I can imagine how difficult it must be to experience such extreme mood swings. It's important to seek help in managing these symptoms."
-    - text: "You're not alone in this. Bipolar disorder is a common mental health condition, and there are effective treatments available. Have you considered therapy or medication to help manage your symptoms?"
-    - text: "It can be challenging to manage the highs and lows of bipolar disorder. However, with the right support and treatment, it is possible to lead a fulfilling life. What kind of support or resources do you need right now?"
-    - text: "It's important to monitor your symptoms and seek help when necessary. Have you considered keeping a journal to track your mood swings and other symptoms?"
-    - text: "It can be helpful to develop a self-care plan to manage your symptoms. Have you considered incorporating activities such as exercise, meditation, or therapy into your routine?"
-    - text: "Bipolar disorder is a lifelong condition, but it is possible to manage your symptoms and live a meaningful life. What kind of goals do you have for yourself moving forward?"
-    - text: "It takes a lot of courage to seek help for mental health concerns. I want to support you in finding the help and resources you need to manage your bipolar disorder."
-    - text: "It can be challenging to find the right treatment plan for bipolar disorder, but it's important to keep trying until you find what works for you. Have you discussed different treatment options with your mental health professional?"
-    - text: "Remember, your mental health is important and deserves attention and care. Let's work together to find ways to manage your symptoms and improve your quality of life."
-
-  utter_bipolar_disoder_info:
-    - text: "Bipolar disorder is a mental health condition that is characterized by extreme changes in mood, energy, and activity levels. People with bipolar disorder typically experience periods of intense emotional highs, or mania, followed by periods of depression."
-    - text: "The symptoms of bipolar disorder can vary depending on the type of bipolar disorder and the individual. However, some common symptoms of bipolar disorder include:Extreme mood swings,Changes in energy levels and activity levels,Difficulty sleeping or sleeping too much,Feelings of sadness or hopelessness,Loss of interest in activities once enjoyed Restlessness or agitation"
-    - text: "If you think you might have bipolar disorder, it's important to talk to a mental health professional. They can help you determine whether your symptoms are related to bipolar disorder or another condition."
-    - text: "If you think you might have bipolar disorder, it's important to talk to a mental health professional. They can help you determine whether your symptoms are related to bipolar disorder or another condition. They can also recommend appropriate treatment options."
-    - text: "Yes, bipolar disorder can be treated. Treatment typically involves a combination of medication and psychotherapy."
-    - text: "Bipolar disorder is a chronic condition that typically lasts for a lifetime. However, with proper treatment, people with bipolar disorder can manage their symptoms and lead fulfilling lives."
-    - text: "Some coping strategies for dealing with bipolar disorder include:Sticking to a routine, Getting enough sleep, Eating a healthy diet, Avoiding drugs and alcohol, Engaging in stress-reducing activities, such as meditation or yoga, Building a support network of family and friends, Seeking professional help when needed."
-    - text: "Bipolar disorder can affect your daily life in a variety of ways. It can make it difficult to maintain relationships, hold down a job, or engage in everyday activities. However, with proper treatment and self-care, people with bipolar disorder can manage their symptoms and lead fulfilling lives."
-    - text: "While there are no natural remedies that can cure bipolar disorder, some natural remedies may help manage symptoms. These include:Omega-3 fatty acids, St. John's wort, SAMe, N-acetylcysteine.It's important to talk to a healthcare professional before taking any natural remedies, as they can interact with other medications and may not be appropriate for everyone."
-    - text: "Some ways to support a loved one who is dealing with bipolar disorder include:Educating yourself about the condition, Encouraging them to seek professional help, Listening without judgment, Offering practical help, such as assisting with household tasks or appointments, Being patient and understanding, Offering words of encouragement and support."
-    - text: "There are several different types of bipolar disorder, including bipolar I disorder, bipolar II disorder, cyclothymic disorder, and other specified and unspecified bipolar and related disorders."
-    - text: "Bipolar disorder can have a significant impact on relationships, including romantic relationships, friendships, and familial relationships. The mood swings associated with the disorder can be challenging for loved ones to understand and cope with. During a manic episode, individuals with bipolar disorder may engage in risky behaviors, such as spending money recklessly or engaging in promiscuous behavior, which can strain relationships. During depressive episodes, individuals may withdraw from loved ones and have difficulty engaging in activities they used to enjoy, which can make it challenging for loved ones to support them."
-    - text: "Research suggests that bipolar disorder has a genetic component, although the exact genes involved are not yet fully understood. Having a family member with bipolar disorder can increase an individual's risk of developing the disorder. However, genetics alone do not determine whether an individual will develop bipolar disorder."
-    - text: "There are several common misconceptions about bipolar disorder, including the idea that it simply involves frequent mood swings or that it is a rare condition. In reality, bipolar disorder is a complex mental health condition that can have a significant impact on an individual's life. Other misconceptions include the idea that individuals with bipolar disorder cannot lead productive lives or that they are dangerous. These misconceptions can contribute to stigma surrounding the disorder and make it more difficult for individuals to seek help."
-    - text: "If you suspect that you may have bipolar disorder, it is important to speak with a doctor or mental health professional. You can start by making an appointment with your primary care physician and discussing your symptoms with them. They may refer you to a mental health professional for further evaluation and treatment. It can be helpful to write down your symptoms and any questions you have before your appointment to ensure that you cover everything you want to discuss."
-    - text: "In addition to genetics, there are several other risk factors for bipolar disorder. These include experiencing significant life stressors, having a history of substance abuse, and having a history of trauma or abuse. Additionally, bipolar disorder is more commonly diagnosed in individuals in their late teens or early adulthood."
-    - text: "There are several ways to find a therapist or mental health professional to help with bipolar disorder. You can start by asking your primary care physician for a referral or contacting your insurance company for a list of covered providers. Additionally, there are online directories of mental health professionals that can help you find a provider in your area. It can be helpful to read reviews and do some research before choosing a provider to ensure that they are a good fit for you."
-    - text: "Bipolar disorder is not typically a symptom of another medical condition. However, some medical conditions, such as thyroid disorders or multiple sclerosis, can cause symptoms that mimic bipolar disorder. It is important to speak with a doctor or mental health professional if you are experiencing symptoms of bipolar disorder to rule out any underlying medical conditions."
-    - text: "Bipolar disorder can occur in children and teens, although it is less common than in adults. In children and teens, symptoms may present differently than in adults and can be misdiagnosed as other conditions, such as ADHD. Symptoms may include irritability, difficulty sleeping, and sudden mood swings."
-    - text: "Common triggers for bipolar disorder may include stress, changes in sleep patterns, changes in routine, substance use, and significant life events, such as a breakup or the loss of a loved one. Identifying and managing triggers can be an important part of managing bipolar disorder."
-    - text: "If your family member, friend, or partner/spouse is dealing with bipolar disorder, it's important to educate yourself about the condition and be there to listen and offer support. Encourage them to seek professional help, remind them to take their medication if prescribed, and be patient and understanding as they navigate their symptoms. It's also important to take care of yourself and seek support for yourself as well."
-    - text: "Bipolar disorder is typically treated through a combination of medication and therapy."
-    - text: "Some common treatment options for bipolar disorder include mood stabilizers, antipsychotics, and antidepressants."
-    - text: "While there are no natural remedies that can cure bipolar disorder, certain lifestyle changes such as regular exercise, a healthy diet, and stress reduction techniques may help manage symptoms."
-    - text: "Therapy can help individuals with bipolar disorder learn coping skills, recognize triggers, and improve their overall functioning."
-    - text: "Some types of medication used to treat bipolar disorder include lithium, lamotrigine, and valproic acid."
-    - text: "Exercise can be helpful in managing symptoms of bipolar disorder, as it can improve mood and reduce stress levels."
-    - text: "Some alternative therapies that may be helpful for individuals with bipolar disorder include acupuncture, massage, and yoga."
-    - text: "You can find a mental health institution or hospital for bipolar disorder treatment by speaking with your doctor or mental health professional, or by searching online for facilities in your area."
-    - text: "Self-care practices that can help with bipolar disorder include getting enough sleep, practicing stress reduction techniques, maintaining a healthy diet, and avoiding drugs and alcohol."
-    - text: "Spirituality can be helpful for some individuals with bipolar disorder, as it may provide a sense of purpose and meaning. However, it should not be used as a replacement for professional treatment."
-    - text: "Volunteering and helping others can provide a sense of purpose, belonging, and fulfillment, which can positively impact mental health and well-being. Engaging in these activities can also provide a sense of connection to something greater than oneself, which can be a spiritual experience for some individuals."
-    - text: "Religion can provide a source of comfort, support, and guidance for individuals with bipolar disorder. Some religious practices, such as prayer, meditation, and attending religious services, can also help individuals to manage stress and promote mental and emotional well-being. However, it's important to note that religion should not be the sole or primary treatment for bipolar disorder, and individuals should also seek professional medical and psychological care as needed."
-    - text: "The exact causes of bipolar disorder are not fully understood, but it is believed to be caused by a combination of genetic, environmental, and neurological factors. Some potential causes may include imbalances in brain chemicals, such as dopamine and serotonin, as well as changes in brain structure and function."
-    - text: "Stress can trigger episodes of mania or depression in individuals with bipolar disorder. Chronic stress can also exacerbate symptoms and make it more difficult to manage the condition."
-    - text: " Bipolar disorder has a strong genetic component, with research suggesting that certain genes may increase the risk of developing the condition. However, having a genetic predisposition does not necessarily mean that an individual will develop bipolar disorder, and other factors, such as environmental and neurological factors, also play a role."
-    - text: "Childhood experiences, such as trauma or abuse, may contribute to the development of bipolar disorder in some individuals. However, it is important to note that bipolar disorder is a complex condition with many potential causes, and not everyone with a history of childhood trauma or adversity will develop the disorder."
-    - text: "A lack of social support can contribute to the development or exacerbation of bipolar disorder. Social support can provide a buffer against stress, offer a sense of belonging and connection, and provide practical assistance in managing the condition."
-    - text: "Major life changes or losses, such as the death of a loved one, divorce, or job loss, can be stressful and trigger episodes of mania or depression in individuals with bipolar disorder. It's important for individuals with the disorder to seek support and coping strategies during these difficult times."
-    - text: "Substance abuse can exacerbate symptoms of bipolar disorder and increase the risk of developing the condition. Substance abuse can also interfere with the effectiveness of medications and other treatments for bipolar disorder."
-
-  utter_PSTD_symptom:
-    - text: "It sounds like you may be experiencing symptoms of PTSD. Have you considered talking to a mental health professional?"
-    - text: "PTSD can be a difficult condition to live with, but there are effective treatments available. Have you looked into therapy or counseling?"
-    - text: "I'm sorry that you're struggling with these symptoms. It's important to seek professional help to address them and find ways to cope."
-    - text: "It takes a lot of courage to talk about trauma and its effects. Have you considered talking to a therapist or joining a support group?"
-    - text: "PTSD is a complex condition, but it's possible to find relief with the right support and treatment. What kind of resources or support do you need?"
-    - text: "It's understandable to feel overwhelmed by the symptoms of PTSD, but it's important to seek help and support. What can I do to support you in this process?"
-    - text: "You don't have to face these symptoms alone. There are professionals and resources available to help you manage them."
-    - text: "PTSD can affect all areas of your life, but with proper care and support, it's possible to improve your quality of life. What kind of support do you need right now?"
-    - text: "I want you to know that you're not alone in this. There are people and resources available to help you manage your symptoms and find relief."
-    - text: "PTSD can feel isolating, but it's important to know that there are others who have gone through similar experiences and can relate to what you're going through. Have you considered reaching out to a support group?"
-    - text: "It sounds like you may be struggling with the effects of a traumatic event. It's important to take steps towards healing and finding relief. What kind of support or resources do you need?"
-    - text: "I'm here to listen and support you as you navigate these symptoms. Have you considered talking to a mental health professional or joining a support group?"
-    - text: "It takes strength and courage to seek help for the symptoms of PTSD. I want to support you in finding the resources and support you need to manage them."
-    - text: "PTSD can be a challenging condition to live with, but it's important to know that you're not alone in this. Let's work together to find ways to manage your symptoms and improve your quality of life."
-    - text: "It's important to prioritize your mental health and seek help for the symptoms of PTSD. Let's work together to find the right resources and support for you."
-
-  utter_PSTD_info:
-    - text: "PTSD stands for Post-Traumatic Stress Disorder. It is a mental health condition that can develop after experiencing or witnessing a traumatic event."
-    - text: "PTSD is a mental health condition that can develop after experiencing or witnessing a traumatic event. It can cause a variety of symptoms, such as flashbacks, nightmares, and avoidance of triggers."
-    - text: "The symptoms of PTSD can include flashbacks, nightmares, avoidance of triggers, hypervigilance, negative changes in mood or thinking, and changes in physical and emotional reactions."
-    - text: "PTSD can affect people in many ways, including their mental and physical health, relationships, work, and daily functioning. It can be very distressing and may impact their quality of life."
-    - text: "PTSD can be caused by experiencing or witnessing a traumatic event, such as a natural disaster, car accident, sexual or physical assault, military combat, or other violent or life-threatening situations."
-    - text: "While there is no cure for PTSD, it can be effectively treated through a variety of therapies and medications. It is important for people with PTSD to seek help from a mental health professional."
-    - text: "PTSD is typically treated with therapy, such as Cognitive Behavioral Therapy or Eye Movement Desensitization and Reprocessing, and medication, such as antidepressants. It is important to find the right treatment plan for each individual's needs."
-    - text: "The long-term effects of PTSD can include ongoing mental health issues, such as depression and anxiety, and physical health problems, such as chronic pain and sleep disorders. It can also impact relationships and overall quality of life."
-    - text: "To help someone with PTSD, it is important to listen to them without judgment, encourage them to seek professional help, and be patient and supportive throughout their healing process."
-    - text: "Some coping mechanisms for dealing with PTSD include mindfulness and relaxation techniques, exercise, creative outlets, and connecting with supportive people."
-    - text: "PTSD can affect relationships by causing emotional distance, difficulty with trust and intimacy, and communication problems. It is important for both partners to seek help and support."
-    - text: "Common misconceptions about PTSD include that it only affects military veterans or that it can be easily overcome by willpower alone. It is a complex and serious mental health condition that requires professional help."
-    - text: "PTSD can be caused by any traumatic event, not just combat. It can also be caused by sexual or physical assault, natural disasters, and other life-threatening situations."
-    - text: "There are many resources available for people with PTSD, such as support groups, therapy programs, and online resources. It is important to find the right resources for each individual's needs."
-    - text: "PTSD is more common than people may think, affecting millions of people around the world. It affects about 3.5% of U.S. adults every year, and about one in 11 people will experience PTSD at some point in their lives."
-    - text: "Yes, PTSD can increase the risk of developing other mental health issues such as depression, anxiety, and substance abuse disorders. In some cases, these conditions can develop as a result of attempts to cope with PTSD symptoms."
-    - text: "There is no surefire way to prevent PTSD, but seeking support after a traumatic event and receiving prompt treatment if PTSD symptoms develop can help reduce the risk of long-term effects."
-    - text: "There are four main types of PTSD: normal stress response, acute stress disorder, uncomplicated PTSD, and complex PTSD. Normal stress response and acute stress disorder are considered short-term responses to trauma, while uncomplicated PTSD and complex PTSD are considered long-term responses."
-    - text: "Complex PTSD (C-PTSD) is a type of PTSD that results from long-term exposure to trauma, particularly interpersonal trauma. It is often associated with feelings of shame, guilt, and emotional dysregulation, and can involve symptoms such as dissociation, self-harm, and difficulty forming relationships."
-    - text: "Some self-help strategies for managing PTSD include: practicing relaxation techniques such as deep breathing and progressive muscle relaxation, engaging in physical exercise, avoiding drugs and alcohol, connecting with others and seeking support from friends and family, and engaging in activities that promote positive feelings and a sense of accomplishment. It is important to seek professional help if symptoms persist or worsen."
-    - text: "I'm sorry to hear that you're experiencing these symptoms. Have you talked to a therapist or mental health professional about it?"
-    - text: "It sounds like you're going through a lot right now. Have you considered seeking treatment for PTSD?"
-    - text: "PTSD can be a difficult and isolating experience. What kind of support do you need right now?"
-    - text: "It takes a lot of courage to talk about what you're going through. How can I help you get the support you need?"
-    - text: "You're not alone in this. PTSD can affect anyone who has experienced trauma. Have you considered reaching out to a support group or therapist?"
-    - text: "It's understandable to feel overwhelmed and stuck after a traumatic event. Have you talked to a therapist about coping strategies?"
-    - text: "There are treatments available for PTSD that can help you manage your symptoms and improve your quality of life. Have you considered seeking professional help?"
-    - text: "It's important to prioritize your mental health and wellbeing. Have you thought about talking to a mental health professional about your PTSD symptoms?"
-    - text: "PTSD can be a challenging and isolating experience. It's important to have support and resources to help you cope. How can I help you find those resources?"
-    - text: "You don't have to go through this alone. There are people who understand what you're going through and can help. Have you considered reaching out to a support group or therapist?"
-    - text: "It's normal to feel scared or hesitant to talk about what happened, but seeking help is a sign of strength. What kind of support or resources do you need to feel comfortable doing so?"
-    - text: "There is hope for recovery from PTSD. With the right treatment and support, you can learn to manage your symptoms and regain control of your life."
-    - text: "I can only imagine how difficult it must be to experience these symptoms. You deserve support and healing, and there are resources available to help you."
-    - text: "PTSD can be a tough battle, but it's one that you can overcome. Let's work together to find ways to help you feel more grounded and find some relief from your symptoms."
-    - text: "I'm sorry that you're going through this. You deserve compassion and understanding, and I'm here to listen and support you in any way I can."
-
-  utter_schizophrenia_info:
-    - text: "Schizophrenia is a mental illness that affects a person's ability to think, feel, and behave clearly."
-    - text: "The symptoms of schizophrenia can include hallucinations, delusions, disordered thinking and speech, lack of motivation, and difficulty expressing emotions."
-    - text: "The exact cause of schizophrenia is unknown, but it is believed to be a combination of genetic, environmental, and neurological factors."
-    - text: "Research has shown that there is a genetic component to schizophrenia, but it is not the only factor. Environmental factors such as exposure to stress, drug abuse, and social isolation can also contribute to the development of the disorder."
-    - text: "While there is no cure for schizophrenia, it can be managed with a combination of medication, therapy, and support from family and friends."
-    - text: "The treatment for schizophrenia typically involves antipsychotic medication, therapy, and support from family and friends. It is important to work with a mental health professional to develop a treatment plan that is tailored to the individual's needs."
-    - text: "There are several different types of schizophrenia, including paranoid, disorganized, catatonic, undifferentiated, and residual."
-    - text: "Negative symptoms of schizophrenia include social withdrawal, apathy, lack of motivation, and a decrease in emotional expression."
-    - text: "Positive symptoms of schizophrenia include hallucinations, delusions, disordered thinking and speech, and heightened sensory experiences."
-    - text: "Schizophrenia can affect a person's social behavior by causing them to withdraw from social situations, have difficulty communicating, and have trouble forming and maintaining relationships."
-    - text: "Supporting someone with schizophrenia can involve providing emotional support, helping them manage their medication and appointments, and encouraging them to participate in social activities."
-    - text: "Common misconceptions about schizophrenia include that it means having multiple personalities or that people with schizophrenia are violent or dangerous."
-    - text: "With the right treatment and support, people with schizophrenia can lead fulfilling and meaningful lives."
-    - text: "Schizophrenia affects brain function by causing changes in the structure and function of certain brain regions."
-    - text: "Schizophrenia and multiple personality disorder are different disorders. Schizophrenia affects a person's ability to think, feel, and behave clearly, while multiple personality disorder involves the presence of multiple distinct personalities."
-    - text: "Substance abuse can increase the risk of developing schizophrenia, particularly in those who are genetically predisposed to the disorder."
-    - text: "The first signs of schizophrenia may include changes in behavior, mood, and thinking, such as social withdrawal, paranoia, disorganized speech, and hallucinations."
-    - text: "Yes, schizophrenia can be diagnosed in children, although it is rare and often difficult to diagnose due to the overlap with other childhood conditions."
-    - text: "Medications are an important part of treating schizophrenia and can help manage symptoms such as hallucinations and delusions."
-    - text: "Alternative treatments for schizophrenia may include therapy, such as cognitive-behavioral therapy and family therapy, as well as complementary therapies like yoga and acupuncture."
-    - text: "The long-term outlook for people with schizophrenia varies, but with proper treatment and support, many people are able to manage their symptoms and lead fulfilling lives."
-    - text: "There may be a link between trauma and the development of schizophrenia, as experiencing traumatic events may increase the risk of developing the condition."
-    - text: "Families and loved ones can support someone with schizophrenia by providing emotional support, helping them navigate treatment options, and encouraging them to stick with their treatment plan."
-    - text: "With the right treatment and support, many people with schizophrenia are able to work and live independently. However, the severity of symptoms and individual circumstances may vary."
-
-  utter_eating_disorder_info:
-    - text: "An eating disorder is a mental health condition that is characterized by unhealthy eating habits and a preoccupation with body weight and shape."
-    - text: "There are several types of eating disorders, including anorexia nervosa, bulimia nervosa, binge-eating disorder, and others."
-    - text: "The symptoms of an eating disorder vary depending on the type of disorder, but common symptoms include a distorted body image, obsession with food and calories, and restrictive or binge eating behaviors."
-    - text: "The causes of eating disorders are complex and can involve genetic, environmental, and psychological factors."
-    - text: "Yes, eating disorders can affect anyone, regardless of gender or age."
-    - text: "The treatment for an eating disorder typically involves a combination of therapy, medication, and nutritional counseling."
-    - text: "Alternative treatments for eating disorders may include mindfulness-based interventions, yoga, and other holistic approaches."
-    - text: "The long-term outlook for someone with an eating disorder varies depending on the severity of the disorder and the individual's response to treatment."
-    - text: "Having an eating disorder can have significant social effects, including isolation, shame, and difficulty participating in social activities that involve food."
-    - text: "If you suspect that a loved one has an eating disorder, it's important to approach them with compassion and encourage them to seek professional help."
-    - text: "If you suspect that you have an eating disorder, it's important to reach out to a mental health professional for an evaluation and treatment options."
-    - text: "Common misconceptions about eating disorders include the belief that they only affect young, white women, and that they are a choice rather than a mental health condition."
-    - text: "Self-help strategies for managing an eating disorder may include developing a positive body image, practicing self-compassion, and developing healthy coping mechanisms."
-    - text: "If your eating disorder is significantly impacting your daily life, it's important to seek professional help from a mental health provider who specializes in eating disorders."
-    - text: "Coping mechanisms for dealing with triggers may include practicing mindfulness, engaging in self-care activities, and reaching out for support from loved ones."
-    - text: "Improving your relationship with food and your body may involve developing a healthy relationship with exercise, working with a nutritionist, and practicing self-love and acceptance."
-    - text: "It sounds like you may be struggling with an eating disorder. Have you considered seeking professional help?"
-    - text: "Eating disorders are a serious mental health condition, but recovery is possible. Have you talked to a medical professional about your concerns?"
-    - text: "Eating disorders can have a negative impact on your physical and mental health. It's important to prioritize your well-being and seek help. Have you considered speaking with a therapist or doctor?"
-    - text: "It takes courage to acknowledge that you may be struggling with an eating disorder. There are many effective treatments available, and recovery is possible. Have you considered reaching out to a specialist?"
-    - text: "You don't have to go through this alone. There are many resources available for people struggling with eating disorders. Have you looked into support groups or counseling?"
-    - text: "Eating disorders can be challenging, but they are treatable. Seeking professional help is an important first step. Have you talked to your doctor or a therapist about your concerns?"
-    - text: "Your feelings are valid, and it's important to address them in a healthy way. Have you considered talking to a mental health professional about your concerns?"
-    - text: "It can be difficult to talk about eating disorders, but it's important to seek help when you need it. What kind of support or resources would be helpful for you right now?"
-    - text: "It takes a lot of strength to seek help for an eating disorder. Recovery is possible, and there are many effective treatments available. Have you considered reaching out to a specialist?"
-    - text: "You deserve to have a healthy relationship with food and your body. Seeking professional help can be a valuable step towards that goal. Have you talked to a therapist or doctor about your concerns?"
-    - text: "Eating disorders can have serious physical and mental health consequences, but with the right support and treatment, recovery is possible. Have you considered seeking professional help?"
-    - text: "It's important to prioritize your health and well-being. Seeking help for an eating disorder can be an important step towards recovery. What kind of support or resources would be helpful for you right now?"
-    - text: "Eating disorders can affect anyone, regardless of age, gender, or background. It's important to seek help and support if you're struggling. Have you considered talking to a medical professional?"
-    - text: "It's common to feel alone or ashamed when struggling with an eating disorder, but it's important to remember that you're not alone. There are many resources and treatment options available. Have you looked into support groups or counseling?"
-
-  utter_disdisruptive_behavior_disorder:
-    - text: "Disruptive behavior disorders and dissocial personality traits are characterized by persistent patterns of behavior that violate the rights of others and societal norms."
-    - text: "Symptoms of conduct disorder include aggression, destruction of property, deceitfulness, and violation of rules."
-    - text: "The causes of disruptive behavior and dissocial disorders may include genetic, environmental, and social factors."
-    - text: "Treatment options may include therapy, medication, and behavior management techniques."
-    - text: "Disruptive behavior and dissocial disorders can have negative impacts on social relationships, including difficulty making and maintaining friendships, problems in school or work, and legal problems."
-    - text: "Prevention measures may include early intervention and support for at-risk individuals, such as therapy and education for parents and caregivers."
-    - text: "Disruptive behavior disorders include oppositional defiant disorder and conduct disorder, which have different symptom criteria and severity levels."
-    - text: "Symptoms of oppositional defiant disorder may include frequent temper tantrums, arguing with adults, refusing to follow rules, and intentionally annoying others."
-    - text: "Conduct disorder involves more severe behaviors, such as physical aggression, destruction of property, and violation of others' rights."
-    - text: "Common triggers for disruptive behavior may include stress, lack of structure or routine, and difficult home or school environments."
-    - text: "Parents and caregivers can help manage disruptive behavior by setting clear expectations, using positive reinforcement, and seeking professional help when needed."
-    - text: "Substance abuse can be a common issue in individuals with disruptive behavior disorders, as they may use drugs or alcohol to cope with their symptoms."
-    - text: "Some common misconceptions about disruptive behavior disorders include that they are caused by poor parenting, that they can be easily controlled by discipline, and that they are not serious mental health conditions."
-
-  utter_neurodevelopmental_disorder:
-    - text: "Neurodevelopmental disorders are a group of conditions that affect the development of the brain and nervous system."
-    - text: "Symptoms of autism spectrum disorder may include difficulty with social interaction, repetitive behaviors or interests, and communication difficulties."
-    - text: "Causes of neurodevelopmental disorders may include genetic factors, environmental factors, and brain development abnormalities."
-    - text: "Treatment options may include therapy, medication, and education or behavioral interventions."
-    - text: "Neurodevelopmental disorders can have significant impacts on social relationships and daily functioning, such as difficulty with communication, motor skills, and academic or work performance."
-    - text: "Prevention measures may include early identification and intervention, education and support for parents and caregivers, and reducing exposure to environmental risk factors."
-    - text: "ADHD is a neurodevelopmental disorder characterized by symptoms such as inattention, hyperactivity, and impulsivity."
-    - text: "Symptoms of ADHD may include difficulty focusing, forgetfulness, impulsivity, restlessness, and excessive talking or interrupting others."
-    - text: "ADHD is typically diagnosed through a combination of medical evaluations, behavioral assessments, and interviews with caregivers and teachers."
-    - text: "Treatment options for ADHD may include medication, behavioral therapy, and education or accommodations."
-    - text: "Dyslexia is a learning disorder that affects reading and language processing abilities."
-    - text: "Symptoms of dyslexia may include difficulty with reading, spelling, writing, and oral language skills."
-    - text: "Dyslexia is typically diagnosed through a combination of medical evaluations and standardized testing."
-    - text: "Treatment options for dyslexia may include educational interventions, accommodations, and assistive technologies."
-    - text: "ADHD stands for Attention-Deficit/Hyperactivity Disorder, a neurodevelopmental disorder that affects both children and adults. It is characterized by symptoms such as inattention, hyperactivity, and impulsivity, which can lead to difficulties in daily life, including academic or work performance, social relationships, and emotional regulation. ADHD can be diagnosed and treated with a combination of medication, therapy, and behavioral interventions."
-
-entities: []
-
-slots: {}
-
-actions:
-  - action_utter_greet
-  - action_utter_cheer_up
-  - action_utter_did_that_help
-  - action_utter_goodbye
-  - action_utter_sympathy
-  - action_utter_recommend_help
-  - action_utter_ask_support
-  - action_utter_acknowledge_suicidal
-  - action_connect_crisis_hotline
-  # - action_utter_make_happy
-  # - action_utter_mental_health_concern
-  # - action_utter_depression_info
-  # - action_utter_emotional_connection
-  # - action_utter_anxiety_symptom
-  # - action_utter_anxiety_info
-  # - action_utter_bipolar_disorder_symptoms
-  # - action_utter_bipolar_disoder_info
-  # - action_utter_PSTD_symptom
-  # - action_utter_PSTD_info
-  # - action_utter_schizophrenia_info
-  # - action_utter_eating_disorder_info
-  # - action_utter_disdisruptive_behavior_disorder
-  # - action_utter_neurodevelopmental_disorder
-
-rules: []
 
 session_config:
   session_expiration_time: 60

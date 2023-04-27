@@ -13,6 +13,7 @@ stories:
       - intent: greet
       - action: utter_greet
       - intent: mood_unhappy
+      - action: utter_make_happy
       - action: utter_cheer_up
       - action: utter_did_that_help
       - intent: affirm
@@ -28,116 +29,82 @@ stories:
       - intent: deny
       - action: utter_goodbye
 
-  - story: User expresses depression symptoms
-    steps:
-      - intent: depression_symptoms
-      - action: action_utter_sympathy
-      - action: action_utter_recommend_help
-      - action: utter_did_that_help
-      - intent: deny
-      - action: action_utter_acknowledge_suicidal
-      - action: action_connect_crisis_hotline
-      - action: utter_goodbye
+  # - story: user in unhappy mood
+  #   steps:
+  #     - intent: mood_unhappy
+  #     - action: utter_sorry
 
-  - story: User expresses depression
-    steps:
-      - intent: depression_symptoms
-      - action: utter_depression_info
-      - action: utter_emotional_connection
-      - action: utter_did_that_help
-      - intent: deny
+  # - story: user wants to challenge bot
+  #   steps:
+  #     - intent: bot_challenge
+  #     - action: utter_bot_challenge
 
-  - story: User expresses anxiety
+  - story: user wants to define depression
     steps:
-      - intent: anxiety_symptoms
-      - action: action_utter_sympathy
-      - action: utter_ask_support
-      - action: utter_anxiety_symptom
-      - intent: deny
-      - action: utter_goodbye
+      - intent: define_depression
+      - action: utter_define_depression
 
-  - story: User expresses bipolar disorder symptoms
+  - story: user wants to define anxiety
     steps:
-      - intent: bipolar_disorder_symptoms
-      - action: action_utter_sympathy
-      - action: utter_ask_support
-      - action: utter_bipolar_disorder_symptoms
-      - intent: deny
-      - action: action_utter_recommend_help
-      - action: utter_goodbye
+      - intent: define_anxiety
+      - action: utter_anxiety_defination
 
-  - story: User expresses bipolar disorder
+  - story: user wants to know depression symptoms
     steps:
-      - intent: Bipolar Disorder
-      - action: action_utter_sympathy
-      - action: utter_ask_support
-      - action: utter_bipolar_disorder_symptoms
-      - intent: deny
-      - action: action_utter_recommend_help
-      - action: utter_goodbye
+      - intent: depression_symptom
+      - action: utter_depression_symptom
 
-  - story: User expresses PTSD_symptoms
+  - story: user wants recommendations for depression
     steps:
-      - intent: PTSD_symptoms
-      - action: action_utter_sympathy
-      - action: utter_ask_support
-      - action: utter_PSTD_symptom
-      - intent: deny
-      - action: action_utter_recommend_help
-      - action: utter_goodbye
+      - intent: recommendation_depression
+      - action: utter_recommendation_depression
 
-  - story: User expresses PTSD
+  - story: user wants to know how long depression lasts
     steps:
-      - intent: PTSD
-      - action: action_utter_sympathy
-      - action: utter_ask_support
-      - action: utter_PSTD_info
-      - intent: deny
-      - action: action_utter_recommend_help
-      - action: utter_goodbye
+      - intent: how_long_depression_last
+      - action: utter_how_long_depression_last
 
-  - story: User expresses schizophrenia
+  - story: user wants to know how depression is affecting their life
     steps:
-      - intent: PTSD
-      - action: action_utter_sympathy
-      - action: utter_ask_support
-      - action: utter_schizophrenia_info
-      - intent: deny
-      - action: action_utter_recommend_help
-      - action: utter_goodbye
+      - intent: depression_affecting_life
+      - action: utter_depression_affecting_life
 
-  - story: User expresses eating_disorder
+  - story: user wants to know how depression is treated
     steps:
-      - intent: eating_disorder
-      - action: action_utter_sympathy
-      - action: utter_ask_support
-      - action: utter_eating_disorder_info
-      - intent: deny
-      - action: action_utter_recommend_help
-      - action: utter_goodbye
+      - intent: treatment_depression
+      - action: utter_treatment_depression
 
-  - story: User expresses disdisruptive_behavior_disorder
+  - story: user wants to know how to help a loved one who is depressed
     steps:
-      - intent: eating_disorder
-      - action: action_utter_sympathy
-      - action: utter_ask_support
-      - action: utter_disdisruptive_behavior_disorder
-      - intent: deny
-      - action: action_utter_recommend_help
-      - action: utter_goodbye
+      - intent: loved_one_depressed
+      - action: utter_loved_one_depressed
 
-  - story: User expresses disdisruptive_behavior_disorder
+  - story: user wants to know about types of depression
     steps:
-      - intent: neurodevelopmental_disorder
-      - action: action_utter_sympathy
-      - action: utter_ask_support
-      - action: utter_neurodevelopmental_disorder
-      - intent: deny
-      - action: action_utter_recommend_help
-      - action: utter_goodbye
+      - intent: types_of_depression
+      - action: utter_types_of_depression
 
-  - story: User expresses gratitude
+  - story: user wants to know how depression affects them
     steps:
-      - intent: thanks
-      - action: utter_thanks
-      - action: utter_goodbye
+      - intent: Affect_of_depression
+      - action: utter_Affect_of_depression
+
+  - story: user wants to know the role of genetics in depression
+    steps:
+      - intent: genetics_role_in_depression
+      - action: utter_genetics_role_in_depression
+
+  - story: user has misconceptions about depression
+    steps:
+      - intent: misconception_depression
+      - action: utter_misconception_depression
+
+  - story: user wants to know how to ask for help for depression
+    steps:
+      - intent: asking_help_for_depression
+      - action: utter_asking_help_for_depression
+
+  - story: user wants to know the cause of depression
+    steps:
+      - intent: cause_of_depression
+      - action: utter_cause_of_depression

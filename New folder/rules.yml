@@ -1,0 +1,97 @@
+version: "3.1"
+
+rules:
+  - rule: Say goodbye anytime the user says goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - rule: Say 'I am a bot' anytime the user challenges
+    steps:
+      - intent: bot_challenge
+      - action: utter_iamabot
+
+  - rule: Handle mental health concerns
+    steps:
+      - intent: mental_health_concern
+      - action: utter_mental_health_concern
+
+  - rule: When the user says anything about depression handle it
+    steps:
+      - intent: Depression
+      - action: utter_depression_info
+
+  - rule: Express Emotion when user Express Depression
+    steps:
+      - intent: Depression_conversations
+      - action: utter_emotional_connection
+
+  - rule: Say 'I am here' when the user ask for help
+    steps:
+      - intent: help
+      - action: utter_help
+
+  - rule: Express gratidue when the user Says 'thanks'
+    steps:
+      - intent: thanks
+      - action: utter_thanks
+
+  - rule: when the user expresses sadness make them happy with words
+    steps:
+      - intent: sad
+      - action: utter_make_happy
+
+  - rule: when the user expresses depression_symptom provide them solution
+    steps:
+      - intent: depression_symptoms
+      - action: utter_ask_support
+
+  - rule: when the user express anxiety symptoms give them recoomendations
+    steps:
+      - intent: anxiety_symptoms
+      - action: utter_anxiety_symptom
+
+  - rule: when the user express anxiety give them recoomendations
+    steps:
+      - intent: Anxiety
+      - action: utter_anxiety_info
+
+  - rule: when the user express bipolar disorder symptoms give them recoomendations
+    steps:
+      - intent: bipolar_disorder_symptoms
+      - action: utter_bipolar_disorder_symptoms
+
+  - rule: when the user express Bipolar Disorder give them recoomendations
+    steps:
+      - intent: Bipolar_Disorder
+      - action: utter_bipolar_disoder_info
+
+  - rule: when the user express interest PTSD symptoms give them recoomendations
+    steps:
+      - intent: PTSD_symptoms
+      - action: utter_PSTD_symptom
+
+  - rule: when the user express interest PTSD  give them recoomendations
+    steps:
+      - intent: PSTD
+      - action: utter_PSTD_info
+
+  - rule: when the user express interest schizophrenia give them recoomendations
+    steps:
+      - intent: schizophrenia
+      - action: utter_schizophrenia_info
+
+  - rule: when the user express interest eating disorder give them recoomendations
+    steps:
+      - intent: eating_disorder
+      - action: utter_eating_disorder_info
+
+  - rule: when the user express interest disdisruptive behaviour disorder give them recoomendations
+    steps:
+      - intent: disdisruptive_behavior_disorder
+      - action: utter_disdisruptive_behavior_disorder
+
+  - rule: when the user express interest neurodevelpmental disorder give them recoomendations
+    steps:
+      - intent: neurodevelopmental_disorder
+      - action: utter_neurodevelopmental_disorder
