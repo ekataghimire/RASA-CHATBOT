@@ -31,15 +31,30 @@ rules:
   #     - intent: mood_unhappy
   #     - action: utter_make_happy
 
-  # - rule: Respond to bot_challenge intent
-  #   steps:
-  #     - intent: bot_challenge
-  #     - action: utter_bot_challenge
+  - rule: Respond to asking_bot  intent
+    steps:
+      - intent: asking_bot
+      - action: utter_asking_bot
+
+  - rule: Respond to  bot_feelings intent
+    steps:
+      - intent: bot_feelings
+      - action: utter_bot_feelings
+
+  - rule: Respond to sentiment_bot  intent
+    steps:
+      - intent: sentiment_bot
+      - action: utter_sentiment_bot
 
   - rule: Respond to define_depression intent
     steps:
       - intent: define_depression
       - action: utter_define_depression
+
+  - rule: Respond to define_anxiety intent
+    steps:
+      - intent: define_anxiety
+      - action: utter_define_anxiety
 
   - rule: Respond to depression_symptom intent
     steps:

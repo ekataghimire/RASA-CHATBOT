@@ -1,0 +1,62 @@
+utter_are_you_okay
+-- asking the user if it says hi
+
+utter_music_recommendation
+----recommending music 
+
+stories 1:
+
+intent: depression_symptom --> how to know if you are depressed
+action: utter_depression_symptom
+intent: depression_symptom
+action: utter_recommendation_depression
+action: utter_treatment_depression
+intent: thanks 
+action: utter_say_welcome
+action: bye
+
+stories 2
+  - story: user shows depressive symptom
+    steps:
+      - intent: depression_symptom
+      - action: utter_depression_symptom
+      - intent: depression_symptom
+      - action: utter_recommendation_depression
+      - action: utter_treatment_depression
+      - intent: thanks
+      - action: utter_say_welcome
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: user wants to define depression
+    steps:
+      - intent: define_depression
+      - action: utter_define_depression
+      - action: utter_are_you_okay
+      - intent: mental_health_concern
+      - action: utter_mental_health_concern
+      - action: utter_treatment_depression
+
+  - story: user wants to express themselves
+    steps:
+      - intent: define_depression
+      - action: utter_define_depression
+      - action: utter_are_you_okay
+      - intent: emotional_talk
+      - action: utter_ask_support
+      - action: utter_treatment_depression
+
+  - story: user expresses sadness and depression
+    steps:
+      - intent: recommendation_depression
+      - action: utter_recommendation_depression
+      - action: utter_treatment_depression
+
+  - story: user expresses to die
+    steps: 
+      - intent: exteme_end_suicide
+      - action: utter_ask_support
+      - action: utter_exteme_end_suicide
+      - action: utter_extreme_support
+      - intent: thanks
+      - welcom: utter_say_welcome

@@ -186,7 +186,6 @@ nlu:
       - want free problem
     # responses:
     #   - utter_ask_support
-
   - intent: Depression
     examples: |
       - depress

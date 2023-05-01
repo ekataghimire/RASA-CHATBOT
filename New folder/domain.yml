@@ -328,42 +328,66 @@ responses:
     - text: "Remember, your mental health is important and deserves attention and care. Let's work together to find ways to manage your symptoms and improve your quality of life."
 
   utter_bipolar_disoder_info:
-    - text: "Bipolar disorder is a mental health condition that is characterized by extreme changes in mood, energy, and activity levels. People with bipolar disorder typically experience periods of intense emotional highs, or mania, followed by periods of depression."
     - text: "The symptoms of bipolar disorder can vary depending on the type of bipolar disorder and the individual. However, some common symptoms of bipolar disorder include:Extreme mood swings,Changes in energy levels and activity levels,Difficulty sleeping or sleeping too much,Feelings of sadness or hopelessness,Loss of interest in activities once enjoyed Restlessness or agitation"
     - text: "If you think you might have bipolar disorder, it's important to talk to a mental health professional. They can help you determine whether your symptoms are related to bipolar disorder or another condition."
     - text: "If you think you might have bipolar disorder, it's important to talk to a mental health professional. They can help you determine whether your symptoms are related to bipolar disorder or another condition. They can also recommend appropriate treatment options."
+    - text: "If you suspect that you may have bipolar disorder, it is important to speak with a doctor or mental health professional. You can start by making an appointment with your primary care physician and discussing your symptoms with them. They may refer you to a mental health professional for further evaluation and treatment. It can be helpful to write down your symptoms and any questions you have before your appointment to ensure that you cover everything you want to discuss."
+
+    bipolar_can_be_treated
     - text: "Yes, bipolar disorder can be treated. Treatment typically involves a combination of medication and psychotherapy."
     - text: "Bipolar disorder is a chronic condition that typically lasts for a lifetime. However, with proper treatment, people with bipolar disorder can manage their symptoms and lead fulfilling lives."
+    
+    biploar_treatment
     - text: "Some coping strategies for dealing with bipolar disorder include:Sticking to a routine, Getting enough sleep, Eating a healthy diet, Avoiding drugs and alcohol, Engaging in stress-reducing activities, such as meditation or yoga, Building a support network of family and friends, Seeking professional help when needed."
+    
+    bipolar_affecting_daily_life
     - text: "Bipolar disorder can affect your daily life in a variety of ways. It can make it difficult to maintain relationships, hold down a job, or engage in everyday activities. However, with proper treatment and self-care, people with bipolar disorder can manage their symptoms and lead fulfilling lives."
+    
+    natural_treatment_bipolar
     - text: "While there are no natural remedies that can cure bipolar disorder, some natural remedies may help manage symptoms. These include:Omega-3 fatty acids, St. John's wort, SAMe, N-acetylcysteine.It's important to talk to a healthcare professional before taking any natural remedies, as they can interact with other medications and may not be appropriate for everyone."
+    
+    love_one_bipolar
     - text: "Some ways to support a loved one who is dealing with bipolar disorder include:Educating yourself about the condition, Encouraging them to seek professional help, Listening without judgment, Offering practical help, such as assisting with household tasks or appointments, Being patient and understanding, Offering words of encouragement and support."
-    - text: "There are several different types of bipolar disorder, including bipolar I disorder, bipolar II disorder, cyclothymic disorder, and other specified and unspecified bipolar and related disorders."
-    - text: "Bipolar disorder can have a significant impact on relationships, including romantic relationships, friendships, and familial relationships. The mood swings associated with the disorder can be challenging for loved ones to understand and cope with. During a manic episode, individuals with bipolar disorder may engage in risky behaviors, such as spending money recklessly or engaging in promiscuous behavior, which can strain relationships. During depressive episodes, individuals may withdraw from loved ones and have difficulty engaging in activities they used to enjoy, which can make it challenging for loved ones to support them."
-    - text: "Research suggests that bipolar disorder has a genetic component, although the exact genes involved are not yet fully understood. Having a family member with bipolar disorder can increase an individual's risk of developing the disorder. However, genetics alone do not determine whether an individual will develop bipolar disorder."
-    - text: "There are several common misconceptions about bipolar disorder, including the idea that it simply involves frequent mood swings or that it is a rare condition. In reality, bipolar disorder is a complex mental health condition that can have a significant impact on an individual's life. Other misconceptions include the idea that individuals with bipolar disorder cannot lead productive lives or that they are dangerous. These misconceptions can contribute to stigma surrounding the disorder and make it more difficult for individuals to seek help."
-    - text: "If you suspect that you may have bipolar disorder, it is important to speak with a doctor or mental health professional. You can start by making an appointment with your primary care physician and discussing your symptoms with them. They may refer you to a mental health professional for further evaluation and treatment. It can be helpful to write down your symptoms and any questions you have before your appointment to ensure that you cover everything you want to discuss."
-    - text: "In addition to genetics, there are several other risk factors for bipolar disorder. These include experiencing significant life stressors, having a history of substance abuse, and having a history of trauma or abuse. Additionally, bipolar disorder is more commonly diagnosed in individuals in their late teens or early adulthood."
-    - text: "There are several ways to find a therapist or mental health professional to help with bipolar disorder. You can start by asking your primary care physician for a referral or contacting your insurance company for a list of covered providers. Additionally, there are online directories of mental health professionals that can help you find a provider in your area. It can be helpful to read reviews and do some research before choosing a provider to ensure that they are a good fit for you."
-    - text: "Bipolar disorder is not typically a symptom of another medical condition. However, some medical conditions, such as thyroid disorders or multiple sclerosis, can cause symptoms that mimic bipolar disorder. It is important to speak with a doctor or mental health professional if you are experiencing symptoms of bipolar disorder to rule out any underlying medical conditions."
-    - text: "Bipolar disorder can occur in children and teens, although it is less common than in adults. In children and teens, symptoms may present differently than in adults and can be misdiagnosed as other conditions, such as ADHD. Symptoms may include irritability, difficulty sleeping, and sudden mood swings."
-    - text: "Common triggers for bipolar disorder may include stress, changes in sleep patterns, changes in routine, substance use, and significant life events, such as a breakup or the loss of a loved one. Identifying and managing triggers can be an important part of managing bipolar disorder."
     - text: "If your family member, friend, or partner/spouse is dealing with bipolar disorder, it's important to educate yourself about the condition and be there to listen and offer support. Encourage them to seek professional help, remind them to take their medication if prescribed, and be patient and understanding as they navigate their symptoms. It's also important to take care of yourself and seek support for yourself as well."
+
+    types_of_bipolar
+    - text: "There are several different types of bipolar disorder, including bipolar I disorder, bipolar II disorder, cyclothymic disorder, and other specified and unspecified bipolar and related disorders."
+    
+    bipolar_impact_relationship
+    - text: "Bipolar disorder can have a significant impact on relationships, including romantic relationships, friendships, and familial relationships. The mood swings associated with the disorder can be challenging for loved ones to understand and cope with. During a manic episode, individuals with bipolar disorder may engage in risky behaviors, such as spending money recklessly or engaging in promiscuous behavior, which can strain relationships. During depressive episodes, individuals may withdraw from loved ones and have difficulty engaging in activities they used to enjoy, which can make it challenging for loved ones to support them."
+    
+    genetic_bipolar
+    - text: "Research suggests that bipolar disorder has a genetic component, although the exact genes involved are not yet fully understood. Having a family member with bipolar disorder can increase an individual's risk of developing the disorder. However, genetics alone do not determine whether an individual will develop bipolar disorder."
+    - text: "Bipolar disorder has a strong genetic component, with research suggesting that certain genes may increase the risk of developing the condition. However, having a genetic predisposition does not necessarily mean that an individual will develop bipolar disorder, and other factors, such as environmental and neurological factors, also play a role."
+
+    misconception_on_bipolar
+    - text: "There are several common misconceptions about bipolar disorder, including the idea that it simply involves frequent mood swings or that it is a rare condition. In reality, bipolar disorder is a complex mental health condition that can have a significant impact on an individual's life. Other misconceptions include the idea that individuals with bipolar disorder cannot lead productive lives or that they are dangerous. These misconceptions can contribute to stigma surrounding the disorder and make it more difficult for individuals to seek help."
+    
+    therapist_for_bipolar
+    - text: "There are several ways to find a therapist or mental health professional to help with bipolar disorder. You can start by asking your primary care physician for a referral or contacting your insurance company for a list of covered providers. Additionally, there are online directories of mental health professionals that can help you find a provider in your area. It can be helpful to read reviews and do some research before choosing a provider to ensure that they are a good fit for you."
+    - text: "Some alternative therapies that may be helpful for individuals with bipolar disorder include acupuncture, massage, and yoga."
+
+    bipolar_in_children
+    - text: "Bipolar disorder can occur in children and teens, although it is less common than in adults. In children and teens, symptoms may present differently than in adults and can be misdiagnosed as other conditions, such as ADHD. Symptoms may include irritability, difficulty sleeping, and sudden mood swings."
+    
+    bipolar_triggers
+    - text: "Common triggers for bipolar disorder may include stress, changes in sleep patterns, changes in routine, substance use, and significant life events, such as a breakup or the loss of a loved one. Identifying and managing triggers can be an important part of managing bipolar disorder."
+    
+    bipolar_treatment
     - text: "Bipolar disorder is typically treated through a combination of medication and therapy."
     - text: "Some common treatment options for bipolar disorder include mood stabilizers, antipsychotics, and antidepressants."
     - text: "While there are no natural remedies that can cure bipolar disorder, certain lifestyle changes such as regular exercise, a healthy diet, and stress reduction techniques may help manage symptoms."
     - text: "Therapy can help individuals with bipolar disorder learn coping skills, recognize triggers, and improve their overall functioning."
-    - text: "Some types of medication used to treat bipolar disorder include lithium, lamotrigine, and valproic acid."
     - text: "Exercise can be helpful in managing symptoms of bipolar disorder, as it can improve mood and reduce stress levels."
-    - text: "Some alternative therapies that may be helpful for individuals with bipolar disorder include acupuncture, massage, and yoga."
     - text: "You can find a mental health institution or hospital for bipolar disorder treatment by speaking with your doctor or mental health professional, or by searching online for facilities in your area."
     - text: "Self-care practices that can help with bipolar disorder include getting enough sleep, practicing stress reduction techniques, maintaining a healthy diet, and avoiding drugs and alcohol."
     - text: "Spirituality can be helpful for some individuals with bipolar disorder, as it may provide a sense of purpose and meaning. However, it should not be used as a replacement for professional treatment."
     - text: "Volunteering and helping others can provide a sense of purpose, belonging, and fulfillment, which can positively impact mental health and well-being. Engaging in these activities can also provide a sense of connection to something greater than oneself, which can be a spiritual experience for some individuals."
     - text: "Religion can provide a source of comfort, support, and guidance for individuals with bipolar disorder. Some religious practices, such as prayer, meditation, and attending religious services, can also help individuals to manage stress and promote mental and emotional well-being. However, it's important to note that religion should not be the sole or primary treatment for bipolar disorder, and individuals should also seek professional medical and psychological care as needed."
+    
+    cause_of_bipolar
     - text: "The exact causes of bipolar disorder are not fully understood, but it is believed to be caused by a combination of genetic, environmental, and neurological factors. Some potential causes may include imbalances in brain chemicals, such as dopamine and serotonin, as well as changes in brain structure and function."
     - text: "Stress can trigger episodes of mania or depression in individuals with bipolar disorder. Chronic stress can also exacerbate symptoms and make it more difficult to manage the condition."
-    - text: " Bipolar disorder has a strong genetic component, with research suggesting that certain genes may increase the risk of developing the condition. However, having a genetic predisposition does not necessarily mean that an individual will develop bipolar disorder, and other factors, such as environmental and neurological factors, also play a role."
     - text: "Childhood experiences, such as trauma or abuse, may contribute to the development of bipolar disorder in some individuals. However, it is important to note that bipolar disorder is a complex condition with many potential causes, and not everyone with a history of childhood trauma or adversity will develop the disorder."
     - text: "A lack of social support can contribute to the development or exacerbation of bipolar disorder. Social support can provide a buffer against stress, offer a sense of belonging and connection, and provide practical assistance in managing the condition."
     - text: "Major life changes or losses, such as the death of a loved one, divorce, or job loss, can be stressful and trigger episodes of mania or depression in individuals with bipolar disorder. It's important for individuals with the disorder to seek support and coping strategies during these difficult times."
@@ -387,131 +411,183 @@ responses:
     - text: "It's important to prioritize your mental health and seek help for the symptoms of PTSD. Let's work together to find the right resources and support for you."
 
   utter_PSTD_info:
+  defination_PSTD
     - text: "PTSD stands for Post-Traumatic Stress Disorder. It is a mental health condition that can develop after experiencing or witnessing a traumatic event."
     - text: "PTSD is a mental health condition that can develop after experiencing or witnessing a traumatic event. It can cause a variety of symptoms, such as flashbacks, nightmares, and avoidance of triggers."
+  
+  symptoms_PSTD
     - text: "The symptoms of PTSD can include flashbacks, nightmares, avoidance of triggers, hypervigilance, negative changes in mood or thinking, and changes in physical and emotional reactions."
+  
+  effect_PSTD
     - text: "PTSD can affect people in many ways, including their mental and physical health, relationships, work, and daily functioning. It can be very distressing and may impact their quality of life."
+    - text: "PTSD can affect relationships by causing emotional distance, difficulty with trust and intimacy, and communication problems. It is important for both partners to seek help and support."
+    - text: "PTSD can increase the risk of developing other mental health issues such as depression, anxiety, and substance abuse disorders. In some cases, these conditions can develop as a result of attempts to cope with PTSD symptoms."
+
+  cause_PSTD
     - text: "PTSD can be caused by experiencing or witnessing a traumatic event, such as a natural disaster, car accident, sexual or physical assault, military combat, or other violent or life-threatening situations."
-    - text: "While there is no cure for PTSD, it can be effectively treated through a variety of therapies and medications. It is important for people with PTSD to seek help from a mental health professional."
-    - text: "PTSD is typically treated with therapy, such as Cognitive Behavioral Therapy or Eye Movement Desensitization and Reprocessing, and medication, such as antidepressants. It is important to find the right treatment plan for each individual's needs."
+    - text: "PTSD can be caused by any traumatic event, not just combat. It can also be caused by sexual or physical assault, natural disasters, and other life-threatening situations."
+
+  treatment_PSTD  
+  - text: "While there is no cure for PTSD, it can be effectively treated through a variety of therapies and medications. It is important for people with PTSD to seek help from a mental health professional."
+  - text: "PTSD is typically treated with therapy, such as Cognitive Behavioral Therapy or Eye Movement Desensitization and Reprocessing, and medication, such as antidepressants. It is important to find the right treatment plan for each individual's needs."
+  - text: "There are many resources available for people with PTSD, such as support groups, therapy programs, and online resources. It is important to find the right resources for each individual's needs."
+
+  long_term_effects_PSTD
     - text: "The long-term effects of PTSD can include ongoing mental health issues, such as depression and anxiety, and physical health problems, such as chronic pain and sleep disorders. It can also impact relationships and overall quality of life."
+  
+  helping_loved_one_PSTD
     - text: "To help someone with PTSD, it is important to listen to them without judgment, encourage them to seek professional help, and be patient and supportive throughout their healing process."
     - text: "Some coping mechanisms for dealing with PTSD include mindfulness and relaxation techniques, exercise, creative outlets, and connecting with supportive people."
-    - text: "PTSD can affect relationships by causing emotional distance, difficulty with trust and intimacy, and communication problems. It is important for both partners to seek help and support."
+  
+  misconception_PSTD
     - text: "Common misconceptions about PTSD include that it only affects military veterans or that it can be easily overcome by willpower alone. It is a complex and serious mental health condition that requires professional help."
-    - text: "PTSD can be caused by any traumatic event, not just combat. It can also be caused by sexual or physical assault, natural disasters, and other life-threatening situations."
-    - text: "There are many resources available for people with PTSD, such as support groups, therapy programs, and online resources. It is important to find the right resources for each individual's needs."
+    
+    how_coommon_PTSD
     - text: "PTSD is more common than people may think, affecting millions of people around the world. It affects about 3.5% of U.S. adults every year, and about one in 11 people will experience PTSD at some point in their lives."
-    - text: "Yes, PTSD can increase the risk of developing other mental health issues such as depression, anxiety, and substance abuse disorders. In some cases, these conditions can develop as a result of attempts to cope with PTSD symptoms."
+    
+    prevent_PTSD
     - text: "There is no surefire way to prevent PTSD, but seeking support after a traumatic event and receiving prompt treatment if PTSD symptoms develop can help reduce the risk of long-term effects."
+    
+    Types_PTSD
     - text: "There are four main types of PTSD: normal stress response, acute stress disorder, uncomplicated PTSD, and complex PTSD. Normal stress response and acute stress disorder are considered short-term responses to trauma, while uncomplicated PTSD and complex PTSD are considered long-term responses."
+    complex_PTSD
     - text: "Complex PTSD (C-PTSD) is a type of PTSD that results from long-term exposure to trauma, particularly interpersonal trauma. It is often associated with feelings of shame, guilt, and emotional dysregulation, and can involve symptoms such as dissociation, self-harm, and difficulty forming relationships."
+    self_Care_PTSD
     - text: "Some self-help strategies for managing PTSD include: practicing relaxation techniques such as deep breathing and progressive muscle relaxation, engaging in physical exercise, avoiding drugs and alcohol, connecting with others and seeking support from friends and family, and engaging in activities that promote positive feelings and a sense of accomplishment. It is important to seek professional help if symptoms persist or worsen."
-    - text: "I'm sorry to hear that you're experiencing these symptoms. Have you talked to a therapist or mental health professional about it?"
-    - text: "It sounds like you're going through a lot right now. Have you considered seeking treatment for PTSD?"
-    - text: "PTSD can be a difficult and isolating experience. What kind of support do you need right now?"
-    - text: "It takes a lot of courage to talk about what you're going through. How can I help you get the support you need?"
-    - text: "You're not alone in this. PTSD can affect anyone who has experienced trauma. Have you considered reaching out to a support group or therapist?"
-    - text: "It's understandable to feel overwhelmed and stuck after a traumatic event. Have you talked to a therapist about coping strategies?"
-    - text: "There are treatments available for PTSD that can help you manage your symptoms and improve your quality of life. Have you considered seeking professional help?"
-    - text: "It's important to prioritize your mental health and wellbeing. Have you thought about talking to a mental health professional about your PTSD symptoms?"
-    - text: "PTSD can be a challenging and isolating experience. It's important to have support and resources to help you cope. How can I help you find those resources?"
-    - text: "You don't have to go through this alone. There are people who understand what you're going through and can help. Have you considered reaching out to a support group or therapist?"
-    - text: "It's normal to feel scared or hesitant to talk about what happened, but seeking help is a sign of strength. What kind of support or resources do you need to feel comfortable doing so?"
-    - text: "There is hope for recovery from PTSD. With the right treatment and support, you can learn to manage your symptoms and regain control of your life."
-    - text: "I can only imagine how difficult it must be to experience these symptoms. You deserve support and healing, and there are resources available to help you."
-    - text: "PTSD can be a tough battle, but it's one that you can overcome. Let's work together to find ways to help you feel more grounded and find some relief from your symptoms."
-    - text: "I'm sorry that you're going through this. You deserve compassion and understanding, and I'm here to listen and support you in any way I can."
 
   utter_schizophrenia_info:
+  define_Schizophrenia
     - text: "Schizophrenia is a mental illness that affects a person's ability to think, feel, and behave clearly."
+    symptom_Schizophrenia
     - text: "The symptoms of schizophrenia can include hallucinations, delusions, disordered thinking and speech, lack of motivation, and difficulty expressing emotions."
+    cause_Schizophrenia
     - text: "The exact cause of schizophrenia is unknown, but it is believed to be a combination of genetic, environmental, and neurological factors."
+    genetic_Schizophrenia
     - text: "Research has shown that there is a genetic component to schizophrenia, but it is not the only factor. Environmental factors such as exposure to stress, drug abuse, and social isolation can also contribute to the development of the disorder."
+    treatment_Schizophrenia
     - text: "While there is no cure for schizophrenia, it can be managed with a combination of medication, therapy, and support from family and friends."
     - text: "The treatment for schizophrenia typically involves antipsychotic medication, therapy, and support from family and friends. It is important to work with a mental health professional to develop a treatment plan that is tailored to the individual's needs."
-    - text: "There are several different types of schizophrenia, including paranoid, disorganized, catatonic, undifferentiated, and residual."
-    - text: "Negative symptoms of schizophrenia include social withdrawal, apathy, lack of motivation, and a decrease in emotional expression."
-    - text: "Positive symptoms of schizophrenia include hallucinations, delusions, disordered thinking and speech, and heightened sensory experiences."
-    - text: "Schizophrenia can affect a person's social behavior by causing them to withdraw from social situations, have difficulty communicating, and have trouble forming and maintaining relationships."
-    - text: "Supporting someone with schizophrenia can involve providing emotional support, helping them manage their medication and appointments, and encouraging them to participate in social activities."
-    - text: "Common misconceptions about schizophrenia include that it means having multiple personalities or that people with schizophrenia are violent or dangerous."
-    - text: "With the right treatment and support, people with schizophrenia can lead fulfilling and meaningful lives."
-    - text: "Schizophrenia affects brain function by causing changes in the structure and function of certain brain regions."
-    - text: "Schizophrenia and multiple personality disorder are different disorders. Schizophrenia affects a person's ability to think, feel, and behave clearly, while multiple personality disorder involves the presence of multiple distinct personalities."
-    - text: "Substance abuse can increase the risk of developing schizophrenia, particularly in those who are genetically predisposed to the disorder."
-    - text: "The first signs of schizophrenia may include changes in behavior, mood, and thinking, such as social withdrawal, paranoia, disorganized speech, and hallucinations."
-    - text: "Yes, schizophrenia can be diagnosed in children, although it is rare and often difficult to diagnose due to the overlap with other childhood conditions."
     - text: "Medications are an important part of treating schizophrenia and can help manage symptoms such as hallucinations and delusions."
-    - text: "Alternative treatments for schizophrenia may include therapy, such as cognitive-behavioral therapy and family therapy, as well as complementary therapies like yoga and acupuncture."
-    - text: "The long-term outlook for people with schizophrenia varies, but with proper treatment and support, many people are able to manage their symptoms and lead fulfilling lives."
-    - text: "There may be a link between trauma and the development of schizophrenia, as experiencing traumatic events may increase the risk of developing the condition."
+
+    types_Schizophrenia
+    - text: "There are several different types of schizophrenia, including paranoid, disorganized, catatonic, undifferentiated, and residual."
+    Negetive_symptoms_Schizophrenia
+    - text: "Negative symptoms of schizophrenia include social withdrawal, apathy, lack of motivation, and a decrease in emotional expression."
+    positive_symptom_Schizophrenia
+    - text: "Positive symptoms of schizophrenia include hallucinations, delusions, disordered thinking and speech, and heightened sensory experiences."
+    social_effect_Schizophrenia
+    - text: "Schizophrenia can affect a person's social behavior by causing them to withdraw from social situations, have difficulty communicating, and have trouble forming and maintaining relationships."
+    love_one_Schizophrenia
+    - text: "Supporting someone with schizophrenia can involve providing emotional support, helping them manage their medication and appointments, and encouraging them to participate in social activities."
     - text: "Families and loved ones can support someone with schizophrenia by providing emotional support, helping them navigate treatment options, and encouraging them to stick with their treatment plan."
-    - text: "With the right treatment and support, many people with schizophrenia are able to work and live independently. However, the severity of symptoms and individual circumstances may vary."
+
+    misconception_schizophrenia
+    - text: "Common misconceptions about schizophrenia include that it means having multiple personalities or that people with schizophrenia are violent or dangerous."
+    
+    Schizophrenia_affects
+    - text: "Schizophrenia affects brain function by causing changes in the structure and function of certain brain regions."
+    Schizophrenia_and_multiple_personality_disorder
+    - text: "Schizophrenia and multiple personality disorder are different disorders. Schizophrenia affects a person's ability to think, feel, and behave clearly, while multiple personality disorder involves the presence of multiple distinct personalities."
+    Signs_of_schizophrenia
+    - text: "The first signs of schizophrenia may include changes in behavior, mood, and thinking, such as social withdrawal, paranoia, disorganized speech, and hallucinations."
+    schizophrenia_in_children
+    - text: "Yes, schizophrenia can be diagnosed in children, although it is rare and often difficult to diagnose due to the overlap with other childhood conditions."
+    
+    therapy_schizophrenia
+    - text: "Alternative treatments for schizophrenia may include therapy, such as cognitive-behavioral therapy and family therapy, as well as complementary therapies like yoga and acupuncture."
+    
+    long_term_effect_schizophrenia
+    - text: "The long-term outlook for people with schizophrenia varies, but with proper treatment and support, many people are able to manage their symptoms and lead fulfilling lives."
+    
+    link_between_trauma_schizophrenia
+    - text: "There may be a link between trauma and the development of schizophrenia, as experiencing traumatic events may increase the risk of developing the condition."
 
   utter_eating_disorder_info:
+  define_eating_disorder
     - text: "An eating disorder is a mental health condition that is characterized by unhealthy eating habits and a preoccupation with body weight and shape."
+  types_eating_disorder
     - text: "There are several types of eating disorders, including anorexia nervosa, bulimia nervosa, binge-eating disorder, and others."
+  symptoms__eating_disorder
     - text: "The symptoms of an eating disorder vary depending on the type of disorder, but common symptoms include a distorted body image, obsession with food and calories, and restrictive or binge eating behaviors."
+  cause_eating_disorder
     - text: "The causes of eating disorders are complex and can involve genetic, environmental, and psychological factors."
-    - text: "Yes, eating disorders can affect anyone, regardless of gender or age."
+  affecting_age_group_eating_disorder
+    - text: "eating disorders can affect anyone, regardless of gender or age."
+  treatment_eating_disorder
     - text: "The treatment for an eating disorder typically involves a combination of therapy, medication, and nutritional counseling."
+  therapy_eating_disorder
     - text: "Alternative treatments for eating disorders may include mindfulness-based interventions, yoga, and other holistic approaches."
+  long_term_effect_eating_disorder
     - text: "The long-term outlook for someone with an eating disorder varies depending on the severity of the disorder and the individual's response to treatment."
+  social_life_affect_eating_disorder
     - text: "Having an eating disorder can have significant social effects, including isolation, shame, and difficulty participating in social activities that involve food."
+  love_one_eating_disorder  
     - text: "If you suspect that a loved one has an eating disorder, it's important to approach them with compassion and encourage them to seek professional help."
+  having_eating_disorder
     - text: "If you suspect that you have an eating disorder, it's important to reach out to a mental health professional for an evaluation and treatment options."
+  misconception__eating_disorder
     - text: "Common misconceptions about eating disorders include the belief that they only affect young, white women, and that they are a choice rather than a mental health condition."
+  self_help_eating_disorder
     - text: "Self-help strategies for managing an eating disorder may include developing a positive body image, practicing self-compassion, and developing healthy coping mechanisms."
-    - text: "If your eating disorder is significantly impacting your daily life, it's important to seek professional help from a mental health provider who specializes in eating disorders."
+  coping_mechanism
     - text: "Coping mechanisms for dealing with triggers may include practicing mindfulness, engaging in self-care activities, and reaching out for support from loved ones."
-    - text: "Improving your relationship with food and your body may involve developing a healthy relationship with exercise, working with a nutritionist, and practicing self-love and acceptance."
-    - text: "It sounds like you may be struggling with an eating disorder. Have you considered seeking professional help?"
-    - text: "Eating disorders are a serious mental health condition, but recovery is possible. Have you talked to a medical professional about your concerns?"
-    - text: "Eating disorders can have a negative impact on your physical and mental health. It's important to prioritize your well-being and seek help. Have you considered speaking with a therapist or doctor?"
-    - text: "It takes courage to acknowledge that you may be struggling with an eating disorder. There are many effective treatments available, and recovery is possible. Have you considered reaching out to a specialist?"
-    - text: "You don't have to go through this alone. There are many resources available for people struggling with eating disorders. Have you looked into support groups or counseling?"
-    - text: "Eating disorders can be challenging, but they are treatable. Seeking professional help is an important first step. Have you talked to your doctor or a therapist about your concerns?"
-    - text: "Your feelings are valid, and it's important to address them in a healthy way. Have you considered talking to a mental health professional about your concerns?"
-    - text: "It can be difficult to talk about eating disorders, but it's important to seek help when you need it. What kind of support or resources would be helpful for you right now?"
-    - text: "It takes a lot of strength to seek help for an eating disorder. Recovery is possible, and there are many effective treatments available. Have you considered reaching out to a specialist?"
-    - text: "You deserve to have a healthy relationship with food and your body. Seeking professional help can be a valuable step towards that goal. Have you talked to a therapist or doctor about your concerns?"
-    - text: "Eating disorders can have serious physical and mental health consequences, but with the right support and treatment, recovery is possible. Have you considered seeking professional help?"
-    - text: "It's important to prioritize your health and well-being. Seeking help for an eating disorder can be an important step towards recovery. What kind of support or resources would be helpful for you right now?"
-    - text: "Eating disorders can affect anyone, regardless of age, gender, or background. It's important to seek help and support if you're struggling. Have you considered talking to a medical professional?"
-    - text: "It's common to feel alone or ashamed when struggling with an eating disorder, but it's important to remember that you're not alone. There are many resources and treatment options available. Have you looked into support groups or counseling?"
 
   utter_disdisruptive_behavior_disorder:
+  define_Disruptive_behavior
     - text: "Disruptive behavior disorders and dissocial personality traits are characterized by persistent patterns of behavior that violate the rights of others and societal norms."
-    - text: "Symptoms of conduct disorder include aggression, destruction of property, deceitfulness, and violation of rules."
-    - text: "The causes of disruptive behavior and dissocial disorders may include genetic, environmental, and social factors."
-    - text: "Treatment options may include therapy, medication, and behavior management techniques."
-    - text: "Disruptive behavior and dissocial disorders can have negative impacts on social relationships, including difficulty making and maintaining friendships, problems in school or work, and legal problems."
-    - text: "Prevention measures may include early intervention and support for at-risk individuals, such as therapy and education for parents and caregivers."
     - text: "Disruptive behavior disorders include oppositional defiant disorder and conduct disorder, which have different symptom criteria and severity levels."
-    - text: "Symptoms of oppositional defiant disorder may include frequent temper tantrums, arguing with adults, refusing to follow rules, and intentionally annoying others."
-    - text: "Conduct disorder involves more severe behaviors, such as physical aggression, destruction of property, and violation of others' rights."
-    - text: "Common triggers for disruptive behavior may include stress, lack of structure or routine, and difficult home or school environments."
-    - text: "Parents and caregivers can help manage disruptive behavior by setting clear expectations, using positive reinforcement, and seeking professional help when needed."
+
+  symptom_Disruptive_behavior
+    - text: "Symptoms of conduct disorder include aggression, destruction of property, deceitfulness, and violation of rules."
+  cause_Disruptive_behavior
+    - text: "The causes of disruptive behavior and dissocial disorders may include genetic, environmental, and social factors."
+  treatment_Disruptive_behavior
+    - text: "Treatment options may include therapy, medication, and behavior management techniques."
+  social_Disruptive_behavior  
+    - text: "Disruptive behavior and dissocial disorders can have negative impacts on social relationships, including difficulty making and maintaining friendships, problems in school or work, and legal problems."
     - text: "Substance abuse can be a common issue in individuals with disruptive behavior disorders, as they may use drugs or alcohol to cope with their symptoms."
-    - text: "Some common misconceptions about disruptive behavior disorders include that they are caused by poor parenting, that they can be easily controlled by discipline, and that they are not serious mental health conditions."
+
+  prevention_Disruptive_behavior  
+  - text: "Prevention measures may include early intervention and support for at-risk individuals, such as therapy and education for parents and caregivers."
+  oppositional_defiant_disorder
+    - text: "Symptoms of oppositional defiant disorder may include frequent temper tantrums, arguing with adults, refusing to follow rules, and intentionally annoying others."
+  Conduct_disorder
+  - text: "Conduct disorder involves more severe behaviors, such as physical aggression, destruction of property, and violation of others' rights."
+  triggers_disruptive
+    - text: "Common triggers for disruptive behavior may include stress, lack of structure or routine, and difficult home or school environments."
 
   utter_neurodevelopmental_disorder:
+
+  define_Neurodevelopmental
     - text: "Neurodevelopmental disorders are a group of conditions that affect the development of the brain and nervous system."
+  Symptoms_autism_spectrum 
     - text: "Symptoms of autism spectrum disorder may include difficulty with social interaction, repetitive behaviors or interests, and communication difficulties."
+  cause_neurodevelopmental
     - text: "Causes of neurodevelopmental disorders may include genetic factors, environmental factors, and brain development abnormalities."
+  treatment_neurodevelopmental  
     - text: "Treatment options may include therapy, medication, and education or behavioral interventions."
+  socail_life_effect_neurodevelopmental
     - text: "Neurodevelopmental disorders can have significant impacts on social relationships and daily functioning, such as difficulty with communication, motor skills, and academic or work performance."
-    - text: "Prevention measures may include early identification and intervention, education and support for parents and caregivers, and reducing exposure to environmental risk factors."
-    - text: "ADHD is a neurodevelopmental disorder characterized by symptoms such as inattention, hyperactivity, and impulsivity."
-    - text: "Symptoms of ADHD may include difficulty focusing, forgetfulness, impulsivity, restlessness, and excessive talking or interrupting others."
-    - text: "ADHD is typically diagnosed through a combination of medical evaluations, behavioral assessments, and interviews with caregivers and teachers."
-    - text: "Treatment options for ADHD may include medication, behavioral therapy, and education or accommodations."
+  prevention_neurodevelopmental  
+  - text: "Prevention measures may include early identification and intervention, education and support for parents and caregivers, and reducing exposure to environmental risk factors."
+  deine_ADHD  
+  - text: "ADHD is a neurodevelopmental disorder characterized by symptoms such as inattention, hyperactivity, and impulsivity."
+  Symptoms_ADHD
+  - text: "Symptoms of ADHD may include difficulty focusing, forgetfulness, impulsivity, restlessness, and excessive talking or interrupting others."
+  ADHD_diagnosed
+  - text: "ADHD is typically diagnosed through a combination of medical evaluations, behavioral assessments, and interviews with caregivers and teachers."
+  treatment_ADHD
+  - text: "Treatment options for ADHD may include medication, behavioral therapy, and education or accommodations."
+  define_dyslexia
     - text: "Dyslexia is a learning disorder that affects reading and language processing abilities."
+  symptoms_dyslexia
     - text: "Symptoms of dyslexia may include difficulty with reading, spelling, writing, and oral language skills."
-    - text: "Dyslexia is typically diagnosed through a combination of medical evaluations and standardized testing."
-    - text: "Treatment options for dyslexia may include educational interventions, accommodations, and assistive technologies."
-    - text: "ADHD stands for Attention-Deficit/Hyperactivity Disorder, a neurodevelopmental disorder that affects both children and adults. It is characterized by symptoms such as inattention, hyperactivity, and impulsivity, which can lead to difficulties in daily life, including academic or work performance, social relationships, and emotional regulation. ADHD can be diagnosed and treated with a combination of medication, therapy, and behavioral interventions."
+  dyslexia_diagnosed
+  - text: "Dyslexia is typically diagnosed through a combination of medical evaluations and standardized testing."
+  treatment_dyslexia
+  - text: "Treatment options for dyslexia may include educational interventions, accommodations, and assistive technologies."
+  ADHD_fullform
+  - text: "ADHD stands for Attention-Deficit/Hyperactivity Disorder, a neurodevelopmental disorder that affects both children and adults. It is characterized by symptoms such as inattention, hyperactivity, and impulsivity, which can lead to difficulties in daily life, including academic or work performance, social relationships, and emotional regulation. ADHD can be diagnosed and treated with a combination of medication, therapy, and behavioral interventions."
 
 entities: []
 
