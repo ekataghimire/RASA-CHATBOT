@@ -1,0 +1,458 @@
+    - intent: ask_weather_location
+      examples: |
+        - what's the weather in pokhara
+        - what is the weather in kathmandu
+        - please tell me the weather at kathmandu
+        - whats the weather in kathmandu
+        - tell me weather conditions at kathmandu
+        - is it hot in kathmandu
+        - is it sunny in kathmandu
+        - is it rainy in kathmandu
+        - is it windy in kathmandu
+        - please tell me the weather at pokhara
+        - whats the weather in pokhara
+        - tell me weather conditions at pokhara
+        - is it hot in pokhara
+        - is it sunny in pokhara
+        - is it rainy in pokhara
+        - is it windy in pokhara
+        - please tell me the weather at lamjung
+        - whats the weather in lamjung
+        - tell me weather conditions at lamjung
+        - is it hot in lamjung
+        - is it sunny in lamjung
+        - is it rainy in lamjung
+        - is it windy in lamjung
+        - please tell me the weather at chitwan
+        - whats the weather in chitwan
+        - tell me weather conditions at chitwan
+        - is it hot in chitwan
+        - is it sunny in chitwan
+        - is it rainy in chitwan
+        - is it windy in chitwan
+        - please tell me the weather at hetauda
+        - whats the weather in hetauda
+        - tell me weather conditions at hetauda
+        - is it hot in hetauda
+        - is it sunny in hetauda
+        - is it rainy in hetauda
+        - is it windy in hetauda
+        - please tell me the weather at kalanki
+        - whats the weather in kalanki
+        - tell me weather conditions at kalanki
+        - is it hot in kalanki
+        - is it sunny in kalanki
+        - is it rainy in kalanki
+        - is it windy in kalanki
+        - please tell me the weather at thapathali
+        - whats the weather in thapathali
+        - tell me weather conditions at thapathali
+        - is it hot in thapathali
+        - is it sunny in thapathali
+        - is it rainy in thapathali
+        - is it windy in thapathali
+        - please tell me the weather at baneshwor
+        - whats the weather in baneshwor
+        - tell me weather conditions at baneshwor
+        - is it hot in baneshwor
+        - is it sunny in baneshwor
+        - is it rainy in baneshwor
+        - is it windy in baneshwor
+        - please tell me the weather at thankot
+        - whats the weather in thankot
+        - tell me weather conditions at thankot
+        - is it hot in thankot
+        - is it sunny in thankot
+        - is it rainy in thankot
+        - is it windy in thankot
+        - please tell me the weather at putalisadak
+        - whats the weather in putalisadak
+        - tell me weather conditions at putalisadak
+        - is it hot in putalisadak
+        - is it sunny in putalisadak
+        - is it rainy in putalisadak
+        - is it windy in putalisadak
+        - please tell me the weather at gorkha
+        - whats the weather in gorkha
+        - tell me weather conditions at gorkha
+        - is it hot in gorkha
+        - is it sunny in gorkha
+        - is it rainy in gorkha
+        - is it windy in gorkha
+        - please tell me the weather at nagpokhari
+        - whats the weather in nagpokhari
+        - tell me weather conditions at nagpokhari
+        - is it hot in nagpokhari
+        - is it sunny in nagpokhari
+        - is it rainy in nagpokhari
+        - is it windy in nagpokhari
+        - please tell me the weather at nepal
+        - whats the weather in nepal
+        - tell me weather conditions at nepal
+        - is it hot in nepal
+        - is it sunny in nepal
+        - is it rainy in nepal
+        - is it windy in nepal
+        - please tell me the weather at Australia
+        - whats the weather in Australia
+        - tell me weather conditions at Australia
+        - is it hot in Australia
+        - is it sunny in Australia
+        - is it rainy in Australia
+        - is it windy in Australia
+        - please tell me the weather at USA
+        - whats the weather in USA
+        - tell me weather conditions at USA
+        - is it hot in USA
+        - is it sunny in USA
+        - is it rainy in USA
+        - is it windy in USA
+        - please tell me the weather at India
+        - whats the weather in India
+        - tell me weather conditions at India
+        - is it hot in India
+        - is it sunny in India
+        - is it rainy in India
+        - is it windy in India
+        - please tell me the weather at kolkata
+        - whats the weather in kolkata
+        - tell me weather conditions at kolkata
+        - is it hot in kolkata
+        - is it sunny in kolkata
+        - is it rainy in kolkata
+        - is it windy in kolkata
+        - please tell me the weather at Jamal
+        - whats the weather in Jamal
+        - tell me weather conditions at Jamal
+        - is it hot in Jamal
+        - is it sunny in Jamal
+        - is it rainy in Jamal
+        - is it windy in Jamal
+        - please tell me the weather at kaski
+        - whats the weather in kaski
+        - tell me weather conditions at kaski
+        - is it hot in kaski
+        - is it sunny in kaski
+        - is it rainy in kaski
+        - is it windy in kaski
+        - please tell me the weather at Bagmati
+        - whats the weather in Bagmati
+        - tell me weather conditions at Bagmati
+        - is it hot in Bagmati
+        - is it sunny in Bagmati
+        - is it rainy in Bagmati
+        - is it windy in Bagmati
+
+    - intent: ask_temperature
+      examples: |
+
+        - what's the temperature in pokhara
+        - what is the temperature in kathmandu
+        - please tell me the temperature at kathmandu
+        - whats the temperature in kathmandu
+        - tell me temperature conditions at kathmandu
+        - please tell me the temperature at pokhara
+        - whats the temperature in pokhara
+        - tell me temperature conditions at pokhara
+        - please tell me the temperature at lamjung
+        - whats the temperature in lamjung
+        - tell me temperature conditions at lamjung
+        - please tell me the temperature at chitwan
+        - whats the temperature in chitwan
+        - tell me temperature conditions at chitwan
+        - please tell me the temperature at hetauda
+        - whats the temperature in hetauda
+        - tell me temperature conditions at hetauda
+        - please tell me the temperature at kalanki
+        - whats the temperature in kalanki
+        - tell me temperature conditions at kalanki
+        - please tell me the temperature at thapathali
+        - whats the temperature in thapathali
+        - tell me temperature conditions at thapathali
+        - please tell me the temperature at baneshwor
+        - whats the temperature in baneshwor
+        - tell me temperature conditions at baneshwor
+        - please tell me the temperature at thankot
+        - whats the temperature in thankot
+        - tell me temperature conditions at thankot
+        - please tell me the temperature at putalisadak
+        - whats the temperature in putalisadak
+        - tell me temperature conditions at putalisadak
+        - please tell me the temperature at gorkha
+        - whats the temperature in gorkha
+        - tell me temperature conditions at gorkha
+        - please tell me the temperature at nagpokhari
+        - whats the temperature in nagpokhari
+        - tell me temperature conditions at nagpokhari
+        - please tell me the temperature at nepal
+        - whats the temperature in nepal
+        - tell me temperature conditions at nepal
+        - please tell me the temperature at Australia
+        - whats the temperature in Australia
+        - tell me temperature conditions at Australia
+        - please tell me the temperature at USA
+        - whats the temperature in USA
+        - tell me temperature conditions at USA
+        - please tell me the temperature at India
+        - whats the temperature in India
+        - tell me temperature conditions at India
+        - please tell me the temperature at kolkata
+        - whats the temperature in kolkata
+        - tell me temperature conditions at kolkata
+        - please tell me the temperature at Jamal
+        - whats the temperature in Jamal
+        - tell me temperature conditions at Jamal
+        - please tell me the temperature at kaski
+        - whats the temperature in kaski
+        - tell me temperature conditions at kaski
+        - please tell me the temperature at Bagmati
+        - whats the temperature in Bagmati
+        - tell me temperature conditions at Bagmati
+    - intent: out_of_scope
+      examples: |
+        - What is the global optimum of a non-convex function
+        - Tell me about quantum computing
+        - Who is Donald Trump?
+        - What do you think an idiot looks like?
+        - Why is Gamora?
+        - What is Gamora?
+        - Do you know anything about soccer
+        - Tell me about football
+        - What is quantum computing
+        - Do you know about soccer?
+        - Do you know who is Justin Trudeau
+        - Do you know quantum computing?
+
+    - intent: handleinsult
+      examples: |
+        - you're a loser lmao
+        - you are a stupid bot
+        - i hate you
+        - Stupid
+        - fuck you
+        - so dumb
+        - you are a moron
+        - you are an idiot
+        - so fucking dumb
+        - are you brain dead?
+        - how can you be such an idiot?
+        - a baby knows more than you
+        - i hate your dumb face
+        - you are fucking stupid
+        - bloody dunce
+        - You're an idiot.
+        - You are a fool.
+        - You're foolish.
+        - You are dumb.
+        - You have no sense.
+        - You are unintelligent.
+        - You're a dolt.
+        - You're a dunce.
+        - You have no brains.
+        - You have no intelligence.
+        - You are an idiot.
+        - You lack intelligence.
+        - You are unknowing.
+        - You are shortsighted.
+        - Your intelligence is laughable.
+        - You know nothing.
+        - You lack understanding.
+        - Your mindset is naive.
+        - You brain is dull.
+        - you are dumb
+        - you're an idiot
+        - God you're a moron
+        - you're so dumb
+        - you are idiotic
+        - you're the most moronic person I know
+        - I can't believe how dumb you are
+        - you are unintelligent
+        - you're not smart
+        - you are so ignorant
+        - you are stupid
+        - you're dumb
+        - asshole
+        - bitch
+        - fuck u
+        - idiot
+        - deal with my ass, you bitch
+        - you son of a bitch
+        - shut up asshole
+        - you asshole
+        - are u dump?
+        - fuck off
+        - fuck
+        - Fuck
+        - Fuck you
+        - fuck you machine learning bot
+        - Fuck u
+        - what fuck
+        - fucking stupid
+        - you are fucking stupid guy！
+        - go fuck yourself
+        - Fuck off
+        - fuck rasa
+        - fuck you!
+        - Fuck Off
+        - ok fuck you
+        - FUCK
+        - fucking work
+        - ok shut up
+
+    - intent: tellquote
+      examples: |
+        - give me a quote
+        - quote
+        - got a quote
+        - quotes are us
+        - tell me a quote
+        - Give me a quote.
+        - Give me a funny quote.
+        - What's a good quote?
+        - Do you have any quotes?
+        - Do you know any quotes?
+        - I need a good quote.
+        - Tell me the best quote you know.
+        - Tell quote.
+        - Share a quote with me!
+        - Will you tell me a quote.
+        - Can you tell me a quote.
+        - Would you tell me a quote
+        - Please tell me a quote.
+        - Could you tell me a quote.
+        - Would you share a quote with me.
+        - Could you please share a quote with me.
+        - Entertain me with a quote.
+        - Can you tell a quote?
+        - Know any quotes?
+        - Come up with a quote.
+        - Let's hear a quote from you.
+        - say a quote that's funny
+        - tell me something funny, like a quote
+        - say a quote
+        - tell me a short quote
+        - tell me a story quote
+        - say a funny quote
+        - give me a good quote
+        - you can say a quote
+
+    - intent: ask_whoami
+      examples: |
+        - Who am I?
+        - Okay who am I?
+        - WHo am I
+        - Tell me who am I?
+        - Tell me who I am?
+        - Do you know who I am?
+        - Can you tell me who I am?
+        - How do I discover who I am?
+        - How can I determine who I am?
+        - Do you know who am I?
+        - Can you tell me who am I?
+        - How do I discover who am I?
+        - How can I determine who am I?
+        - who are I ?
+        - who may i ?
+        - Shall i know who am i?
+        - Tell me who I am.
+        - How do I identify myself?
+        - Who could I be?
+        - tell me who I am?
+        - what's my identity?
+        - tell me what my identity is?
+        - can you tell me what I am?
+        - can you tell me what my identity is?
+        - can you tell me who I am?
+        - who am i
+
+    - intent: ask_languagesbot
+      examples: |
+        - What languages can you use?
+        - Which languages do you speak?
+        - What are the languages you can speak?
+        - In which languages can you speak?
+        - What languages do you know?
+        - What languages are you fluent in?
+        - In which languages are you fluent?
+        - What languages can you converse in?
+        - What languages do you know how to use?
+        - Which languages are you familiar with?
+        - what languages are you familiar with?
+        - what languages you know?
+        - In what languages are you fluent enough?
+        - what languages you can speak ?
+        - what languages are you comfortable speaking at?
+        - what languages are you good at speaking?
+        - what languages you are well versed ?
+        - what languages you can be comfortable speaking?
+        - what languages you prefer more speaking at?
+        - what languages you can handle well?
+        - Do you know any other languages?
+        - Do you speak any other languages?
+        - What languages do you speak?
+        - What do you speak?
+        - Speak any other languages?
+        - Can you communicate in any other languages?
+        - What languages can you communicate in?
+        - How many languages do you know?
+        - what languages do you know?
+        - tell me some languages you know?
+        - do you speak any other languages?
+        - what else do you know besides English?
+        - are you bilingual?
+        - are you multilingual?
+        - what foreign languages do you know?
+        - what foreign languages are you fluent in?
+        - how many languages are you fluent in?
+        - how many languages do you know?
+        - How many languages can you speak?
+        - How many different languages are you fluent in?
+        - How many languages do you have knowledge of?
+        - What are all of the different languages you can speak?
+        - Are you familiar with more than one language?
+        - Can you speak more than one language?
+        - Do you know other languages?
+        - How many languages are you familiar with?
+        - can you speak in italian?
+        - do you speak german?
+        - Do you speak german?
+
+
+    - intent: ask_whatismyname
+      examples: |
+        - what is my name?
+        - May i know my name?
+        - What is my name?
+        - What do I call myself?
+        - Tell me my name.
+        - Explain my name to me.
+        - What could be my name?
+        - What name do I go by?
+        - What name should I recognize for myself?
+        - what's my name?
+        - can you tell me my name?
+        - Do I have a name?
+        - Do I have a name? What is it?
+        - What was I named?
+        - Say my name.
+        - Do you know my name?
+        - What do people call me?
+        - Can you tell me my name?
+        - What else do people call me?
+        - I have a name, what is it?
+        - Tell me my name
+        - I'd like to know my name
+        - Inform me what my name is
+        - Please let me know what my name is
+        - Can you tell me what I am called?
+        - I'd like to know what my name is
+        - What is the name I was given?
+        - What does everyone call me?
+        - What am I called?
+        - What did my parents name me?
+        - What do my colleagues call me?
+        - What would be the name on my tombstone?
+        - Do you know what my name is?
+        - What is my first name?
+        - What is my full name?
+        - What exactly is my name?

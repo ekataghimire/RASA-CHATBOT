@@ -27,7 +27,7 @@ stories:
       - action: utter_cheer_up
       - action: utter_did_that_help
       - intent: deny
-      - action: utter_goodbye
+      - action: utter_deny
 
   - story: user wants to define depression
     steps:
@@ -35,56 +35,31 @@ stories:
       - action: utter_mental_health_concern
       - action: utter_treatment_depression
 
-  # - story: user wants to express themselves
-  #   steps:
-  #     - intent: define_depression
-  #     - action: utter_define_depression
-  #     - action: utter_are_you_okay
-  #     - action: utter_ask_support
-  #     - action: utter_treatment_depression
-
-  # - story: user expresses sadness and depression
-  #   steps:
-  #     - intent: recommendation_depression
-  #     - action: utter_recommendation_depression
-  #     - action: utter_treatment_depression
-
-  # - story: user expresses to die
-  #   steps:
-  #     - intent: exteme_end_suicide
-  #     - action: utter_exteme_end_suicide
-  #     - action: utter_extreme_support
-  #     - intent: thanks
-  #     - action: utter_say_welcome
-
-  # - story: user shows depressive symptom
-  #   steps:
-  #     - intent: depression_symptom
-  #     - action: utter_depression_symptom
-  #     - intent: depression_symptom
-  #     - action: utter_recommendation_depression
-  #     - action: utter_treatment_depression
-  #     - intent: thanks
-  #     - action: utter_say_welcome
-  #     - intent: goodbye
-  #     - action: utter_goodbye
-
-  # - story: user in unhappy mood
-  #   steps:
-  #     - intent: mood_unhappy
-  #     - action: utter_sorry
-
   - story: user wants to challenge bot
     steps:
       - intent: bot_challenge
       - action: utter_iamabot
 
+  - story: user wants to deny
+    steps:
+      - intent: deny
+      - action: utter_deny
+
+  - story: user wants know jokes
+    steps:
+      - intent: telljoke
+      - action: action_get_joke
   # basic_normal_conversational_dataset
 
   - story: smalltalk_agent_what_they_doing
     steps:
       - intent: smalltalk_agent_what_they_doing
       - action: utter_smalltalk_agent_what_they_doing
+
+  - story: handle the insult
+    steps:
+      - intent: handleinsult
+      - action: utter_handleinsult
 
   - story: smalltalk_agent_age
     steps:
@@ -336,10 +311,10 @@ stories:
       - intent: smalltalk_greetings_goodnight
       - action: utter_smalltalk_greetings_goodnight
 
-  - story: smalltalk_greetings_hello
-    steps:
-      - intent: smalltalk_greetings_hello
-      - action: utter_smalltalk_greetings_hello
+  # - story: smalltalk_greetings_hello
+  #   steps:
+  #     - intent: smalltalk_greetings_hello
+  #     - action: utter_smalltalk_greetings_hello
 
   - story: smalltalk_greetings_how_are_you
     steps:
@@ -532,8 +507,8 @@ stories:
       - intent: depression_affecting_life
       - action: utter_depression_affecting_life
 
-
   - story: user wants to know what happens if they have depression
+    steps:
       - intent: what_happens_during_depression
       - action: utter_what_happens_during_depression
 
@@ -546,11 +521,6 @@ stories:
     steps:
       - intent: fix_Depression
       - action: utter_fix_Depression
-
-  - story: user wants to know life after depression
-    steps:
-      - intent: life_after_depression
-      - action: utter_life_after_depression
 
   - story: user wants to know how depression is treated
     steps:
@@ -607,24 +577,22 @@ stories:
       - intent: rape
       - action: utter_rape
 
-
   - story: user wants express trauma
     steps:
       - intent: trauma
       - action: utter_trauma
-
 
   - story: user wants express low self esteem
     steps:
       - intent: issue_low_self_esteem
       - action: utter_issue_low_self_esteem
 
-  - story: user wants to impove the mental health condition  
+  - story: user wants to impove the mental health condition
     steps:
       - intent: make_mental_health_better
       - action: utter_make_mental_health_better
 
-  - story: deadly disease surviour asking about mental health 
+  - story: deadly disease surviour asking about mental health
     steps:
       - intent: deadly_disease_survivor_mental_health
       - action: utter_deadly_disease_survivor_mental_health
@@ -639,17 +607,17 @@ stories:
       - intent: panic_attacks
       - action: utter_panic_attacks
 
-  - story: user wants to get the counseler 
+  - story: user wants to get the counseler
     steps:
       - intent: get_counseler
       - action: utter_get_counseler
 
-  - story: user wants to get couseling recommendation 
+  - story: user wants to get couseling recommendation
     steps:
       - intent: counseling_recoomendation
       - action: utter_counseling_recoomendation
 
-  - story: user wants to know the first experience in the counseler 
+  - story: user wants to know the first experience in the counseler
     steps:
       - intent: first_session
       - action: utter_first_session
@@ -700,7 +668,7 @@ stories:
       - action: utter_addiction_mental_health
 
   - story: user wants to know the symptom of bipolar disorder
-    steps: 
+    steps:
       - intent: bipolar_symptom
       - action: utter_bipolar_symptom
 
@@ -711,435 +679,430 @@ stories:
 
   - story: user wants express define_biploar_disorder
     steps:
-    - intent: define_biploar_disorder
-    - action: utter_define_biploar_disorder
-
+      - intent: define_biploar_disorder
+      - action: utter_define_biploar_disorder
 
   - story: user wants express bipolar_can_be_treated
     steps:
-    - intent: bipolar_can_be_treated
-    - action: utter_bipolar_can_be_treated
+      - intent: bipolar_can_be_treated
+      - action: utter_bipolar_can_be_treated
 
   - story: user wants express biploar_treatment
     steps:
-    - intent: biploar_treatment
-    - action: utter_biploar_treatment
+      - intent: biploar_treatment
+      - action: utter_biploar_treatment
 
   - story: user wants express bipolar_affecting_daily_life
     steps:
-    - intent: bipolar_affecting_daily_life
-    - action: utter_bipolar_affecting_daily_life
+      - intent: bipolar_affecting_daily_life
+      - action: utter_bipolar_affecting_daily_life
 
   - story: user wants express natural_treatment_bipolar
     steps:
-    - intent: natural_treatment_bipolar
-    - action: utter_natural_treatment_bipolar
+      - intent: natural_treatment_bipolar
+      - action: utter_natural_treatment_bipolar
 
   - story: user wants express love_one_bipolar
     steps:
-    - intent: love_one_bipolar
-    - action: utter_love_one_bipolar
+      - intent: love_one_bipolar
+      - action: utter_love_one_bipolar
 
   - story: user wants express types_of_bipolar
     steps:
-    - intent: types_of_bipolar
-    - action: utter_types_of_bipolar
+      - intent: types_of_bipolar
+      - action: utter_types_of_bipolar
 
   - story: user wants express bipolar_impact_relationship
     steps:
-    - intent: bipolar_impact_relationship
-    - action: utter_bipolar_impact_relationship
+      - intent: bipolar_impact_relationship
+      - action: utter_bipolar_impact_relationship
 
   - story: user wants express genetic_bipolar
     steps:
-    - intent: genetic_bipolar
-    - action: utter_genetic_bipolar
+      - intent: genetic_bipolar
+      - action: utter_genetic_bipolar
 
   - story: user wants express misconception_on_bipolar
     steps:
-    - intent: misconception_on_bipolar
-    - action: utter_misconception_on_bipolar
+      - intent: misconception_on_bipolar
+      - action: utter_misconception_on_bipolar
 
   - story: user wants express therapist_for_bipolar
     steps:
-    - intent: therapist_for_bipolar
-    - action: utter_therapist_for_bipolar
+      - intent: therapist_for_bipolar
+      - action: utter_therapist_for_bipolar
 
   - story: user wants express bipolar_in_children
     steps:
-    - intent: bipolar_in_children
-    - action: utter_bipolar_in_children
+      - intent: bipolar_in_children
+      - action: utter_bipolar_in_children
 
   - story: user wants express bipolar_triggers
     steps:
-    - intent: bipolar_triggers
-    - action: utter_bipolar_triggers
+      - intent: bipolar_triggers
+      - action: utter_bipolar_triggers
 
   - story: user wants express bipolar_treatment
     steps:
-    - intent: bipolar_treatment
-    - action: utter_bipolar_treatment
+      - intent: bipolar_treatment
+      - action: utter_bipolar_treatment
 
   - story: user wants express cause_of_bipolar
     steps:
-    - intent: cause_of_bipolar
-    - action: utter_cause_of_bipolar
+      - intent: cause_of_bipolar
+      - action: utter_cause_of_bipolar
 
   - story: user wants express PSTD_symptom
     steps:
-    - intent: PSTD_symptom
-    - action: utter_PSTD_symptom
+      - intent: PSTD_symptom
+      - action: utter_PSTD_symptom
 
   - story: user wants express defination_PSTD
     steps:
-    - intent: defination_PSTD
-    - action: utter_defination_PSTD
+      - intent: defination_PSTD
+      - action: utter_defination_PSTD
 
   - story: user wants express symptoms_PSTD
     steps:
-    - intent: symptoms_PSTD
-    - action: utter_symptoms_PSTD
+      - intent: symptoms_PSTD
+      - action: utter_symptoms_PSTD
 
   - story: user wants express effect_PSTD
     steps:
-    - intent: effect_PSTD
-    - action: utter_effect_PSTD
-
+      - intent: effect_PSTD
+      - action: utter_effect_PSTD
 
   - story: user wants express cause_PSTD
     steps:
-    - intent: cause_PSTD
-    - action: utter_cause_PSTD
+      - intent: cause_PSTD
+      - action: utter_cause_PSTD
 
   - story: user wants express treatment_PSTD
     steps:
-    - intent: treatment_PSTD
-    - action: utter_treatment_PSTD
+      - intent: treatment_PSTD
+      - action: utter_treatment_PSTD
 
   - story: user wants express long_term_effects_PSTD
     steps:
-    - intent: long_term_effects_PSTD
-    - action: utter_long_term_effects_PSTD
+      - intent: long_term_effects_PSTD
+      - action: utter_long_term_effects_PSTD
 
   - story: user wants express helping_loved_one_PSTD
     steps:
-    - intent: helping_loved_one_PSTD
-    - action: utter_helping_loved_one_PSTD
+      - intent: helping_loved_one_PSTD
+      - action: utter_helping_loved_one_PSTD
 
   - story: user wants express misconception_PSTD
     steps:
-    - intent: misconception_PSTD
-    - action: utter_misconception_PSTD
+      - intent: misconception_PSTD
+      - action: utter_misconception_PSTD
 
   - story: user wants express how_coommon_PTSD
     steps:
-    - intent: how_coommon_PTSD
-    - action: utter_how_coommon_PTSD
+      - intent: how_coommon_PTSD
+      - action: utter_how_coommon_PTSD
 
   - story: user wants express prevent_PTSD
     steps:
-    - intent: prevent_PTSD
-    - action: utter_prevent_PTSD
+      - intent: prevent_PTSD
+      - action: utter_prevent_PTSD
 
   - story: user wants express Types_PTSD
     steps:
-    - intent: Types_PTSD
-    - action: utter_Types_PTSD
+      - intent: Types_PTSD
+      - action: utter_Types_PTSD
 
   - story: user wants express complex_PTSD
     steps:
-    - intent: complex_PTSD
-    - action: utter_complex_PTSD
-
-  - story: user wants express 
-    steps:
-    - intent: 
-    - action: utter_
+      - intent: complex_PTSD
+      - action: utter_complex_PTSD
 
   - story: user wants express self_Care_PTSD
     steps:
-    - intent: self_Care_PTSD
-    - action: utter_self_Care_PTSD
+      - intent: self_Care_PTSD
+      - action: utter_self_Care_PTSD
 
   - story: user wants express define_Schizophrenia
     steps:
-    - intent: define_Schizophrenia
-    - action: utter_define_Schizophrenia
+      - intent: define_Schizophrenia
+      - action: utter_define_Schizophrenia
 
   - story: user wants express symptom_Schizophrenia
     steps:
-    - intent: symptom_Schizophrenia
-    - action: utter_symptom_Schizophrenia
+      - intent: symptom_Schizophrenia
+      - action: utter_symptom_Schizophrenia
 
   - story: user wants express cause_Schizophrenia
     steps:
-    - intent: cause_Schizophrenia
-    - action: utter_cause_Schizophrenia
+      - intent: cause_Schizophrenia
+      - action: utter_cause_Schizophrenia
 
   - story: user wants express genetic_Schizophrenia
     steps:
-    - intent: genetic_Schizophrenia
-    - action: utter_genetic_Schizophrenia
+      - intent: genetic_Schizophrenia
+      - action: utter_genetic_Schizophrenia
 
   - story: user wants express treatment_Schizophrenia
     steps:
-    - intent: treatment_Schizophrenia
-    - action: utter_treatment_Schizophrenia
+      - intent: treatment_Schizophrenia
+      - action: utter_treatment_Schizophrenia
 
   - story: user wants express types_Schizophrenia
     steps:
-    - intent: types_Schizophrenia
-    - action: utter_types_Schizophrenia
+      - intent: types_Schizophrenia
+      - action: utter_types_Schizophrenia
 
   - story: user wants express Negetive_symptoms_Schizophrenia
     steps:
-    - intent: Negetive_symptoms_Schizophrenia
-    - action: utter_Negetive_symptoms_Schizophrenia
-
+      - intent: Negetive_symptoms_Schizophrenia
+      - action: utter_Negetive_symptoms_Schizophrenia
 
   - story: user wants express positive_symptom_Schizophrenia
     steps:
-    - intent: positive_symptom_Schizophrenia
-    - action: utter_positive_symptom_Schizophrenia
+      - intent: positive_symptom_Schizophrenia
+      - action: utter_positive_symptom_Schizophrenia
 
   - story: user wants express social_effect_Schizophrenia
     steps:
-    - intent: social_effect_Schizophrenia
-    - action: utter_social_effect_Schizophrenia
+      - intent: social_effect_Schizophrenia
+      - action: utter_social_effect_Schizophrenia
 
   - story: user wants express love_one_Schizophrenia
     steps:
-    - intent: love_one_Schizophrenia
-    - action: utter_love_one_Schizophrenia
+      - intent: love_one_Schizophrenia
+      - action: utter_love_one_Schizophrenia
 
   - story: user wants express misconception_schizophrenia
     steps:
-    - intent: misconception_schizophrenia
-    - action: utter_misconception_schizophrenia
+      - intent: misconception_schizophrenia
+      - action: utter_misconception_schizophrenia
 
   - story: user wants express Schizophrenia_affects
     steps:
-    - intent: Schizophrenia_affects
-    - action: utter_Schizophrenia_affects
+      - intent: Schizophrenia_affects
+      - action: utter_Schizophrenia_affects
 
   - story: user wants express Schizophrenia_and_multiple_personality_disorder
     steps:
-    - intent: Schizophrenia_and_multiple_personality_disorder
-    - action: utter_Schizophrenia_and_multiple_personality_disorder
+      - intent: Schizophrenia_and_multiple_personality_disorder
+      - action: utter_Schizophrenia_and_multiple_personality_disorder
 
   - story: user wants express Signs_of_schizophrenia
     steps:
-    - intent: Signs_of_schizophrenia
-    - action: utter_Signs_of_schizophrenia
+      - intent: Signs_of_schizophrenia
+      - action: utter_Signs_of_schizophrenia
 
   - story: user wants express schizophrenia_in_children
     steps:
-    - intent: schizophrenia_in_children
-    - action: utter_schizophrenia_in_children
+      - intent: schizophrenia_in_children
+      - action: utter_schizophrenia_in_children
 
   - story: user wants express therapy_schizophrenia
     steps:
-    - intent: therapy_schizophrenia
-    - action: utter_therapy_schizophrenia
+      - intent: therapy_schizophrenia
+      - action: utter_therapy_schizophrenia
 
   - story: user wants express long_term_effect_schizophrenia
     steps:
-    - intent: long_term_effect_schizophrenia
-    - action: utter_long_term_effect_schizophrenia
+      - intent: long_term_effect_schizophrenia
+      - action: utter_long_term_effect_schizophrenia
 
   - story: user wants express link_between_trauma_schizophrenia
     steps:
-    - intent: link_between_trauma_schizophrenia
-    - action: utter_link_between_trauma_schizophrenia
+      - intent: link_between_trauma_schizophrenia
+      - action: utter_link_between_trauma_schizophrenia
 
   - story: user wants express define_eating_disorder
     steps:
-    - intent: define_eating_disorder
-    - action: utter_define_eating_disorder
+      - intent: define_eating_disorder
+      - action: utter_define_eating_disorder
 
   - story: user wants express types_eating_disorder
     steps:
-    - intent: types_eating_disorder
-    - action: utter_types_eating_disorder
+      - intent: types_eating_disorder
+      - action: utter_types_eating_disorder
 
   - story: user wants express symptoms__eating_disorder
     steps:
-    - intent: symptoms__eating_disorder
-    - action: utter_symptoms__eating_disorder
+      - intent: symptoms__eating_disorder
+      - action: utter_symptoms__eating_disorder
 
   - story: user wants express cause_eating_disorder
     steps:
-    - intent: cause_eating_disorder
-    - action: utter_cause_eating_disorder
+      - intent: cause_eating_disorder
+      - action: utter_cause_eating_disorder
 
   - story: user wants express affecting_age_group_eating_disorder
     steps:
-    - intent: affecting_age_group_eating_disorder
-    - action: utter_affecting_age_group_eating_disorder
+      - intent: affecting_age_group_eating_disorder
+      - action: utter_affecting_age_group_eating_disorder
 
   - story: user wants express treatment_eating_disorder
     steps:
-    - intent: treatment_eating_disorder
-    - action: utter_treatment_eating_disorder
+      - intent: treatment_eating_disorder
+      - action: utter_treatment_eating_disorder
 
   - story: user wants express therapy_eating_disorder
     steps:
-    - intent: therapy_eating_disorder
-    - action: utter_therapy_eating_disorder
-
+      - intent: therapy_eating_disorder
+      - action: utter_therapy_eating_disorder
 
   - story: user wants express long_term_effect_eating_disorder
     steps:
-    - intent: long_term_effect_eating_disorder
-    - action: utter_long_term_effect_eating_disorder
+      - intent: long_term_effect_eating_disorder
+      - action: utter_long_term_effect_eating_disorder
 
   - story: user wants express social_life_affect_eating_disorder
     steps:
-    - intent: social_life_affect_eating_disorder
-    - action: utter_social_life_affect_eating_disorder
+      - intent: social_life_affect_eating_disorder
+      - action: utter_social_life_affect_eating_disorder
 
   - story: user wants express love_one_eating_disorder
     steps:
-    - intent: love_one_eating_disorder
-    - action: utter_love_one_eating_disorder
+      - intent: love_one_eating_disorder
+      - action: utter_love_one_eating_disorder
 
   - story: user wants express having_eating_disorder
     steps:
-    - intent: having_eating_disorder
-    - action: utter_having_eating_disorder
+      - intent: having_eating_disorder
+      - action: utter_having_eating_disorder
 
   - story: user wants express misconception__eating_disorder
     steps:
-    - intent: misconception__eating_disorder
-    - action: utter_misconception__eating_disorder
+      - intent: misconception__eating_disorder
+      - action: utter_misconception__eating_disorder
 
-  - story: user wants express 
+  - story: user wants express
     steps:
-    - intent: self_help_eating_disorder
-    - action: utter_self_help_eating_disorder
+      - intent: self_help_eating_disorder
+      - action: utter_self_help_eating_disorder
 
-  - story: user wants express 
+  - story: user wants express
     steps:
-    - intent: coping_mechanism
-    - action: utter_coping_mechanism
+      - intent: coping_mechanism
+      - action: utter_coping_mechanism
 
   - story: user wants express define_Disruptive_behavior
     steps:
-    - intent: define_Disruptive_behavior
-    - action: utter_define_Disruptive_behavior
+      - intent: define_Disruptive_behavior
+      - action: utter_define_Disruptive_behavior
 
   - story: user wants express symptom_Disruptive_behavior
     steps:
-    - intent: symptom_Disruptive_behavior
-    - action: utter_symptom_Disruptive_behavior
+      - intent: symptom_Disruptive_behavior
+      - action: utter_symptom_Disruptive_behavior
 
   - story: user wants express cause_Disruptive_behavior
     steps:
-    - intent: cause_Disruptive_behavior
-    - action: utter_cause_Disruptive_behavior
+      - intent: cause_Disruptive_behavior
+      - action: utter_cause_Disruptive_behavior
 
   - story: user wants express treatment_Disruptive_behavior
     steps:
-    - intent: treatment_Disruptive_behavior
-    - action: utter_treatment_Disruptive_behavior
+      - intent: treatment_Disruptive_behavior
+      - action: utter_treatment_Disruptive_behavior
 
   - story: user wants express social_Disruptive_behavior
     steps:
-    - intent: social_Disruptive_behavior
-    - action: utter_social_Disruptive_behavior
+      - intent: social_Disruptive_behavior
+      - action: utter_social_Disruptive_behavior
 
   - story: user wants express prevention_Disruptive_behavior
     steps:
-    - intent: prevention_Disruptive_behavior
-    - action: utter_prevention_Disruptive_behavior
+      - intent: prevention_Disruptive_behavior
+      - action: utter_prevention_Disruptive_behavior
 
   - story: user wants express oppositional_defiant_disorder
     steps:
-    - intent: oppositional_defiant_disorder
-    - action: utter_oppositional_defiant_disorder
+      - intent: oppositional_defiant_disorder
+      - action: utter_oppositional_defiant_disorder
 
   - story: user wants express Conduct_disorder
     steps:
-    - intent: Conduct_disorder
-    - action: utter_Conduct_disorder
+      - intent: Conduct_disorder
+      - action: utter_Conduct_disorder
 
   - story: user wants express triggers_disruptive
     steps:
-    - intent: triggers_disruptive
-    - action: utter_triggers_disruptive
+      - intent: triggers_disruptive
+      - action: utter_triggers_disruptive
 
   - story: user wants express define_Neurodevelopmental
     steps:
-    - intent: define_Neurodevelopmental
-    - action: utter_define_Neurodevelopmental
+      - intent: define_Neurodevelopmental
+      - action: utter_define_Neurodevelopmental
 
   - story: user wants express Symptoms_autism_spectrum
     steps:
-    - intent: Symptoms_autism_spectrum
-    - action: utter_Symptoms_autism_spectrum
-
+      - intent: Symptoms_autism_spectrum
+      - action: utter_Symptoms_autism_spectrum
 
   - story: user wants express cause_neurodevelopmental
     steps:
-    - intent: cause_neurodevelopmental
-    - action: utter_cause_neurodevelopmental
+      - intent: cause_neurodevelopmental
+      - action: utter_cause_neurodevelopmental
 
   - story: user wants express treatment_neurodevelopmental
     steps:
-    - intent: treatment_neurodevelopmental
-    - action: utter_treatment_neurodevelopmental
+      - intent: treatment_neurodevelopmental
+      - action: utter_treatment_neurodevelopmental
 
   - story: user wants express socail_life_effect_neurodevelopmental
     steps:
-    - intent: socail_life_effect_neurodevelopmental
-    - action: utter_socail_life_effect_neurodevelopmental
+      - intent: socail_life_effect_neurodevelopmental
+      - action: utter_socail_life_effect_neurodevelopmental
 
   - story: user wants express prevention_neurodevelopmental
     steps:
-    - intent: prevention_neurodevelopmental
-    - action: utter_prevention_neurodevelopmental
+      - intent: prevention_neurodevelopmental
+      - action: utter_prevention_neurodevelopmental
 
   - story: user wants express deine_ADHD
     steps:
-    - intent: deine_ADHD
-    - action: utter_deine_ADHD
+      - intent: deine_ADHD
+      - action: utter_deine_ADHD
 
   - story: user wants express Symptoms_ADHD
     steps:
-    - intent: Symptoms_ADHD
-    - action: utter_Symptoms_ADHD
+      - intent: Symptoms_ADHD
+      - action: utter_Symptoms_ADHD
 
   - story: user wants express ADHD_diagnosed
     steps:
-    - intent: ADHD_diagnosed
-    - action: utter_ADHD_diagnosed
+      - intent: ADHD_diagnosed
+      - action: utter_ADHD_diagnosed
 
   - story: user wants express treatment_ADHD
     steps:
-    - intent: treatment_ADHD
-    - action: utter_treatment_ADHD
+      - intent: treatment_ADHD
+      - action: utter_treatment_ADHD
 
   - story: user wants express define_dyslexia
     steps:
-    - intent: define_dyslexia
-    - action: utter_define_dyslexia
+      - intent: define_dyslexia
+      - action: utter_define_dyslexia
 
   - story: user wants express symptoms_dyslexia
     steps:
-    - intent: symptoms_dyslexia
-    - action: utter_symptoms_dyslexia
+      - intent: symptoms_dyslexia
+      - action: utter_symptoms_dyslexia
 
   - story: user wants express dyslexia_diagnosed
     steps:
-    - intent: dyslexia_diagnosed
-    - action: utter_dyslexia_diagnosed
+      - intent: dyslexia_diagnosed
+      - action: utter_dyslexia_diagnosed
 
   - story: user wants express treatment_dyslexia
     steps:
-    - intent: treatment_dyslexia
-    - action: utter_treatment_dyslexia
+      - intent: treatment_dyslexia
+      - action: utter_treatment_dyslexia
 
   - story: user wants express ADHD_fullform
     steps:
-    - intent: ADHD_fullform
-    - action: utter_ADHD_fullform
+      - intent: ADHD_fullform
+      - action: utter_ADHD_fullform
+
+  # - story: Respond fallback
+  #   steps:
+  #     - intent: bot_challenge
+  #     - action: utter_default

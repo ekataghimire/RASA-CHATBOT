@@ -25,6 +25,24 @@ nlu:
       - what
       - how
       - when
+      - hey there
+      - hello mate
+      - hello friend
+      - heya
+      - ssup
+      - sup
+      - whats up
+      - greetings
+      - I greet you
+      - hi there
+      - hello there
+      - lovely day isn't it
+      - hello again
+      - just going to say hi
+      - a good day
+      - afternoon
+      - hello hi
+      - heya
 
   - intent: asking_bot
     examples: |
@@ -71,6 +89,42 @@ nlu:
       - have a good day
       - end
       - stop
+      -  see you later
+      -  till we meet again
+      -  until nex time
+      -  see ya
+      -  talk to you later
+      -  ttyl
+      -  meet you again soon
+      -  okay see you later
+      -  hope to see you later
+      -  bye for now
+      -  till next time
+      -  I must go
+      -  see you
+      -  see you soon
+      -  bye-bye
+      -  good bye
+      -  bye bye see you
+      -  bye bye see you soon
+      -  bye bye take care
+      -  I said bye
+      -  never mind bye
+      -  now bye
+      -  that's all goodbye
+      -  that's it goodbye
+      -  leave me alone
+      -  go to bed
+      -  goodbye for now
+      -  you can go now
+      -  get lost
+      -  goodbye see you later
+      -  alright bye
+      -  thanks bye bye
+      -  okay bye
+      -  okay thank you bye
+      -  see you tomorrow
+      -  ok bye
 
   - intent: affirm
     examples: |
@@ -82,6 +136,86 @@ nlu:
       - correct
       - great
       - wow it looks good
+      - affirmative
+      - okay
+      - that's correct
+      - it's fine
+      - go ahead
+      - sounds good
+      - ok
+      - okie dokie
+      - sure
+      - go for it
+      - yeah
+      - yea
+      - do it
+      - I guess
+      - yeah sure
+      - why not
+      - please do
+      - sure is
+      - I agree
+      - I don't mind
+      - certainly
+      - exactly
+      - yes I agree
+      - I think so
+      - yes it is
+      - right
+      - okay then
+      - yes of course
+      - yes I do
+      - that s okay
+      - I do
+      - yup
+      - ya
+      - oh yes
+      - yes sure
+      - obviously
+      - k
+      - sure why not
+      - yeah right
+      - yeah of course
+      - absolutely
+      - yes indeed
+      - ok sure
+      - ok yes
+      - yes correct
+      - ok thank you
+      - sure thing
+      - ye
+      - confirm
+      - yep
+      - looks good
+      - yes thank you
+      - definitely
+      - yes right
+      - yes I would like to
+      - alrighty
+      - yes definitely
+      - yeh
+      - yes it is correct
+      - yeah that's right
+      - ok you can
+      - yap
+      - yes you may
+      - confirmed
+      - of course why not
+      - yes that's fine
+      - yeah go ahead
+      - yeah I'm sure
+      - okay sounds good
+      - okay that's fine
+      - yeah exactly
+      - that is ok
+      - this is correct
+      - ok go ahead
+      - yes this is correct
+      - nevermind its okay
+      - okey
+      - yes for sure
+      - all right
+      - uhgf
 
   - intent: deny
     examples: |
@@ -92,6 +226,73 @@ nlu:
       - don't like that
       - no way
       - not really
+      - never
+      - don't like that
+      - no way
+      - not really
+      - never though of it
+      - how about no
+      - don t have a sense
+      - don't
+      - I don't want that
+      - I disagree
+      - disagree
+      - I don't want
+      - not interested
+      - no it isn't
+      - no I don't
+      - I'm not
+      - na
+      - no that's fine thank you
+      - I said no
+      - of course not
+      - nah
+      - no tanks
+      - no never
+      - no need
+      - no thanks
+      - no sorry
+      - do not
+      - not today
+      - no it's not
+      - absolutely not
+      - not that
+      - nooo
+      - nope
+      - I don't want to
+      - no I would not
+      - let 's not
+      - not needed
+      - not this time
+      - no don't do that
+      - thanks but no thanks
+      - no that's wrong
+      - not this
+      - definitely not
+      - not at this time
+      - not exactly
+      - no don't
+      - not really no
+      - no thank you not right now
+      - actually no
+      - no leave it
+      - sorry no
+      - no incorrect
+      - nope sorry
+      - I say no
+      - not right now thanks
+      - I think no
+      - absolutely no
+      - no actually
+      - apparently not
+      - no do not
+      - no just no
+      - no but thank you
+      - no need thanks
+      - no thank you though
+      - no thank you very much
+      - no thanks not right now
+      - no forget
 
   - intent: mood_great
     examples: |
@@ -110,12 +311,9 @@ nlu:
       - so good
       - so perfect
 
-  - intent: mood_unhappy
+  - intent: sad
     examples: |
-      - my day was horrible
       - I am sad
-      - I don't feel very well
-      - I am disappointed
       - super sad
       - I'm so sad
       - sad
@@ -124,6 +322,22 @@ nlu:
       - not good
       - not very good
       - extremly sad
+      - so saad
+      - so sad
+      - feel really sad today
+      - ca it seem shake feel sad 
+      - feel like stuck rut sad despair
+      - it know snap sad
+      - struggle find motive any sad
+
+  - intent: mood_unhappy
+    examples: |
+      - my day was horrible
+      - I don't feel very well
+      - I am disappointed
+      - unhappy
+      - not good
+      - not very good
       - so saad
       - so sad
       - feel really sad today
@@ -136,6 +350,12 @@ nlu:
       - feel like weight chest ca it breath
       - struggle find motive any sad
       - feel like go motion life right
+      - i feel so empty 
+      - i am feeling anxious
+      - i am feeling out of the blue
+      - i feel so irritated
+      - so irritated
+      - i feel empty
 
   - intent: bot_challenge
     examples: |
@@ -204,6 +424,8 @@ nlu:
       - like it
       - love it
       - awww
+
+  #still doubt
   # basic normal conversations
   - intent: smalltalk_agent_age
     examples: |
@@ -216,7 +438,54 @@ nlu:
       - what's your age
       - tell me your age
       - how old are you
-
+      - whats your age?
+      - how old?
+      - what's your age?
+      - when were you born?
+      - what is your birthday?
+      - when is your birthday?
+      - how many years old are you?
+      - do you know how old you are?
+      - what is your exact age?
+      - what year were you born?
+      - can you tell me your age?
+      - What is your age?
+      - What is your birthdate?
+      - How old will you be on your next birthday?
+      - When do you celebrate your day of birth?
+      - How old were you on your last birthday?
+      - How many candles were on your last birthday cake?
+      - Do you have friends the same age as you, if so, how old are they?
+      - Tell me your day, month and year of birth.
+      - Whats your age?
+      - and you are how many years old?
+      - whats your birth year?
+      - what age were you when you celebrated your last birthday?
+      - how old were you when you celebrated your last birthday?
+      - tell me your age?
+      - how about your age
+      - how old were you on your last birthday?
+      - what age are you
+      - how old will you be this year?
+      - What year were you born?
+      - How long have you been around?
+      - How long have you been alive?
+      - What was your age on your last birthday?
+      - What will be your age on your next birthday?
+      - How many years have you lived?
+      - How many years have you been alive?
+      - How long have you occupied the earth?
+      - What is your count of years being alive so far?
+      - what is your age?
+      - in what year were you born?
+      - what number represents your age?
+      - tell me how old you are?
+      - give me your age?
+      - tell me your age number?
+      - can you tell me exactly how old you are?
+      - can you tell me what number represents your age?
+      - how old are u
+  #not working why i dont get it
   - intent: smalltalk_agent_annoying
     examples: |
       - you're annoying
@@ -267,7 +536,6 @@ nlu:
       - you're awful
       - you are not cool
       - you are not good
-      - you are so bad
       - you are so useless
       - you are terrible
       - you are totally useless
@@ -282,7 +550,7 @@ nlu:
       - you're worthless
 
   - intent: smalltalk_agent_what_they_doing
-    examples:
+    examples: |
       - what are you doing
       - what are you up to
       - what is your business
@@ -299,6 +567,7 @@ nlu:
       - be smarter
       - be smart
       - get qualified
+
   - intent: smalltalk_agent_beautiful
     examples: |
       - you're cute
@@ -359,6 +628,7 @@ nlu:
 
   - intent: smalltalk_agent_birth_date
     examples: |
+      - your birthdate
       - your birth date
       - when is your birthday
       - when do you celebrate your birthday
@@ -508,7 +778,6 @@ nlu:
       - you're incredibly funny
       - you are funny
       - you're the funniest
-      - you are so funny
       - you are very funny
       - that was funny
 
@@ -1146,7 +1415,7 @@ nlu:
       - do nothing
       - I said cancel cancel
       - but can you cancel it
-
+  # not working
   - intent: smalltalk_confirmation_no
     examples: |
       - how about no
@@ -1158,7 +1427,6 @@ nlu:
       - disagree
       - I don't want
       - not interested
-      - I don't think so
       - no way
       - no it isn't
       - no I don't
@@ -1218,6 +1486,7 @@ nlu:
       - no thanks not right now
       - no forget
 
+  # not working
   - intent: smalltalk_dialog_hold_on
     examples: |
       - wait a second
@@ -1258,11 +1527,14 @@ nlu:
       - not care at all
       - don't care at all
       - not caring at all
+      - i dont care
+      - i DONT CARE
 
+  #not working
   - intent: smalltalk_dialog_sorry
     examples: |
       - excuse me
-      - apologise
+      - apologis/e
       - I apologize
       - sorry
       - I'm sorry
@@ -1294,6 +1566,7 @@ nlu:
       - what do you mean exactly
       - but what do you mean
 
+  #not working
   - intent: smalltalk_dialog_wrong
     examples: |
       - that was wrong
@@ -1341,6 +1614,7 @@ nlu:
       - hehe
       - hehehe
       - lmao
+      - you are so funny
 
   - intent: smalltalk_emotions_wow
     examples: |
@@ -1385,7 +1659,62 @@ nlu:
       - okay thank you bye
       - see you tomorrow
       - ok bye
-
+      - cu
+      - good by
+      - cee you later
+      - good night
+      - bye
+      - goodbye
+      - have a nice day
+      - see you around
+      - bye bye
+      - see you later
+      - talk to you soon 
+      - take care
+      - nice talk
+      - it was quite good
+      - okay
+      - okay then
+      - have a good day
+      - end
+      - stop
+      -  see you later
+      -  till we meet again
+      -  until nex time
+      -  see ya
+      -  talk to you later
+      -  ttyl
+      -  meet you again soon
+      -  okay see you later
+      -  hope to see you later
+      -  bye for now
+      -  till next time
+      -  I must go
+      -  see you
+      -  see you soon
+      -  bye-bye
+      -  good bye
+      -  bye bye see you
+      -  bye bye see you soon
+      -  bye bye take care
+      -  I said bye
+      -  never mind bye
+      -  now bye
+      -  that's all goodbye
+      -  that's it goodbye
+      -  leave me alone
+      -  go to bed
+      -  goodbye for now
+      -  you can go now
+      -  get lost
+      -  goodbye see you later
+      -  alright bye
+      -  thanks bye bye
+      -  okay bye
+      -  okay thank you bye
+      -  see you tomorrow
+      -  ok bye
+  #not working
   - intent: smalltalk_greetings_goodevening
     examples: |
       - good evening
@@ -1431,26 +1760,25 @@ nlu:
       - okay have a good night
       - have a good night
 
-  - intent: smalltalk_greetings_hello
-    examples: |
-      - long time no see
-      - hello
-      - hi
-      - howdy
-      - hey there
-      - hey
-      - greetings
-      - I greet you
-      - hi there
-      - hello there
-      - lovely day isn't it
-      - hello again
-      - just going to say hi
-      - a good day
-      - afternoon
-      - hello hi
-      - heya
+  # - intent: smalltalk_greetings_hello
+  #   examples: |
+  #     - long time no see
+  # #not working
+  #     - hi
+  #     - howdy
 
+  #     - greetings
+  #     - I greet you
+  #     - hi there
+  #     - hello there
+  #     - lovely day isn't it
+  #     - hello again
+  #     - just going to say hi
+  #     - a good day
+  #     - afternoon
+  #     - hello hi
+  #     - heya
+  #not working
   - intent: smalltalk_greetings_how_are_you
     examples: |
       - how is your morning so far
@@ -1587,6 +1915,48 @@ nlu:
       - this is boring
       - very boring
       - it bores me
+  #not working
+  - intent: telljoke
+    examples: |
+      - tell me a joke
+      - Say something funny.
+      - Give me a joke.
+      - Give me a funny joke.
+      - What's a good joke?
+      - Do you have any jokes?
+      - Do you know any jokes?
+      - I need a good joke.
+      - Tell me the best joke you know.
+      - Tell joke.
+      - Tell me something funny.
+      - Share a joke with me!
+      - Tell me something humorous!
+      - Will you tell me a joke.
+      - Can you tell me a joke.
+      - Would you tell me a joke
+      - Please tell me a joke.
+      - Could you tell me a joke.
+      - Would you share a joke with me.
+      - Could you please share a joke with me.
+      - Entertain me with a joke.
+      - Tell me something that you think will make me laugh.
+      - I want to hear something funny.
+      - Give me some comic relief.
+      - Can you tell a joke?
+      - Know any jokes?
+      - Come up with a joke you think I'll find funny.
+      - Let's hear a joke from you.
+      - say a joke that's funny
+      - make me laugh with a joke
+      - tell me something funny, like a joke
+      - say a joke
+      - tell me a short joke
+      - tell me a story joke
+      - say a funny joke
+      - say a joke that's so bad it's funny
+      - make me laugh with a bad joke
+      - give me a good joke
+      - you can say a joke
 
   - intent: smalltalk_user_busy
     examples: |
@@ -1610,12 +1980,18 @@ nlu:
       - I can't get to sleep
       - I can't get no sleep
       - I'm insomniac
+      - i am insominac
+      - i cannot sleep
+      - i am sleepless
+      - i cannot get any sleep
+      - i cannot seem to get any sleep
 
   - intent: smalltalk_user_does_not_want_to_talk
     examples: |
       - bad time for talking
       - I don't want to talk
       - let's not talk
+      - let us not talk
       - I'm not talking to you anymore
       - I don't want to talk to you
       - let's stop talking for a minute
@@ -1689,6 +2065,9 @@ nlu:
       - joking
       - just kidding
       - kidding
+      - kiding
+      - kidn
+      - kiddn
       - I'm just playing with you
 
   - intent: smalltalk_user_likes_agent
@@ -1811,6 +2190,7 @@ nlu:
       - I missed you
       - I've missed you
 
+    #not working
   - intent: smalltalk_user_needs_advice
     examples: |
       - what should I do about it
@@ -1839,10 +2219,8 @@ nlu:
 
   - intent: smalltalk_user_sad
     examples: |
-      - I am sad
       - I'm grieving
       - I am depressed
-      - I am feeling sad
       - I am upset
       - I'm unhappy
       - I'm having a bad day
@@ -1884,6 +2262,7 @@ nlu:
       - I'm waiting
       - still waiting
       - I'll wait
+      - still wait
       - I can't wait anymore
       - how long do I have to wait
 
@@ -1918,7 +2297,7 @@ nlu:
       - I'll be back
       - I promise to come back
       - I'll be back in a few minutes
-
+  #not working
   # mental health conversational dataset
   - intent: mental_health_concern
     examples: |
@@ -1960,18 +2339,15 @@ nlu:
 
   - intent: depression_symptom
     examples: |
-      - sad hopelessness 
+      - hopelessness 
       - lack interest
       - not enjoying lifeany more
       - oversleeping
-      - no sleep
-      - sleep deprived
       - no joy
       - lack of joy
       - how to know if i have depression
       - how to know you are depressed
       - what is to like having depression
-
 
   - intent: recommendation_depression
     examples: |
@@ -2005,8 +2381,84 @@ nlu:
       - aftermath of depression
       - result of depression
       - what happens after you suffered from depression
+  #not working idiot dumb
+  - intent: handleinsult
+    examples: |
+      - you're a loser lmao
+      - you are a stupid bot
+      - i hate you
+      - Stupid
+      - fuck you
+      - so dumb
+      - you are a moron
+      - you are an idiot
+      - so fucking dumb
+      - are you brain dead?
+      - how can you be such an idiot?
+      - a baby knows more than you
+      - i hate your dumb face
+      - you are fucking stupid
+      - bloody dunce
+      - You're an idiot.
+      - You are a fool.
+      - You're foolish.
+      - You are dumb.
+      - You have no sense.
+      - You are unintelligent.
+      - You're a dolt.
+      - You're a dunce.
+      - You have no brains.
+      - You have no intelligence.
+      - You are an idiot.
+      - You lack intelligence.
+      - You are unknowing.
+      - You are shortsighted.
+      - Your intelligence is laughable.
+      - You know nothing.
+      - You lack understanding.
+      - Your mindset is naive.
+      - You brain is dull.
+      - you are dumb
+      - you're an idiot
+      - God you're a moron
+      - you're so dumb
+      - you are idiotic
+      - you're the most moronic person I know
+      - I can't believe how dumb you are
+      - you are unintelligent
+      - you're not smart
+      - you are so ignorant
+      - you are stupid
+      - you're dumb
+      - asshole
+      - bitch
+      - fuck u
+      - idiot
+      - deal with my ass, you bitch
+      - you son of a bitch
+      - shut up asshole
+      - you asshole
+      - are u dump?
+      - fuck off
+      - fuck
+      - Fuck
+      - Fuck you
+      - fuck you machine learning bot
+      - Fuck u
+      - what fuck
+      - fucking stupid
+      - you are fucking stupid guy！
+      - go fuck yourself
+      - Fuck off
+      - fuck rasa
+      - fuck you!
+      - Fuck Off
+      - ok fuck you
+      - FUCK
+      - fucking work
+      - ok shut up
 
-  -intent: fix_Depression
+  - intent: fix_Depression
     examples: |
       - i want to get rid of depression
       - get away from depression 
@@ -2021,7 +2473,7 @@ nlu:
       - set free of mental health issues
       - i dont want mental health issues
       - i think i have anxiety
-
+  #not working - working but i need therapist should provide with the therapist number location
   - intent: reaching_out_counseling
     examples: |
       - i am going to therapist nothing helped 
@@ -2035,6 +2487,7 @@ nlu:
       - i need therapist
 
   - intent: life_after_depression
+    examples: |
       - what does depression makes you do
       - life after depression
       - depression makes you do
@@ -2065,7 +2518,12 @@ nlu:
 
   - intent: types_of_depression
     examples: |
+      - types of depression
       - type of depression
+      - what are the types of depression
+      - what are the type of depression?
+      - what are the type of depression
+      - give me the type of depression
       - what other type of depression there are
       - other form of depression
       - are there any other form of depression
@@ -2094,7 +2552,7 @@ nlu:
       - stigmatized depression
       - conception towards depression
       - what is the understanding of depression in today's world
-
+  #add the therapist number here , along with the location
   - intent: asking_help_for_depression
     examples: |
       - find therapist
@@ -2106,7 +2564,7 @@ nlu:
       - can i have the recommendaion for therapist
       - hospital depress
       - solution to depress
-      - therapist near me 
+      - therapist near me
 
   - intent: cause_of_depression
     examples: |
@@ -2188,7 +2646,6 @@ nlu:
   - intent: demotivated
     examples: |
       - everyone better than me
-      - am failure
       - feel like failure
       - can't achieve anything
       - unlucky
@@ -2198,6 +2655,7 @@ nlu:
       - do nothing right
       - nothing going my way
 
+  #not working -- need to add the link to the spotiy music
   - intent: calming_yourself
     examples: |
       - feel low
@@ -2206,7 +2664,7 @@ nlu:
       - no enthusiasm
       - mood low
       - so tired
-
+  #not working need to add the motivational line before the helpline
   - intent: exteme_end_suicide
     examples: |
       - want to sucide 
@@ -2293,12 +2751,14 @@ nlu:
 
   - intent: targeted_age_group
     examples: |
+      - what are the targeted age group for anxiety
       - age group anxiety
       - anxiety attack age
 
   - intent: symptoms_anxiety
     examples: |
       - anxiety symptoms
+      - anxiety attack symptoms
       - what are the symptoms od anxiety
       - symptom anxiety
       - what can anxiety do
@@ -2320,16 +2780,17 @@ nlu:
   - intent: low_self_esteem
     examples: |
       - am looser
+      - am loser
       - never won 
       - feel loser everytime
       - it's tough
-      - everyone better than me
       - can't seem to succed
       - am a failure
       - people don't appriciate me
 
   - intent: bullying_issue
     examples: |
+      - i am being bullied
       - am being bullied
       - friend getting bullied
       - friends bully
@@ -2343,9 +2804,6 @@ nlu:
       - trouble concentrating , tense muscles
       - trouble sitting still
       - felling lot of stress
-      - live alone
-      - want to be alone
-      - enjoy lone time more
 
   - intent: treatment_anxiety
     examples: |
@@ -2363,7 +2821,7 @@ nlu:
 
   - intent: anxiety_cause
     examples: |
-      - cause of anxiety
+      - what could be the cause of anxiety?
       - common triggers anxiety
       - reason of anxiety
       - origin anxiety
@@ -2376,7 +2834,7 @@ nlu:
       - remove anxeity
       - overcome anxeity
       - win anxeity
-
+  #not working
   - intent: duration_of_anxiety
     examples: |
       - how long Anxiety last
@@ -2439,7 +2897,7 @@ nlu:
     examples: |
       - can therapy help anxiety
       - therapy anxiety
-
+  #provide mental health supoort line number
   - intent: medication
     examples: |
       - medication depress
@@ -2450,6 +2908,7 @@ nlu:
 
   - intent: excersie_helping_anxiety
     examples: |
+      - can exercise help reducing anxiety
       - excersie helping anxiety
       - can exercise help overcome anxiety
 
@@ -2471,7 +2930,7 @@ nlu:
       - are anxiety depress same
       - depress anxiety diff
       - how do you know if you have depression or anxiety
-
+  #create a story here
   - intent: sexual_abuse
     examples: |
       - I was sexually abused by a family member
@@ -2481,10 +2940,10 @@ nlu:
       - my friend is a sexual abuse victim 
       - sexual abuse
       - I think I might have been sexually abused, but I'm not sure. Can you help me figure it out?
-      - I have scars due to sexual abuse 
+      - I have scars due to sexual abuse
 
   - intent: abuse
-    examples: |   
+    examples: |
       - I was abused by someone close to me when I was younger.
       - My partner is emotionally abusive towards me.
       - I experienced physical abuse as a child.
@@ -2560,7 +3019,7 @@ nlu:
       - prevent myself from getting mental health issues 
       - improve my mood 
       - increase the mental health capacity 
-      - how can i increase the mental health capacity 
+      - how can i increase the mental health capacity
 
   - intent: deadly_disease_survivor_mental_health
     examples: |
@@ -2572,7 +3031,7 @@ nlu:
       - How can I deal with the emotional toll of being a survivor of a deadly disease?
       - What are some self-care tips for someone who has survived a life-threatening illness?
       - I am struggling with survivor's guilt after overcoming a deadly disease. What can I do to alleviate this feeling?
-  
+  #not working
   - intent: user_feeling_worthless
     examples: |
       - I'm Worthless
@@ -2608,6 +3067,8 @@ nlu:
       - what are the steps to go to the counseling
       - counseling 
       - i need counseling
+      - i think i need counseling
+      - do you think i need counseling 
       - recommend me some conseling
 
   - intent: get_counseler
@@ -2641,7 +3102,7 @@ nlu:
       - sucidal thought in a person 
       - why does suicidal thought come in one person 
       - sucidal thought come person
-      - how do sucidal people comprehend their thought 
+      - how do sucidal people comprehend their thought
 
   - intent: self_harm
     examples: |
@@ -2650,8 +3111,8 @@ nlu:
       - self harm 
       - i self harmed myslef
       - my friend is self harming themsleves
-      - my pal is self harming 
-      
+      - my pal is self harming
+
   - intent: past_making_things_hard
     examples: |
       - my past is hunting me 
@@ -2685,10 +3146,14 @@ nlu:
       - I think I might be gay/bi/lesbian/pansexual
       - How can I come out to my family and friends?
       - come out 
+      - am i gay
+      - am  i lesbian
+      - i want to be a girl 
+      - i want to be a boy 
       - society not accepting my sexual orientaion.
       - sexual orientation confusion 
       - I'm struggling with societal pressure to conform to heteronormative standards
-
+  #not working
   - intent: Gender_Roles_Mental_Health
     examples: |
       - I feel like I don't fit into traditional gender roles and it's affecting my mental health
@@ -2698,7 +3163,7 @@ nlu:
       - i am trans
       - i am bi 
       - i am gay 
-      - i am asexual 
+      - i am asexual
 
   - intent: love_life
     examples: |
@@ -2721,7 +3186,7 @@ nlu:
       - i am not loved by the people around me 
       - i feel alone in the relationship
       - feel alone in the relationship
-    
+
   - intent: addiction_mental_health
     examples: |
       - I'm addicted to alcohol and it's affecting my mental health
@@ -2732,9 +3197,8 @@ nlu:
       - i am drug addict
       - i am alcohol addict
       - i am drug addict
-      - i have strange addiction 
-
-
+      - i have strange addiction
+  #not working
   - intent: bipolar_disorder_symptoms
     examples: |
       - experience extreme mood swing late  feel overlie happy extreme sad
@@ -2760,7 +3224,7 @@ nlu:
       - what are the symptoms of bipolar disorder
       - how do you know you have biploar disorder
       - i think i have bipolar disorder how do i confirm it 
-      - symptom of bipolar disorder 
+      - symptom of bipolar disorder
 
   - intent: bipolar_can_be_treated
     examples: |
@@ -2776,13 +3240,13 @@ nlu:
       - coping strategies against biploar disorder 
       - solution to bipolar disorder
       - i want to be free of bipolar disorder
-    
+
   - intent: bipolar_affecting_daily_life
     examples: |
       - how does bipolar affect daily life
       - bipolar affecting life
       - if i have bipolar how would be my life be like
-    
+
   - intent: natural_treatment_bipolar
     examples: |
       - can bipolar be treated naturally
@@ -2794,13 +3258,14 @@ nlu:
       - coping strategies against biploar disorder naturally
       - natural solution to bipolar disorder 
       - i want to be free of bipolar disorder naturally
-      
+
   - intent: love_one_bipolar
     examples: |
       - partner suffering from bipolar disorder
       - friend suffering from bipolar disorder
       - wife/lover/husband suffering from bipolar disorder
       - roomate suffering from bipolar disorder
+      - girlfriend/boyfriend suffering from bipolar disorder
       - brother/sister/father/mother suffering from bipolar disorder
       - family member suffering from bipolar disorder
       - support suffering from bipolar disorder roomate
@@ -2818,6 +3283,8 @@ nlu:
 
   - intent: bipolar_impact_relationship
     examples: |
+      - types of bipolar 
+      - what are the types of bipolar disorder?
       - how does the bipolar disorder affect relationship
       - biploar disorder affecting relationship
       - can the bipolar disorder have any effect in the relationship
@@ -2841,7 +3308,7 @@ nlu:
       - stigmatized bipolar disorder
       - conception towards bipolar disorder
       - what is the understanding of bipolar disorder in today's world
-
+  #not working -- needs the therapist number
   - intent: therapist_for_bipolar
     examples: |
       - find therapist bipolar disorder
@@ -2860,11 +3327,12 @@ nlu:
       - does bipolar occur in children
       - my children suffering from biploar disorder
       - can childresn have bipolar disorder 
-      - how can i know my children have the biploar disorder 
-
+      - how can i know my children have the biploar disorder
+  #not working
   - intent: bipolar_triggers
     examples: |
       - cause of bipolar disorder
+      - what are the cause for bipolar disorder
       - why do people suffer from bipolar disorder
       - triggers for bipolar disorder
       - cause for development bipolar disorder
@@ -2880,14 +3348,13 @@ nlu:
       - spiritual way of treatment for bipolar disorder
       - self-care bipolar disorder
       - bipolar disorder treat
- 
+
   - intent: cause_of_bipolar
     examples: |
-      - cause of bipolar disorder
-      - common triggers bipolar disorder
+      - what are the reason of bipolar disorder
       - reason of bipolar disorder
       - origin bipolar disorder
-
+  #not working
   - intent: PSTD_symptom
     examples: |
       - I keep having nightmares about the traumatic event
@@ -2939,11 +3406,12 @@ nlu:
       - how can the pstd effect
       - effect of ptsd
       - i want to know the effect of ptsd
-       - is there after math of ptsd
-
+      - is there after math of ptsd
+  #not working
   - intent: cause_PSTD
     examples: |
       - cause of PSTD
+      - common triggers for pstd
       - common triggers PSTD
       - reason of PSTD
       - origin PSTD
@@ -2958,15 +3426,16 @@ nlu:
       - spiritual way of treatment PSTD
       - self-care PSTD
       - PSTD treat
-  
+
   - intent: long_term_effects_PSTD
     examples: |
       - long term effect of PSTD
       - how long does PSTD effect
-
+  #not working
   - intent: helping_loved_one_PSTD
     examples: |
       - partner PTSD
+      - my partner is suffering from pstd
       - friend PTSD
       - wife/lover/husband PTSD
       - roomate PTSD
@@ -2994,14 +3463,14 @@ nlu:
       - PSTD occurs in how many people
       - people suffering from pstd
       - how its is likely to get ptsd
-    
+
   - intent: prevent_PTSD
     examples: |
       - how can pstd be prevented
       - preventing pstd beforehand
       - is the prevention of pstd possible
       - pstd prevention
-    
+
   - intent: Types_PTSD
     examples: |
       - type of PTSD
@@ -3015,14 +3484,14 @@ nlu:
       - is there any other type of pstd 
       - what is complex pstd 
       - other forms of pstd 
-      - dangerous pstd 
+      - dangerous pstd
 
   - intent: self_Care_PTSD
     examples: |
       - how can the pstd be self cared
       - self care for pstd 
       - is it possible to care the pstd self cared
-    
+
   - intent: define_Schizophrenia
     examples: |
       - What is Schizophrenia
@@ -3066,10 +3535,11 @@ nlu:
       - spiritual way of treatment for Schizophrenia
       - self-care Schizophrenia
       - Schizophrenia treat
-    
+
   - intent: types_Schizophrenia
     examples: |
       - type of Schizophrenia
+      - types of Schizophrenia
       - what other type of Schizophrenia there are
       - other form of Schizophrenia
       - are there any other form of Schizophrenia
@@ -3082,7 +3552,7 @@ nlu:
       - can Schizophrenia be negetive 
       - negetive symptom of Schizophrenia
       - is there negetive symptom of Schizophrenia
-
+  #not working
   - intent: positive_symptom_Schizophrenia
     examples: |
       - can Schizophrenia have positive impact 
@@ -3090,16 +3560,16 @@ nlu:
       - can Schizophrenia be positive 
       - positive symptom of Schizophrenia
       - is there positive symptom of Schizophrenia
-    
+  #not working
   - intent: social_effect_Schizophrenia
     examples: |
-        - how does the social life be affected by the Schizophrenia
-        - Social life being affected by Schizophrenia
-        - my life has been affected by Schizophrenia
-        - negative impact of Schizophrenia
-        - can Schizophrenia affect my social life 
-        - if i have Schizophrenia can i still function well in the society
-    
+      - how does the social life be affected by the Schizophrenia
+      - Social life being affected by Schizophrenia
+      - my life has been affected by Schizophrenia
+      - negative impact of Schizophrenia
+      - can Schizophrenia affect my social life 
+      - if i have Schizophrenia can i still function well in the society
+
   - intent: love_one_Schizophrenia
     examples: |
       - partner Schizophrenia
@@ -3123,7 +3593,7 @@ nlu:
       - stigmatized Schizophrenia
       - conception towards Schizophrenia
       - what is the understanding of Schizophrenia in today's world
-      
+
   - intent: Schizophrenia_affects
     examples: |
       - how does the Schizophrenia affects the brain
@@ -3137,7 +3607,7 @@ nlu:
       - differentiate between multiple personality disorder or Schizophrenia
       - how are Schizophrenia and multiple personlity disorder different
       - Schizophrenia and multiple personality disorder
-
+  #not working
   - intent: Signs_of_schizophrenia
     examples: |
       - how to know if i have Schizophrenia
@@ -3145,7 +3615,7 @@ nlu:
       - early symptom of Schizophrenia
       - Schizophrenia detection
       - knowing if i have Schizophrenia
-    
+  #not working
   - intent: schizophrenia_in_children
     examples: |
       - does Schizophrenia affect children
@@ -3153,7 +3623,7 @@ nlu:
       - Schizophrenia in children
       - can my child be Schizophrenic
       - symptoms of child Schizophrenia
-    
+
   - intent: therapy_schizophrenia
     examples: |
       - alternative therapy of Schizophrenia 
@@ -3161,20 +3631,20 @@ nlu:
       - therapy for Schizophrenia
       - can therapy help Schizophrenia
       - Schizophrenia therapy 
-      - how can be Schizophrenia treated alternativley 
+      - how can be Schizophrenia treated alternativley
 
   - intent: long_term_effect_schizophrenia
     examples: |
       - long term effect of Schizophrenia
       - how long does Schizophrenia effect
-    
+
   - intent: link_between_trauma_schizophrenia
     examples: |
       - is there a link between trauma and Schizophrenia
       - link between trauma and Schizophrenia
       - can the trauma and Schizophrenia be linked 
-      - are trauma and Schizophrenia related 
-    
+      - are trauma and Schizophrenia related
+
   - intent: define_eating_disorder
     examples: |
       - What is eating disorder
@@ -3209,7 +3679,7 @@ nlu:
       - common triggers eating disorder
       - reason of eating disorder
       - origin eating disorder
-
+  #not working
   - intent: affecting_age_group_eating_disorder
     examples: |
       - is there age which specifically has the eating disorder
@@ -3226,7 +3696,7 @@ nlu:
       - spiritual way of treatment for eating disorder
       - self-care eating disorder
       - eating disorder treat
-    
+
   - intent: therapy_eating_disorder
     examples: |
       - alternative therapy of eating disorder 
@@ -3234,7 +3704,7 @@ nlu:
       - therapy for eating disorder
       - can therapy help eating disorder
       - eating disorder therapy 
-      - how can be eating disorder treated alternativley 
+      - how can be eating disorder treated alternativley
 
   - intent: long_term_effect_eating_disorder
     examples: |
@@ -3243,12 +3713,12 @@ nlu:
 
   - intent: social_life_affect_eating_disorder
     examples: |
-        - how does the social life be affected by the eating disorder
-        - Social life being affected by eating disorder
-        - my life has been affected by eating disorder
-        - negative impact of eating disorder
-        - can eating disorder affect my social life 
-        - if i have eating disorder can i still function well in the society
+      - how does the social life be affected by the eating disorder
+      - Social life being affected by eating disorder
+      - my life has been affected by eating disorder
+      - negative impact of eating disorder
+      - can eating disorder affect my social life 
+      - if i have eating disorder can i still function well in the society
 
   - intent: love_one_eating_disorder
     examples: |
@@ -3269,8 +3739,8 @@ nlu:
       - i am having eating disorder 
       - i like to each too much 
       - if i start to eat i can't stop
-      - i am getting obsese 
-      s
+      - i am getting obsese
+
   - intent: misconception__eating_disorder
     examples: |
       - misconception eating disorder
@@ -3288,7 +3758,7 @@ nlu:
       - how to stop over eating
       - i want to stop overeating 
       - can i help myself to stop over eating
-      - i found out i have eating disorder how do i handle it 
+      - i found out i have eating disorder how do i handle it
 
   - intent: coping_mechanism
     examples: |
@@ -3316,7 +3786,7 @@ nlu:
       - what can Disruptive behavior do
       - Disruptive behavior leads to
       - i have Disruptive behavior issues
-
+  #not working
   - intent: cause_Disruptive_behavior
     examples: |
       - cause of Disruptive behavior
@@ -3334,15 +3804,15 @@ nlu:
       - spiritual way of treatment for Disruptive behavior
       - self-care Disruptive behavior
       - Disruptive behavior treat
-    
+
   - intent: social_Disruptive_behavior
     examples: |
-        - how does the social life be affected by the Disruptive behavior
-        - Social life being affected by Disruptive behavior
-        - my life has been affected by Disruptive behavior
-        - negative impact of Disruptive behavior
-        - can Disruptive behavior affect my social life 
-        - if i have Disruptive behavior can i still function well in the society
+      - how does the social life be affected by the Disruptive behavior
+      - Social life being affected by Disruptive behavior
+      - my life has been affected by Disruptive behavior
+      - negative impact of Disruptive behavior
+      - can Disruptive behavior affect my social life 
+      - if i have Disruptive behavior can i still function well in the society
 
   - intent: prevention_Disruptive_behavior
     examples: |
@@ -3367,8 +3837,8 @@ nlu:
       - explain Conduct disorder 
       - define Conduct disorder 
       - i want to know about Conduct disorder 
-      - is there a way to know Conduct disorder 
-
+      - is there a way to know Conduct disorder
+  #not working
   - intent: triggers_disruptive
     examples: |
       - cause of Disruptive behavior
@@ -3387,7 +3857,7 @@ nlu:
       - Neurodevelopmental disorder
       - give me the defination of Neurodevelopmental disorder
       - what is the meaning of depresNeurodevelopmental disordersion
-
+  #not working
   - intent: Symptoms_autism_spectrum
     examples: |
       - Autism spectrum symptoms
@@ -3414,16 +3884,16 @@ nlu:
       - spiritual way of treatment Neurodevelopmental
       - self-care Neurodevelopmental
       - Neurodevelopmental treat
-    
+
   - intent: socail_life_effect_neurodevelopmental
     examples: |
-        - how does the social life be affected by the Neurodevelopmental
-        - Social life being affected by Neurodevelopmental
-        - my life has been affected by Neurodevelopmental
-        - negative impact of Neurodevelopmental
-        - can Neurodevelopmental affect my social life 
-        - if i have Neurodevelopmental can i still function well in the society
-    
+      - how does the social life be affected by the Neurodevelopmental
+      - Social life being affected by Neurodevelopmental
+      - my life has been affected by Neurodevelopmental
+      - negative impact of Neurodevelopmental
+      - can Neurodevelopmental affect my social life 
+      - if i have Neurodevelopmental can i still function well in the society
+
   - intent: prevention_neurodevelopmental
     examples: |
       - how can Neurodevelopmental be prevented
@@ -3456,8 +3926,8 @@ nlu:
       - how can adhd be diagonsed
       - how to know if you have adhd 
       - is there a way to know if you have adhd
-      - i want to know way to diagnose adhd 
-
+      - i want to know way to diagnose adhd
+  #not working
   - intent: treatment_ADHD
     examples: |
       - coping strategies for ADHD
@@ -3468,7 +3938,7 @@ nlu:
       - spiritual way of treatment ADHD
       - self-care ADHD
       - ADHD treat
-    
+
   - intent: define_dyslexia
     examples: |
       - What is dyslexia
@@ -3488,13 +3958,13 @@ nlu:
       - what can dyslexia do
       - dyslexia leads to
       - i have dyslexia issues
-
+  #not working
   - intent: dyslexia_diagnosed
     examples: |
       - how can dyslexia be diagonsed
       - how to know if you have dyslexia 
       - is there a way to know if you have dyslexia
-      - i want to know way to diagnose dyslexia 
+      - i want to know way to diagnose dyslexia
 
   - intent: treatment_dyslexia
     examples: |
@@ -3513,13 +3983,12 @@ nlu:
       - full form of adhd
       - explain adhd
       - define adhd
-    
-  # - intent: 
-  #   examples: |
-    
-  # - intent: 
+
+  # - intent:
   #   examples: |
 
-  # - intent: 
+  # - intent:
   #   examples: |
- 
+
+  # - intent:
+  #   examples: |
