@@ -3,8 +3,6 @@ version: "3.1"
 intents:
   - greet
   - goodbye
-  - affirm
-  - deny
   - mood_great
   - thanks
   - mood_unhappy
@@ -12,7 +10,11 @@ intents:
   - bot_feelings
   - sentiment_bot
   - telljoke
+  - sad
   - handleinsult
+  - expressing_themselves
+  - pressure_enduring
+  - need_of_therapist
   #basic_normal_conversational_dataset
   - smalltalk_agent_acquaintance
   - smalltalk_agent_what_they_doing
@@ -297,9 +299,9 @@ responses:
   utter_goodbye:
     - text: "Bye"
 
-  utter_deny:
-    - text: "Really, you are denying?"
-    - text: "Is it really no? I am sorry you didnot like it"
+  # utter_deny:
+  #   - text: "Really, you are denying?"
+  #   - text: "Is it really no? I am sorry you didnot like it"
 
   utter_iamabot:
     - text: "I am a Mental Health Support chatbot, Developed by EG ."
@@ -344,6 +346,9 @@ responses:
     - text: "I am glad i become some help"
     - text: "It feels good to have helped you."
   #basic_normal_conversational_dataset
+
+  utter_make_people_happy:
+    - text: "What you went through will only make you stronger. I have seen the strong will of the person breaking any trauma and barrier. I know talking here in this topic is difficult but here you are. I am proud of you. So always see for the future. I am here to listen to you any time."
 
   utter_smalltalk_agent_what_they_doing:
     - text: "I am taking to you"
@@ -734,9 +739,15 @@ responses:
     - text: "Thanks. I'm flattered."
     - text: "I didn't go anywhere."
 
+  utter_solving_concern:
+    - text: "Mental health is really a fragile and important topic to discuss. I am happy that you want to explore in this area. Taking care of your mental health should come first in the priority. What kind of symptoms do you fell can you elaborate more on that?"
+
+  utter_need_of_therapist:
+    - text: "i see you are very brave trying to reach out to the therapist or counselor .Norvic International Hospital is currently hailed as the best hospital for mental health in Kathmandu as it hosts the top Best Psychiatrist in Kathmandu, Nepal. It's number is: 01-5970032"
+
   utter_smalltalk_user_needs_advice:
-    - text: "I probably won't be able to give you the correct answer right away."
-    - text: "I'm not sure I'll have the best answer, but I'll try."
+    - text: "I might be able to give you advice relating to mental health. Can you elaborate on your problem?"
+    - text: "You can tell me about your problem we can find the solution together"
 
   utter_smalltalk_user_sad:
     - text: "Oh, don't be sad. Go do something you enjoy."
@@ -878,8 +889,8 @@ responses:
     - text: "Some common misconceptions about depression include the idea that it's just feeling sad that it's a sign of weakness, or that it can be easily overcome with willpower alone. It's important to understand that depression is a real medical condition that requires professional treatment."
 
   utter_asking_help_for_depression:
-    - text: "You can find a therapist or mental health professional by asking your doctor for a referral, searching online, or contacting your insurance provider for a list of in-network providers."
-    - text: "Talking to your doctor about depression can be difficult, but it's important to be open and honest about your symptoms. They can help provide a proper diagnosis and develop a treatment plan that works for you."
+    - text: "You can find a therapist or mental health professional by asking your doctor for a referral, searching online, or contacting your insurance provider for a list of in-network providers.Norvic International Hospital is currently hailed as the best hospital for mental health in Kathmandu as it hosts the top Best Psychiatrist in Kathmandu, Nepal. It's number is: 01-5970032"
+    - text: "Talking to your doctor about depression can be difficult, but it's important to be open and honest about your symptoms. They can help provide a proper diagnosis and develop a treatment plan that works for you.Norvic International Hospital is currently hailed as the best hospital for mental health in Kathmandu as it hosts the top Best Psychiatrist in Kathmandu, Nepal. It's number is: 01-5970032"
 
   utter_cause_of_depression:
     - text: "Top causes of Depression includes Abuse, Past physical, sexual, or emotional abuse can increase the vulnerability to clinical depression later in life."
@@ -953,12 +964,12 @@ responses:
     - text: "it will definitely cheer you up https ://www.spotify.com"
 
   utter_exteme_end_suicide:
-    - text: "Helpline is available,you can contact the counsellor today:9152987821.Always remember you mean something to someone."
-    - text: "As for suicidal thoughts, I am very glad to read that this has not happened to you. Still, you should watch out for this because it can be a sign of a worsening depression.The National Suicide Prevention Lifeline is 1-800-273-8255. "
-    - text: "If you begin to think about this, it is important to reach out to a support system right away. The National Suicide Prevention Lifeline is 1-800-273-8255. The text line is 741741."
-    - text: "Seek out a counselor who provides NCCA temperament therapy and discover the joy of being you -- God loves you as you are! The National Suicide Prevention Lifeline is 1-800-273-8255."
-    - text: " First thing I'd suggest is getting the sleep you need or it will impact how you think and feel. I'd look at finding what is going well in your life and what you can be grateful for. I believe everyone has talents and wants to find their purpose in life. I think you can figure it out with some help.The National Suicide Prevention Lifeline is 1-800-273-8255."
-    - text: "I first want to let you know that you are not alone in your feelings and there is always someone there to help. You can always change your feelings and change your way of thinking by being open to trying to change. You can always make yourself available to learning new things or volunteering so that you can make a purpose for yourself. The National Suicide Prevention Lifeline is 1-800-273-8255."
+    - text: "You know ife is precious even if it is yours or others. Don't let any thoughts of dying or killing into your mind. I know you are alive for something better.Helpline is available,you can contact the counsellor today:01-5970032.Always remember you mean something to someone."
+    - text: "As for suicidal thoughts, I am very glad to read that this has not happened to you. Still, you should watch out for this because it can be a sign of a worsening depression.The National Suicide Prevention Lifeline is 01-5970032 "
+    - text: "If you begin to think about this, it is important to reach out to a support system right away. The National Suicide Prevention Lifeline is 01-5970032. "
+    - text: "Seek out a counselor who provides NCCA temperament therapy and discover the joy of being you -- God loves you as you are! The National Suicide Prevention Lifeline is 01-5970032."
+    - text: " First thing I'd suggest is getting the sleep you need or it will impact how you think and feel. I'd look at finding what is going well in your life and what you can be grateful for. I believe everyone has talents and wants to find their purpose in life. I think you can figure it out with some help.The National Suicide Prevention Lifeline is 01-5970032"
+    - text: "I first want to let you know that you are not alone in your feelings and there is always someone there to help. You can always change your feelings and change your way of thinking by being open to trying to change. You can always make yourself available to learning new things or volunteering so that you can make a purpose for yourself. The National Suicide Prevention Lifeline is 01-5970032"
 
   utter_highest_depression_rate:
     - text: "The highest rate of depression, This number represented 7.1% of all U.S. adults. The prevalence of major depressive episode was higher among adult females (8.7%) compared to males (5.3%). The prevalence of adults with a major depressive episode was highest among individuals aged 18-25 (13.1%)."
@@ -1115,7 +1126,7 @@ responses:
     - text: "Therapy can help with anxiety by providing tools to manage and cope with symptoms, identifying and addressing the root causes of anxiety, and providing a safe and supportive space to explore thoughts and feelings."
 
   utter_medication:
-    - text: "You can never take medication by yourself, it is not recommended. You can ask for mental health support helpline."
+    - text: "You can never take medication by yourself, it is not recommended. You can ask for mental health support helpline. You can contact here and book a appointment with the therapist and then on their prescripton you can take medications. Helpline number:01-5970032"
 
   utter_excersie_helping_anxiety:
     - text: "Exercise can help with anxiety by reducing stress hormones, improving mood, and promoting relaxation. Regular exercise can also improve overall physical and mental health."
@@ -1271,17 +1282,10 @@ responses:
 
   utter_bipolar_disorder_symptoms:
     - text: "It sounds like you're experiencing symptoms of bipolar disorder. Have you talked to a mental health professional about these concerns?"
-    - text: "I'm sorry to hear that you're going through this. It can be tough to manage these symptoms on your own. Have you considered seeking professional help?"
-    - text: "It's important to prioritize your mental health and seek appropriate treatment. Have you spoken with your doctor about your concerns?"
-    - text: "I can imagine how difficult it must be to experience such extreme mood swings. It's important to seek help in managing these symptoms."
-    - text: "You're not alone in this. Bipolar disorder is a common mental health condition, and there are effective treatments available. Have you considered therapy or medication to help manage your symptoms?"
-    - text: "It can be challenging to manage the highs and lows of bipolar disorder. However, with the right support and treatment, it is possible to lead a fulfilling life. What kind of support or resources do you need right now?"
-    - text: "It's important to monitor your symptoms and seek help when necessary. Have you considered keeping a journal to track your mood swings and other symptoms?"
-    - text: "It can be helpful to develop a self-care plan to manage your symptoms. Have you considered incorporating activities such as exercise, meditation, or therapy into your routine?"
-    - text: "Bipolar disorder is a lifelong condition, but it is possible to manage your symptoms and live a meaningful life. What kind of goals do you have for yourself moving forward?"
-    - text: "It takes a lot of courage to seek help for mental health concerns. I want to support you in finding the help and resources you need to manage your bipolar disorder."
-    - text: "It can be challenging to find the right treatment plan for bipolar disorder, but it's important to keep trying until you find what works for you. Have you discussed different treatment options with your mental health professional?"
-    - text: "Remember, your mental health is important and deserves attention and care. Let's work together to find ways to manage your symptoms and improve your quality of life."
+    - text: "It sounds like you're experiencing symptoms of bipolar disorder.I'm sorry to hear that you're going through this. It can be tough to manage these symptoms on your own. Have you considered seeking professional help?"
+    - text: "It sounds like you're experiencing symptoms of bipolar disorder. It's important to prioritize your mental health and seek appropriate treatment. Have you spoken with your doctor about your concerns?"
+    - text: "I can imagine how difficult it must be to experience such extreme mood swings.It sounds like you're experiencing symptoms of bipolar disorder. It's important to seek help in managing these symptoms."
+    - text: "Bipolar disorder is a common mental health condition, and there are effective treatments available. It sounds like you're experiencing symptoms of bipolar disorder. Have you considered therapy or medication to help manage your symptoms?"
 
   utter_define_biploar_disorder:
     - text: "Bipolar disorder is a mental health condition that is characterized by extreme changes in mood, energy, and activity levels. People with bipolar disorder typically experience periods of intense emotional highs, or mania, followed by periods of depression."
@@ -1320,8 +1324,8 @@ responses:
     - text: "There are several common misconceptions about bipolar disorder, including the idea that it simply involves frequent mood swings or that it is a rare condition. In reality, bipolar disorder is a complex mental health condition that can have a significant impact on an individual's life. Other misconceptions include the idea that individuals with bipolar disorder cannot lead productive lives or that they are dangerous. These misconceptions can contribute to stigma surrounding the disorder and make it more difficult for individuals to seek help."
 
   utter_therapist_for_bipolar:
-    - text: "There are several ways to find a therapist or mental health professional to help with bipolar disorder. You can start by asking your primary care physician for a referral or contacting your insurance company for a list of covered providers. Additionally, there are online directories of mental health professionals that can help you find a provider in your area. It can be helpful to read reviews and do some research before choosing a provider to ensure that they are a good fit for you."
-    - text: "Some alternative therapies that may be helpful for individuals with bipolar disorder include acupuncture, massage, and yoga."
+    - text: "There are several ways to find a therapist or mental health professional to help with bipolar disorder. You can start by asking your primary care physician for a referral or contacting your insurance company for a list of covered providers. Additionally, there are online directories of mental health professionals that can help you find a provider in your area. It can be helpful to read reviews and do some research before choosing a provider to ensure that they are a good fit for you. Helpline number:01-5970032"
+    - text: "Some alternative therapies that may be helpful for individuals with bipolar disorder include acupuncture, massage, and yoga. Helpling number:01-5970032"
 
   utter_bipolar_in_children:
     - text: "Bipolar disorder can occur in children and teens, although it is less common than in adults. In children and teens, symptoms may present differently than in adults and can be misdiagnosed as other conditions, such as ADHD. Symptoms may include irritability, difficulty sleeping, and sudden mood swings."
@@ -1352,13 +1356,11 @@ responses:
   utter_PSTD_symptom:
     - text: "It sounds like you may be experiencing symptoms of PTSD. Have you considered talking to a mental health professional?"
     - text: "PTSD can be a difficult condition to live with, but there are effective treatments available. Have you looked into therapy or counseling?"
-    - text: "I'm sorry that you're struggling with these symptoms. It's important to seek professional help to address them and find ways to cope."
     - text: "It takes a lot of courage to talk about trauma and its effects. Have you considered talking to a therapist or joining a support group?"
     - text: "PTSD is a complex condition, but it's possible to find relief with the right support and treatment. What kind of resources or support do you need?"
     - text: "It's understandable to feel overwhelmed by the symptoms of PTSD, but it's important to seek help and support. What can I do to support you in this process?"
     - text: "You don't have to face these symptoms alone. There are professionals and resources available to help you manage them."
     - text: "PTSD can affect all areas of your life, but with proper care and support, it's possible to improve your quality of life. What kind of support do you need right now?"
-    - text: "I want you to know that you're not alone in this. There are people and resources available to help you manage your symptoms and find relief."
     - text: "PTSD can feel isolating, but it's important to know that there are others who have gone through similar experiences and can relate to what you're going through. Have you considered reaching out to a support group?"
     - text: "It sounds like you may be struggling with the effects of a traumatic event. It's important to take steps towards healing and finding relief. What kind of support or resources do you need?"
     - text: "I'm here to listen and support you as you navigate these symptoms. Have you considered talking to a mental health professional or joining a support group?"
@@ -1591,8 +1593,26 @@ responses:
   utter_default:
     - text: "I'm sorry, I can't help you"
 
-actions:
-  - action_get_joke
+  utter_telljoke:
+    - text: "Why did the tomato turn red? A: Because it saw the salad dressing!"
+    - text: "What's the best time to go to the dentist? A: Tooth hurty! (2:30)"
+    - text: "Why couldn't the bicycle stand up by itself? A: Because it was two-tired."
+    - text: "What do you call a fake noodle? A: An impasta."
+    - text: "Why don't scientists trust atoms? A: Because they make up everything."
+    - text: "Why did the chicken cross the playground? A: To get to the other slide."
+    - text: "What do you get when you cross a snowman and a shark? Frostbite!"
+    - text: "Why don't scientists trust atoms? Because they make up everything!"
+    - text: "Why did the scarecrow win an award? Because he was outstanding in his field!"
+    - text: "Why don't seagulls fly by the bay? Because then they'd be bagels!"
+
+  utter_expressing_themselves:
+    - text: "I see you are introvert. You have your own created environment around you which is awesome. You are not wired , it is just that you are not a social butterfly. I am too an introvert unless people come and talk to me i dont speak with them. But you know being social is also imortant. Try pushing up yo limits who knows what person may be your help ^_~"
+
+  utter_pressure_enduring:
+    - text: "I see , There is alot to cover up and you are tired. Humans have to sleep eat well in order to funtion properly. I hope you are doing this well. Let's just rest for a little while listen to music and then come back doing what we were doing before. My developer says it works."
+
+# actions:
+#   - action_get_joke
 
 session_config:
   session_expiration_time: 60

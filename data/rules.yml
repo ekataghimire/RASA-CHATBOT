@@ -13,13 +13,8 @@ rules:
 
   - rule: Respond to affirm intent
     steps:
-      - intent: affirm
-      - action: utter_happy
-
-  - rule: Respond to deny intent
-    steps:
-      - intent: deny
-      - action: utter_deny
+      - intent: smalltalk_confirmation_yes
+      - action: utter_smalltalk_confirmation_yes
 
   - rule: Respond to mood_great intent
     steps:

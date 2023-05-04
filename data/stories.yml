@@ -16,8 +16,8 @@ stories:
       - action: utter_make_happy
       - action: utter_cheer_up
       - action: utter_did_that_help
-      - intent: affirm
-      - action: utter_happy
+      - intent: smalltalk_confirmation_yes
+      - action: utter_smalltalk_confirmation_yes
 
   - story: sad path 2
     steps:
@@ -26,29 +26,24 @@ stories:
       - intent: mood_unhappy
       - action: utter_cheer_up
       - action: utter_did_that_help
-      - intent: deny
-      - action: utter_deny
+      - intent: smalltalk_appraisal_bad
+      - action: utter_smalltalk_appraisal_bad
 
   - story: user wants to define depression
     steps:
       - intent: mental_health_concern
       - action: utter_mental_health_concern
-      - action: utter_treatment_depression
+      - action: utter_solving_concern
 
   - story: user wants to challenge bot
     steps:
       - intent: bot_challenge
       - action: utter_iamabot
 
-  - story: user wants to deny
-    steps:
-      - intent: deny
-      - action: utter_deny
-
   - story: user wants know jokes
     steps:
       - intent: telljoke
-      - action: action_get_joke
+      - action: utter_telljoke
   # basic_normal_conversational_dataset
 
   - story: smalltalk_agent_what_they_doing
@@ -566,21 +561,29 @@ stories:
     steps:
       - intent: sexual_abuse
       - action: utter_sexual_abuse
+      - action: utter_make_people_happy
+      - action: utter_cheer_up
 
   - story: user wants express abuse happened to them
     steps:
       - intent: abuse
       - action: utter_abuse
+      - action: utter_make_people_happy
+      - action: utter_cheer_up
 
   - story: user wants express they were raped
     steps:
       - intent: rape
       - action: utter_rape
+      - action: utter_make_people_happy
+      - action: utter_cheer_up
 
   - story: user wants express trauma
     steps:
       - intent: trauma
       - action: utter_trauma
+      - action: utter_make_people_happy
+      - action: utter_cheer_up
 
   - story: user wants express low self esteem
     steps:
@@ -600,7 +603,7 @@ stories:
   - story: user wants express their worthless ness feeling
     steps:
       - intent: user_feeling_worthless
-      - action:
+      - action: utter_user_feeling_worthless
 
   - story: user wants express panic_attacks
     steps:
@@ -1102,6 +1105,15 @@ stories:
       - intent: ADHD_fullform
       - action: utter_ADHD_fullform
 
+  - story: user wants utter_expressing_themselves
+    steps:
+      - intent: expressing_themselves
+      - action: utter_expressing_themselves
+
+  - story: user wants pressure_enduring
+    steps:
+      - intent: pressure_enduring
+      - action: utter_pressure_enduring
   # - story: Respond fallback
   #   steps:
   #     - intent: bot_challenge

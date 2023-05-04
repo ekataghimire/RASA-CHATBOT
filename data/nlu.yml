@@ -126,174 +126,6 @@ nlu:
       -  see you tomorrow
       -  ok bye
 
-  - intent: affirm
-    examples: |
-      - yes
-      - y
-      - indeed
-      - of course
-      - that sounds good
-      - correct
-      - great
-      - wow it looks good
-      - affirmative
-      - okay
-      - that's correct
-      - it's fine
-      - go ahead
-      - sounds good
-      - ok
-      - okie dokie
-      - sure
-      - go for it
-      - yeah
-      - yea
-      - do it
-      - I guess
-      - yeah sure
-      - why not
-      - please do
-      - sure is
-      - I agree
-      - I don't mind
-      - certainly
-      - exactly
-      - yes I agree
-      - I think so
-      - yes it is
-      - right
-      - okay then
-      - yes of course
-      - yes I do
-      - that s okay
-      - I do
-      - yup
-      - ya
-      - oh yes
-      - yes sure
-      - obviously
-      - k
-      - sure why not
-      - yeah right
-      - yeah of course
-      - absolutely
-      - yes indeed
-      - ok sure
-      - ok yes
-      - yes correct
-      - ok thank you
-      - sure thing
-      - ye
-      - confirm
-      - yep
-      - looks good
-      - yes thank you
-      - definitely
-      - yes right
-      - yes I would like to
-      - alrighty
-      - yes definitely
-      - yeh
-      - yes it is correct
-      - yeah that's right
-      - ok you can
-      - yap
-      - yes you may
-      - confirmed
-      - of course why not
-      - yes that's fine
-      - yeah go ahead
-      - yeah I'm sure
-      - okay sounds good
-      - okay that's fine
-      - yeah exactly
-      - that is ok
-      - this is correct
-      - ok go ahead
-      - yes this is correct
-      - nevermind its okay
-      - okey
-      - yes for sure
-      - all right
-      - uhgf
-
-  - intent: deny
-    examples: |
-      - no
-      - n
-      - never
-      - I don't think so
-      - don't like that
-      - no way
-      - not really
-      - never
-      - don't like that
-      - no way
-      - not really
-      - never though of it
-      - how about no
-      - don t have a sense
-      - don't
-      - I don't want that
-      - I disagree
-      - disagree
-      - I don't want
-      - not interested
-      - no it isn't
-      - no I don't
-      - I'm not
-      - na
-      - no that's fine thank you
-      - I said no
-      - of course not
-      - nah
-      - no tanks
-      - no never
-      - no need
-      - no thanks
-      - no sorry
-      - do not
-      - not today
-      - no it's not
-      - absolutely not
-      - not that
-      - nooo
-      - nope
-      - I don't want to
-      - no I would not
-      - let 's not
-      - not needed
-      - not this time
-      - no don't do that
-      - thanks but no thanks
-      - no that's wrong
-      - not this
-      - definitely not
-      - not at this time
-      - not exactly
-      - no don't
-      - not really no
-      - no thank you not right now
-      - actually no
-      - no leave it
-      - sorry no
-      - no incorrect
-      - nope sorry
-      - I say no
-      - not right now thanks
-      - I think no
-      - absolutely no
-      - no actually
-      - apparently not
-      - no do not
-      - no just no
-      - no but thank you
-      - no need thanks
-      - no thank you though
-      - no thank you very much
-      - no thanks not right now
-      - no forget
-
   - intent: mood_great
     examples: |
       - perfect
@@ -1187,6 +1019,80 @@ nlu:
       - that's really bad
       - it is too bad
       - bad really bad
+      - no
+      - n
+      - never
+      - I don't think so
+      - don't like that
+      - no way
+      - not really
+      - never
+      - don't like that
+      - no way
+      - not really
+      - never though of it
+      - how about no
+      - don t have a sense
+      - don't
+      - I don't want that
+      - I disagree
+      - disagree
+      - I don't want
+      - not interested
+      - no it isn't
+      - no I don't
+      - I'm not
+      - na
+      - no that's fine thank you
+      - I said no
+      - of course not
+      - nah
+      - no tanks
+      - no never
+      - no need
+      - no thanks
+      - no sorry
+      - do not
+      - not today
+      - no it's not
+      - absolutely not
+      - not that
+      - nooo
+      - nope
+      - I don't want to
+      - no I would not
+      - let 's not
+      - not needed
+      - not this time
+      - no don't do that
+      - thanks but no thanks
+      - no that's wrong
+      - not this
+      - definitely not
+      - not at this time
+      - not exactly
+      - no don't
+      - not really no
+      - no thank you not right now
+      - actually no
+      - no leave it
+      - sorry no
+      - no incorrect
+      - nope sorry
+      - I say no
+      - not right now thanks
+      - I think no
+      - absolutely no
+      - no actually
+      - apparently not
+      - no do not
+      - no just no
+      - no but thank you
+      - no need thanks
+      - no thank you though
+      - no thank you very much
+      - no thanks not right now
+      - no forget
 
   - intent: smalltalk_appraisal_good
     examples: |
@@ -1486,7 +1392,6 @@ nlu:
       - no thanks not right now
       - no forget
 
-  # not working
   - intent: smalltalk_dialog_hold_on
     examples: |
       - wait a second
@@ -1530,7 +1435,6 @@ nlu:
       - i dont care
       - i DONT CARE
 
-  #not working
   - intent: smalltalk_dialog_sorry
     examples: |
       - excuse me
@@ -1566,7 +1470,6 @@ nlu:
       - what do you mean exactly
       - but what do you mean
 
-  #not working
   - intent: smalltalk_dialog_wrong
     examples: |
       - that was wrong
@@ -1714,7 +1617,7 @@ nlu:
       -  okay thank you bye
       -  see you tomorrow
       -  ok bye
-  #not working
+
   - intent: smalltalk_greetings_goodevening
     examples: |
       - good evening
@@ -1778,7 +1681,7 @@ nlu:
   #     - afternoon
   #     - hello hi
   #     - heya
-  #not working
+
   - intent: smalltalk_greetings_how_are_you
     examples: |
       - how is your morning so far
@@ -2190,7 +2093,6 @@ nlu:
       - I missed you
       - I've missed you
 
-    #not working
   - intent: smalltalk_user_needs_advice
     examples: |
       - what should I do about it
@@ -2317,12 +2219,13 @@ nlu:
 
   - intent: emotional_talk
     examples: |
-      - feel sad appear reason 
+      - feel sad appear reason
+      - feel sad apparently reason 
       - lost interest thing use enjoy long time
       - energy feel tire time  go
       - ca it consent make denis happen long time
       - trouble sleep sleep much  go 
-      - feel hopeless worthless  long time since felt differ
+      - long time since felt differ
       - want free problem
       - don't want to suicide but i wish to have accident
 
@@ -2344,6 +2247,7 @@ nlu:
       - not enjoying lifeany more
       - oversleeping
       - no joy
+      - i feel no joy
       - lack of joy
       - how to know if i have depression
       - how to know you are depressed
@@ -2386,6 +2290,7 @@ nlu:
     examples: |
       - you're a loser lmao
       - you are a stupid bot
+      - you're a loser
       - i hate you
       - Stupid
       - fuck you
@@ -2473,7 +2378,7 @@ nlu:
       - set free of mental health issues
       - i dont want mental health issues
       - i think i have anxiety
-  #not working - working but i need therapist should provide with the therapist number location
+
   - intent: reaching_out_counseling
     examples: |
       - i am going to therapist nothing helped 
@@ -2481,10 +2386,16 @@ nlu:
       - i am trying to get rid of the depression nothing helped 
       - i going to counsel nothing helped 
       - i visit consel nothing helped 
-      - i visit therapist nothing helped 
+      - i visit therapist nothing helped
+
+  - intent: need_of_therapist
+    examples: |
       - i want to visit therapist
       - i need counseling
       - i need therapist
+      - can you provide me the hospital for mental health 
+      - best hospital for mental health 
+      - mental health hospital number
 
   - intent: life_after_depression
     examples: |
@@ -2552,12 +2463,11 @@ nlu:
       - stigmatized depression
       - conception towards depression
       - what is the understanding of depression in today's world
-  #add the therapist number here , along with the location
+
   - intent: asking_help_for_depression
     examples: |
       - find therapist
       - help find therapist 
-      - i need therapist number
       - is there a therapist near me 
       - i need therapy could you help me 
       - therapy is recommended
@@ -2650,7 +2560,6 @@ nlu:
       - can't achieve anything
       - unlucky
       - can't win
-      - fell like loser
       - i am zero
       - do nothing right
       - nothing going my way
@@ -2664,6 +2573,7 @@ nlu:
       - no enthusiasm
       - mood low
       - so tired
+
   #not working need to add the motivational line before the helpline
   - intent: exteme_end_suicide
     examples: |
@@ -2773,14 +2683,13 @@ nlu:
       - everyone else looks better
       - am ugly
       - feel ugly
-      - feel worthless
       - insecure of looks
       - insecure body
 
   - intent: low_self_esteem
     examples: |
-      - am looser
-      - am loser
+      - i am looser
+      - i am loser
       - never won 
       - feel loser everytime
       - it's tough
@@ -2834,12 +2743,13 @@ nlu:
       - remove anxeity
       - overcome anxeity
       - win anxeity
-  #not working
+
   - intent: duration_of_anxiety
     examples: |
       - how long Anxiety last
       - long Anxiety last
       - Anxiety last
+      - how long does the anxiety last?
 
   - intent: anxiety_affecting_life
     examples: |
@@ -2897,7 +2807,7 @@ nlu:
     examples: |
       - can therapy help anxiety
       - therapy anxiety
-  #provide mental health supoort line number
+
   - intent: medication
     examples: |
       - medication depress
@@ -3146,13 +3056,12 @@ nlu:
       - I think I might be gay/bi/lesbian/pansexual
       - How can I come out to my family and friends?
       - come out 
-      - am i gay
-      - am  i lesbian
       - i want to be a girl 
       - i want to be a boy 
       - society not accepting my sexual orientaion.
       - sexual orientation confusion 
       - I'm struggling with societal pressure to conform to heteronormative standards
+
   #not working
   - intent: Gender_Roles_Mental_Health
     examples: |
@@ -3198,7 +3107,7 @@ nlu:
       - i am alcohol addict
       - i am drug addict
       - i have strange addiction
-  #not working
+
   - intent: bipolar_disorder_symptoms
     examples: |
       - experience extreme mood swing late  feel overlie happy extreme sad
@@ -3308,7 +3217,7 @@ nlu:
       - stigmatized bipolar disorder
       - conception towards bipolar disorder
       - what is the understanding of bipolar disorder in today's world
-  #not working -- needs the therapist number
+
   - intent: therapist_for_bipolar
     examples: |
       - find therapist bipolar disorder
@@ -3328,7 +3237,7 @@ nlu:
       - my children suffering from biploar disorder
       - can childresn have bipolar disorder 
       - how can i know my children have the biploar disorder
-  #not working
+
   - intent: bipolar_triggers
     examples: |
       - cause of bipolar disorder
@@ -3354,7 +3263,7 @@ nlu:
       - what are the reason of bipolar disorder
       - reason of bipolar disorder
       - origin bipolar disorder
-  #not working
+
   - intent: PSTD_symptom
     examples: |
       - I keep having nightmares about the traumatic event
@@ -3407,7 +3316,7 @@ nlu:
       - effect of ptsd
       - i want to know the effect of ptsd
       - is there after math of ptsd
-  #not working
+
   - intent: cause_PSTD
     examples: |
       - cause of PSTD
@@ -3431,7 +3340,7 @@ nlu:
     examples: |
       - long term effect of PSTD
       - how long does PSTD effect
-  #not working
+
   - intent: helping_loved_one_PSTD
     examples: |
       - partner PTSD
@@ -3552,7 +3461,7 @@ nlu:
       - can Schizophrenia be negetive 
       - negetive symptom of Schizophrenia
       - is there negetive symptom of Schizophrenia
-  #not working
+
   - intent: positive_symptom_Schizophrenia
     examples: |
       - can Schizophrenia have positive impact 
@@ -3560,7 +3469,7 @@ nlu:
       - can Schizophrenia be positive 
       - positive symptom of Schizophrenia
       - is there positive symptom of Schizophrenia
-  #not working
+
   - intent: social_effect_Schizophrenia
     examples: |
       - how does the social life be affected by the Schizophrenia
@@ -3607,7 +3516,7 @@ nlu:
       - differentiate between multiple personality disorder or Schizophrenia
       - how are Schizophrenia and multiple personlity disorder different
       - Schizophrenia and multiple personality disorder
-  #not working
+
   - intent: Signs_of_schizophrenia
     examples: |
       - how to know if i have Schizophrenia
@@ -3615,7 +3524,7 @@ nlu:
       - early symptom of Schizophrenia
       - Schizophrenia detection
       - knowing if i have Schizophrenia
-  #not working
+
   - intent: schizophrenia_in_children
     examples: |
       - does Schizophrenia affect children
@@ -3679,7 +3588,7 @@ nlu:
       - common triggers eating disorder
       - reason of eating disorder
       - origin eating disorder
-  #not working
+
   - intent: affecting_age_group_eating_disorder
     examples: |
       - is there age which specifically has the eating disorder
@@ -3984,8 +3893,33 @@ nlu:
       - explain adhd
       - define adhd
 
-  # - intent:
-  #   examples: |
+  - intent: expressing_themselves
+    examples: |
+      - i am an introvert i dont like people
+      - i am an introvert i dont like hanging out with people
+      - i am an introvert i dont like being around people
+      - i hate being aroung many people
+      - i like my solitary 
+      - i like being alone
+      - i feel tired around people
+      - i can't speak around many people
+      - crowd scares me 
+      - even with lots of poeple around me i feel alone
+      - i enjoy time with myself 
+      - i dont want to be around many people
+      - i hate presentations 
+      - i wish people woudl leave me alone
+
+  - intent: pressure_enduring
+    examples: |
+      - i am having toruble completing my assignments
+      - there is way too much pressure
+      - i am not able to handle pressure
+      - i feel like i will explode 
+      - my head hurts and it is going to explode 
+      - i have been trying to complete this task form many days but here i am still lacking
+      - i dont want to do this any more
+      - i can't do this any more
 
   # - intent:
   #   examples: |
