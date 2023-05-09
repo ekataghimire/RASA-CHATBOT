@@ -5,6 +5,7 @@ stories:
     steps:
       - intent: greet
       - action: utter_greet
+      - action: utter_after_greetings
       - intent: mood_great
       - action: utter_happy
 
@@ -12,6 +13,7 @@ stories:
     steps:
       - intent: greet
       - action: utter_greet
+      - action: utter_after_greetings
       - intent: mood_unhappy
       - action: utter_make_happy
       - action: utter_cheer_up
@@ -29,16 +31,33 @@ stories:
       - intent: smalltalk_appraisal_bad
       - action: utter_smalltalk_appraisal_bad
 
+  - story: make user happy
+    steps:
+      - intent: mood_unhappy
+      - action: utter_cheer_up
+      - action: utter_did_that_help
+
   - story: user wants to define depression
     steps:
       - intent: mental_health_concern
       - action: utter_mental_health_concern
       - action: utter_solving_concern
 
+  - story: user wants to define mental health
+    steps:
+      - intent: mental_health_defination
+      - action: utter_mental_health_defination
+      - action: utter_solving_concern
+
   - story: user wants to challenge bot
     steps:
       - intent: bot_challenge
       - action: utter_iamabot
+
+  - story: user wants to thank the bot
+    steps:
+      - intent: thanks
+      - action: utter_say_welcome
 
   - story: user wants know jokes
     steps:
@@ -482,11 +501,15 @@ stories:
       - intent: define_anxiety
       - action: utter_define_anxiety
 
+  - story: user wants to know symptom of depression
+    steps:
+      - intent: symptom_depression
+      - action: utter_depression_symptom
+
   - story: user wants to know depression symptoms
     steps:
       - intent: depression_symptom
       - action: utter_depression_symptom
-
   - story: user wants recommendations for depression
     steps:
       - intent: recommendation_depression
@@ -704,6 +727,13 @@ stories:
     steps:
       - intent: natural_treatment_bipolar
       - action: utter_natural_treatment_bipolar
+      - action: utter_yoga_link
+
+  - story: user wants express natural_treatment_anxiety
+    steps:
+      - intent: natural_treatment_anxiety
+      - action: utter_natural_treatment_anxiety
+      - action: utter_yoga_link
 
   - story: user wants express love_one_bipolar
     steps:
@@ -1114,6 +1144,12 @@ stories:
     steps:
       - intent: pressure_enduring
       - action: utter_pressure_enduring
+
+  - story: user wants utter_referring_therapist
+    steps:
+      - intent: referring_therapist
+      - action: utter_referring_therapist
+
   # - story: Respond fallback
   #   steps:
   #     - intent: bot_challenge

@@ -156,11 +156,13 @@ nlu:
       - extremly sad
       - so saad
       - so sad
+      - so sadd
       - feel really sad today
       - ca it seem shake feel sad 
       - feel like stuck rut sad despair
       - it know snap sad
       - struggle find motive any sad
+      - i am sad make me happy
 
   - intent: mood_unhappy
     examples: |
@@ -170,8 +172,6 @@ nlu:
       - unhappy
       - not good
       - not very good
-      - so saad
-      - so sad
       - feel really sad today
       - feel blue
       - ca it seem shake feel sad 
@@ -2128,6 +2128,11 @@ nlu:
       - I'm having a bad day
       - I want to cry
       - I'm not happy
+      - I am not happy
+      - I can't seem to find happiness
+      - I can't find joy
+      - i can't seem to be happy
+      - not happy
 
   - intent: smalltalk_user_sleepy
     examples: |
@@ -2203,8 +2208,6 @@ nlu:
   # mental health conversational dataset
   - intent: mental_health_concern
     examples: |
-      - struggle mental health recent
-      - mental health 
       - anxiety really bad late 
       - feel like ca it escape depress
       - experience  symptom  really affect life
@@ -2214,8 +2217,19 @@ nlu:
       - feel really stress  problem issue
       - feel really iso along
       - it feel like late
-      - worry might  mental health conduct
       - i am mental patient
+
+  - intent: mental_health_defination
+    examples: |
+      - struggle mental health recent
+      - mental health 
+      - worry might  mental health conduct
+      - what is mental health ?
+      - define mental health 
+      - what is mental health
+      - explain me about mental health 
+      - can you elaborate on mental health
+      - i want to know about mental health
 
   - intent: emotional_talk
     examples: |
@@ -2249,6 +2263,7 @@ nlu:
       - no joy
       - i feel no joy
       - lack of joy
+      - lately i have been sad and depressed
       - how to know if i have depression
       - how to know you are depressed
       - what is to like having depression
@@ -2476,6 +2491,13 @@ nlu:
       - solution to depress
       - therapist near me
 
+  - intent: symptom_depression
+    examples: |
+      - what is symptom of depression
+      - what is like to have depression
+      - symptom of depression
+      - what are the hints to know the symptom of depression
+
   - intent: cause_of_depression
     examples: |
       - cause of depress
@@ -2483,6 +2505,8 @@ nlu:
       - triggers for depress
       - cause for development depression
       - risk factor
+      - what causes depression
+      - what are the cause of depression
 
   - intent: alternative_treatment_depression
     examples: |
@@ -3909,6 +3933,7 @@ nlu:
       - i dont want to be around many people
       - i hate presentations 
       - i wish people woudl leave me alone
+      - i dont like people
 
   - intent: pressure_enduring
     examples: |
@@ -3920,9 +3945,21 @@ nlu:
       - i have been trying to complete this task form many days but here i am still lacking
       - i dont want to do this any more
       - i can't do this any more
+      - Toay was the worst 
+      - i can't do this anymore
+      - can't do this anymore
+      - i feel like my brain will exlode
+      - worst phase of my life 
+      - can't seem to get my life together
 
-  # - intent:
-  #   examples: |
+  - intent: referring_therapist
+    examples: |
+      - top therapist in nepal
+      - who do i go to see 
+      - i want to know the best Psychiatrist in nepal
+      - Psychiatrist in nepal
+      - know best Psychiatrist
+      - top Psychiatrist in nepal
 
   # - intent:
   #   examples: |

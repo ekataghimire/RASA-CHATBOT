@@ -15,6 +15,9 @@ intents:
   - expressing_themselves
   - pressure_enduring
   - need_of_therapist
+  - referring_therapist
+  - mental_health_defination
+  - symptom_depression
   #basic_normal_conversational_dataset
   - smalltalk_agent_acquaintance
   - smalltalk_agent_what_they_doing
@@ -274,6 +277,7 @@ intents:
   - dyslexia_diagnosed
   - treatment_dyslexia
   - ADHD_fullform
+  - help
 
 responses:
   utter_greet:
@@ -293,11 +297,17 @@ responses:
   utter_did_that_help:
     - text: "Did that help you?"
 
+  utter_after_greetings:
+    - text: "How is everything going? Are you doing good?"
+
   utter_happy:
     - text: "Great, carry on!"
 
   utter_goodbye:
     - text: "Bye"
+
+  utter_help:
+    - text: "How can I help You? Are you having trouble with something?"
 
   # utter_deny:
   #   - text: "Really, you are denying?"
@@ -332,7 +342,7 @@ responses:
     - text: "I'm sorry to hear that you're feeling sad. Is there anything specific that's been bothering you?"
     - text: "It's okay to feel sad sometimes, but it's important to take steps to lift yourself out of it. What are some things that usually make you feel happy?"
     - text: "I'm here to support you through this difficult time. Have you tried any relaxation techniques or mindfulness exercises?"
-    - text: "Remember that you're not alone in your feelings. Many people struggle with sadness and depression. What kind of support or resources might be helpful for you?"
+    - text: "Remember that you're not alone in your feelings. Many people struggle with sadness. What kind of support or resources might be helpful for you?"
     - text: "It sounds like you're going through a tough time. Can you think of any activities or hobbies that bring you joy, even if you don't feel like doing them right now?"
     - text: "It's important to take care of yourself when you're feeling sad. Have you been getting enough rest, exercise, and healthy food?"
     - text: "One way to lift your mood is to practice gratitude. Can you think of three things you're grateful for right now?"
@@ -341,7 +351,7 @@ responses:
     - text: "I'm here to listen and support you. What can I do to help you feel better right now?"
 
   utter_say_welcome:
-    - text: "You are welcome"
+    - text: "You are welcome. I will always be here for you"
     - text: "I am always there for you."
     - text: "I am glad i become some help"
     - text: "It feels good to have helped you."
@@ -793,6 +803,9 @@ responses:
     - text: "Okay. You know where to find me."
     - text: "All right. I'll be here."
 
+  utter_mental_health_defination:
+    - text: "Mental health includes our emotional, psychological, and social well-being. It affects how we think, feel, and act. It also helps determine how we handle stress, relate to others, and make healthy choices."
+
   #mental_health_conversational_dataset
   utter_mental_health_concern:
     - text: "That sounds like a lot to deal with. How can I help you right now?"
@@ -942,10 +955,8 @@ responses:
     - text: "Psychotic Depression: This type of depression is characterized by symptoms of major depression along with psychotic symptoms, such as hallucinations or delusions."
 
   utter_love_validation:
-    - text: "No matter what,your loved ones will always be proud of you and will love you"
-    - text: "You will feel much better if you share your feelings with your loved ones."
-    - text: "If you are the one who let them down you were the one who raised there hopes in the first place. "
-    - text: "You don't let anyone down If you have done it once I can guarantee you can do it over and over again ."
+    - text: "There are pople who love you. You are so lovely , There is not a chance of poeple not loving you. That is not possible. No matter what,your loved ones will always be proud of you and will love you"
+    - text: "Some Don't express love superficially , You are so lovely. There is not a chance people don't love you. I love you."
 
   utter_demotivated:
     - text: "Don't ever think you cannot achieve what you want. You can do everything you want. Trust me phases will pass."
@@ -1092,6 +1103,9 @@ responses:
   utter_anxiety_affecting_life:
     - text: "Anxiety can affect your daily life by causing disruptions to your work, relationships, and overall well-being. It can make it difficult to concentrate, sleep, and perform daily tasks."
     - text: "Anxiety can affect daily life by interfering with work or school performance, disrupting relationships, and leading to physical symptoms such as headaches and stomach problems."
+
+  utter_yoga_link:
+    - text: "Hope this helps: https://youtu.be/CDnEKUDNwMM"
 
   utter_natural_treatment_anxiety:
     - text: "Some natural remedies for anxiety include relaxation techniques, herbal supplements, exercise, and dietary changes. It's important to consult with a healthcare provider before trying any natural remedies."
@@ -1591,7 +1605,7 @@ responses:
     - text: I'm sorry, I didn't quite understand that. Could you rephrase?
 
   utter_default:
-    - text: "I'm sorry, I can't help you"
+    - text: "I could not understand you could you paraphrase it?"
 
   utter_telljoke:
     - text: "Why did the tomato turn red? A: Because it saw the salad dressing!"
@@ -1610,6 +1624,9 @@ responses:
 
   utter_pressure_enduring:
     - text: "I see , There is alot to cover up and you are tired. Humans have to sleep eat well in order to funtion properly. I hope you are doing this well. Let's just rest for a little while listen to music and then come back doing what we were doing before. My developer says it works."
+
+  utter_referring_therapist:
+    - text: "The best Psychiatrist here in Nepal are: Dr. Nirmal Lamichhane,Dr. Kenison Shrestha, Dr. Surendra Sherchan, Dr. Saroj Ojha, Dr. Umakant Yadav, Dr. Ananta Adhikari, Dr. Rashmi Mishra"
 
 # actions:
 #   - action_get_joke

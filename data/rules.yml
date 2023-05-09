@@ -282,6 +282,7 @@ rules:
     steps:
       - intent: natural_treatment_anxiety
       - action: utter_natural_treatment_anxiety
+      - action: utter_yoga_link
 
   - rule: Respond to supporting_anxiety_patients intent
     steps:
@@ -317,6 +318,7 @@ rules:
     steps:
       - intent: excersie_helping_anxiety
       - action: utter_excersie_helping_anxiety
+      - action: utter_yoga_link
 
   - rule: Respond to childhood_trauma_leading_anxiety intent
     steps:
